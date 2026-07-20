@@ -1,6 +1,21 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
+import { useCallback, useEffect, useRef, useState } from "react";
 import * as THREE from "three";
+
+import {
+  activateTrigger,
+  acknowledgeCommunity as apiAcknowledgeCommunity,
+  acknowledgeDispatch,
+  checkBackendHealth,
+  fetchLatestDispatch,
+  fetchScorecard,
+  fetchTimeline,
+  fetchTriggers,
+  refreshTriggers,
+  simulateMeshOffline,
+} from "../lib/kinga-api";
+import { formatEatClock, formatTimelineEat } from "../lib/datetime";
+import { scorecardStatusLabel, type RegionNode, type TimelineEvent } from "../lib/kinga-types";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,29 +39,7 @@ export const Route = createFileRoute("/")({
   component: SituationRoom,
 });
 
-type NodeStatus = "dormant" | "armed" | "critical" | "confirmed";
-
-interface RegionNode {
-  id: string;
-  label: string;
-  area: string;
-  hazard: "DROUGHT" | "FLOOD";
-  lat: number; // -1..1 grid coord
-  lon: number; // -1..1 grid coord
-  status: NodeStatus;
-  soilMoisture: number; // %
-  rainfallMm: number;
-  lagHours: number;
-  threshold: number;
-  rationale: string;
-  probability: number; // 0..1
-}
-
-interface TimelineEvent {
-  t: number;
-  label: string;
-  stage: "ingest" | "armed" | "trigger" | "mesh" | "inst_ack" | "comm_ack";
-}
+type NodeStatus = RegionNode["status"];
 
 const INITIAL_NODES: RegionNode[] = [
   {
@@ -54,8 +47,8 @@ const INITIAL_NODES: RegionNode[] = [
     label: "Marsabit",
     area: "Kenya · Marsabit",
     hazard: "DROUGHT",
-    lat: 0.35,
-    lon: -0.15,
+    geoLat: 0.35,
+    geoLon: -0.15,
     status: "armed",
     soilMoisture: 14,
     rainfallMm: 2.1,
@@ -69,8 +62,8 @@ const INITIAL_NODES: RegionNode[] = [
     label: "Gedo",
     area: "Somalia · Gedo",
     hazard: "FLOOD",
-    lat: 0.55,
-    lon: 0.55,
+    geoLat: 0.55,
+    geoLon: 0.55,
     status: "armed",
     soilMoisture: 62,
     rainfallMm: 41.8,
@@ -84,8 +77,8 @@ const INITIAL_NODES: RegionNode[] = [
     label: "Somali Region",
     area: "Ethiopia · Dollo",
     hazard: "DROUGHT",
-    lat: 0.62,
-    lon: 0.05,
+    geoLat: 0.62,
+    geoLon: 0.05,
     status: "dormant",
     soilMoisture: 22,
     rainfallMm: 6.4,
@@ -99,8 +92,8 @@ const INITIAL_NODES: RegionNode[] = [
     label: "Turkana",
     area: "Kenya · Turkana",
     hazard: "DROUGHT",
-    lat: 0.15,
-    lon: -0.45,
+    geoLat: 0.15,
+    geoLon: -0.45,
     status: "dormant",
     soilMoisture: 26,
     rainfallMm: 8.9,
@@ -114,8 +107,8 @@ const INITIAL_NODES: RegionNode[] = [
     label: "Karamoja",
     area: "Uganda · Karamoja",
     hazard: "FLOOD",
-    lat: -0.15,
-    lon: -0.55,
+    geoLat: -0.15,
+    geoLon: -0.55,
     status: "dormant",
     soilMoisture: 48,
     rainfallMm: 12.2,
@@ -123,6 +116,67 @@ const INITIAL_NODES: RegionNode[] = [
     threshold: 35,
     rationale: "Soil saturation moderate, no active convective cells.",
     probability: 0.09,
+  },
+  {
+    id: "DJ-ALI-DROUGHT-06",
+    label: "Ali Sabieh",
+    area: "Djibouti · Ali Sabieh",
+    hazard: "DROUGHT",
+    geoLat: 0.75,
+    geoLon: 0.75,
+    status: "dormant",
+    soilMoisture: 10,
+    rainfallMm: 0.8,
+    lagHours: 5,
+    threshold: 12,
+    rationale: "Consecutive failed rains; livestock mortality rising in pastoral corridors.",
+    probability: 0.31,
+  },
+  {
+    id: "ER-GBR-DROUGHT-07",
+    label: "Gash-Barka",
+    area: "Eritrea · Gash-Barka",
+    hazard: "DROUGHT",
+    geoLat: 0.85,
+    geoLon: 0.35,
+    status: "dormant",
+    soilMoisture: 16,
+    rainfallMm: 3.2,
+    lagHours: 6,
+    threshold: 15,
+    rationale: "Rainfall deficit across Gash-Barka; pastoral communities reporting water scarcity.",
+    probability: 0.24,
+  },
+  {
+    id: "SS-JON-FLOOD-08",
+    label: "Jonglei",
+    area: "South Sudan · Jonglei",
+    hazard: "FLOOD",
+    geoLat: 0.5,
+    geoLon: -0.65,
+    status: "dormant",
+    soilMoisture: 55,
+    rainfallMm: 28.4,
+    lagHours: 3,
+    threshold: 40,
+    rationale:
+      "White Nile gauge at Malakal rising above seasonal norm; upstream rainfall persistent.",
+    probability: 0.18,
+  },
+  {
+    id: "SD-GED-DROUGHT-09",
+    label: "Gedaref",
+    area: "Sudan · Gedaref",
+    hazard: "DROUGHT",
+    geoLat: 0.8,
+    geoLon: -0.5,
+    status: "dormant",
+    soilMoisture: 20,
+    rainfallMm: 5.1,
+    lagHours: 4,
+    threshold: 25,
+    rationale: "Vegetation index significantly below 5-year average for agricultural zone.",
+    probability: 0.22,
   },
 ];
 
@@ -147,6 +201,8 @@ function statusColor(s: NodeStatus): number {
 function SituationRoom() {
   const [nodes, setNodes] = useState<RegionNode[]>(INITIAL_NODES);
   const [selectedId, setSelectedId] = useState<string>(INITIAL_NODES[0].id);
+  const [backendLive, setBackendLive] = useState(false);
+  const [dispatchByTrigger, setDispatchByTrigger] = useState<Record<string, string>>({});
   const [layers, setLayers] = useState({
     ipc: true,
     pop: false,
@@ -155,9 +211,9 @@ function SituationRoom() {
   });
   const [timeline, setTimeline] = useState<TimelineEvent[]>([
     { t: Date.now() - 45000, label: "IMERG rainfall ingest · Marsabit", stage: "ingest" },
-    { t: Date.now() - 30000, label: "LSTM armed KE-MSB-DROUGHT-01 (P=0.72)", stage: "armed" },
+    { t: Date.now() - 30000, label: "Model armed KE-MSB-DROUGHT-01 (P=0.72)", stage: "armed" },
     { t: Date.now() - 20000, label: "SPI-4 stream ingest · Gedo", stage: "ingest" },
-    { t: Date.now() - 12000, label: "LSTM armed SO-GED-FLOOD-04 (P=0.58)", stage: "armed" },
+    { t: Date.now() - 12000, label: "Model armed SO-GED-FLOOD-04 (P=0.58)", stage: "armed" },
   ]);
   const [ussdText, setUssdText] = useState<string>(
     "KINGA: Standby. No active advisory for your cell.",
@@ -167,10 +223,70 @@ function SituationRoom() {
   const [clock, setClock] = useState<string>("");
   const [scorecard, setScorecard] = useState([
     { org: "NDMA · Marsabit", latency: 12, status: "OK" as const },
-    { org: "Ministry · Wajir", latency: 84, status: "SLOW" as const },
+    { org: "NDRMC · Dollo", latency: 840, status: "SLOW" as const },
     { org: "NDMA · Turkana", latency: 21, status: "OK" as const },
-    { org: "NEMA · Gedo", latency: 47, status: "OK" as const },
+    { org: "DRM · Gedo", latency: 47, status: "OK" as const },
+    { org: "OPM · Karamoja", latency: 66, status: "OK" as const },
+    { org: "ANDHS · Ali Sabieh", latency: 39, status: "OK" as const },
+    { org: "DMNC · Gash-Barka", latency: 138, status: "SLOW" as const },
+    { org: "DMC · Jonglei", latency: 27, status: "OK" as const },
+    { org: "HAC · Gedaref", latency: 108, status: "SLOW" as const },
   ]);
+
+  const syncFromBackend = useCallback(async () => {
+    const live = await checkBackendHealth();
+    setBackendLive(live);
+    if (!live) return;
+
+    try {
+      await refreshTriggers();
+      const [triggerNodes, scoreRows, timelineRows] = await Promise.all([
+        fetchTriggers(),
+        fetchScorecard(),
+        fetchTimeline(),
+      ]);
+      if (triggerNodes.length > 0) {
+        setNodes(triggerNodes);
+        setSelectedId((prev) =>
+          triggerNodes.some((n) => n.id === prev) ? prev : triggerNodes[0].id,
+        );
+        const dispatchEntries = await Promise.all(
+          triggerNodes
+            .filter((n) => n.status === "critical" || n.status === "confirmed")
+            .map(async (n) => {
+              const id = await fetchLatestDispatch(n.id);
+              return id ? ([n.id, id] as const) : null;
+            }),
+        );
+        const nextDispatches = Object.fromEntries(
+          dispatchEntries.filter((e): e is readonly [string, string] => e !== null),
+        );
+        if (Object.keys(nextDispatches).length > 0) {
+          setDispatchByTrigger((prev) => ({ ...prev, ...nextDispatches }));
+        }
+      }
+      if (scoreRows.length > 0) {
+        setScorecard(
+          scoreRows.map((row) => ({
+            org: row.institution.split(",")[0],
+            latency: Math.round(row.avg_ack_hours * 60),
+            status: scorecardStatusLabel(row.status),
+          })),
+        );
+      }
+      if (timelineRows.length > 0) {
+        setTimeline(timelineRows);
+      }
+    } catch {
+      setBackendLive(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    void syncFromBackend();
+    const id = setInterval(() => void syncFromBackend(), 3000);
+    return () => clearInterval(id);
+  }, [syncFromBackend]);
 
   const canvasHostRef = useRef<HTMLDivElement | null>(null);
   const threeRef = useRef<{
@@ -185,23 +301,17 @@ function SituationRoom() {
 
   const selected = nodes.find((n) => n.id === selectedId) ?? nodes[0];
 
-  // Live clock (EAT ~ UTC+3)
+  // Live clock (EAT — Africa/Nairobi via Intl)
   useEffect(() => {
-    const tick = () => {
-      const d = new Date();
-      const eat = new Date(d.getTime() + (3 * 60 - d.getTimezoneOffset()) * 60000);
-      const hh = String(eat.getUTCHours()).padStart(2, "0");
-      const mm = String(eat.getUTCMinutes()).padStart(2, "0");
-      const ss = String(eat.getUTCSeconds()).padStart(2, "0");
-      setClock(`${hh}:${mm}:${ss} EAT`);
-    };
+    const tick = () => setClock(formatEatClock().time);
     tick();
     const id = setInterval(tick, 1000);
     return () => clearInterval(id);
   }, []);
 
-  // Synthetic ingest loop — decays soil moisture on armed drought, raises rainfall on floods.
+  // Synthetic ingest loop when backend is offline — decays soil moisture on armed drought, raises rainfall on floods.
   useEffect(() => {
+    if (backendLive) return;
     const id = setInterval(() => {
       setNodes((prev) =>
         prev.map((n) => {
@@ -209,75 +319,67 @@ function SituationRoom() {
           const drift = (Math.random() - 0.5) * 0.6;
           if (n.hazard === "DROUGHT") {
             const nextSoil = Math.max(0, n.soilMoisture - Math.random() * 0.15 + drift * 0.1);
-            const prob = Math.min(
-              0.98,
-              Math.max(0, (n.threshold - nextSoil) / n.threshold + 0.15),
-            );
+            const prob = Math.min(0.98, Math.max(0, (n.threshold - nextSoil) / n.threshold + 0.15));
             const nextStatus: NodeStatus =
-              nextSoil < n.threshold * 0.55
-                ? "critical"
-                : prob > 0.5
-                  ? "armed"
-                  : "dormant";
+              nextSoil < n.threshold * 0.55 ? "critical" : prob > 0.5 ? "armed" : "dormant";
             return { ...n, soilMoisture: nextSoil, probability: prob, status: nextStatus };
           } else {
             const nextRain = Math.max(0, n.rainfallMm + (Math.random() - 0.35) * 0.9);
             const prob = Math.min(0.98, Math.max(0, (nextRain - n.threshold) / n.threshold + 0.4));
             const nextStatus: NodeStatus =
-              nextRain > n.threshold * 1.35
-                ? "critical"
-                : prob > 0.5
-                  ? "armed"
-                  : "dormant";
+              nextRain > n.threshold * 1.35 ? "critical" : prob > 0.5 ? "armed" : "dormant";
             return { ...n, rainfallMm: nextRain, probability: prob, status: nextStatus };
           }
         }),
       );
     }, 1500);
     return () => clearInterval(id);
-  }, []);
+  }, [backendLive]);
 
-  // React to transitions -> critical: push timeline + banner
+  // React to transitions -> critical: push timeline + banner (offline mode only)
   const prevStatusRef = useRef<Record<string, NodeStatus>>({});
   useEffect(() => {
+    if (backendLive) return;
     for (const n of nodes) {
       const prev = prevStatusRef.current[n.id];
       if (prev && prev !== "critical" && n.status === "critical") {
-        setTimeline((t: TimelineEvent[]) =>
-          [
-            ...t,
-            {
-              t: Date.now(),
-              label: `HARD TRIGGER · ${n.id} breached (${n.hazard})`,
-              stage: "trigger",
-            },
-            {
-              t: Date.now() + 1,
-              label: `Mesh relay dispatched via ${GATEWAYS[0].label}`,
-              stage: "mesh",
-            },
-          ].slice(-14) as TimelineEvent[],
+        setTimeline(
+          (t: TimelineEvent[]) =>
+            [
+              ...t,
+              {
+                t: Date.now(),
+                label: `HARD TRIGGER · ${n.id} breached (${n.hazard})`,
+                stage: "trigger",
+              },
+              {
+                t: Date.now() + 1,
+                label: `Mesh relay dispatched via ${GATEWAYS[0].label}`,
+                stage: "mesh",
+              },
+            ].slice(-14) as TimelineEvent[],
         );
         setCriticalBanner(`CRITICAL ALERT · ${n.id} FIRE`);
         setTimeout(() => setCriticalBanner(null), 6000);
       }
       if (prev && prev !== "armed" && n.status === "armed") {
-        setTimeline((t: TimelineEvent[]) =>
-          [
-            ...t,
-            {
-              t: Date.now(),
-              label: `LSTM armed ${n.id} (P=${n.probability.toFixed(2)})`,
-              stage: "armed",
-            },
-          ].slice(-14) as TimelineEvent[],
+        setTimeline(
+          (t: TimelineEvent[]) =>
+            [
+              ...t,
+              {
+                t: Date.now(),
+                label: `Model armed ${n.id} (P=${n.probability.toFixed(2)})`,
+                stage: "armed",
+              },
+            ].slice(-14) as TimelineEvent[],
         );
       }
     }
     prevStatusRef.current = Object.fromEntries(nodes.map((n) => [n.id, n.status]));
-  }, [nodes]);
+  }, [nodes, backendLive]);
 
-  // Three.js scene setup
+  // Three.js scene setup — flat grid map with beacons, data flows, borders
   useEffect(() => {
     const host = canvasHostRef.current;
     if (!host) return;
@@ -285,121 +387,265 @@ function SituationRoom() {
     const height = host.clientHeight;
 
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x05080f, 0.09);
+    scene.fog = new THREE.FogExp2(0x030610, 0.04);
 
-    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-    camera.position.set(0, 5.2, 6.8);
+    const camera = new THREE.PerspectiveCamera(42, width / height, 0.1, 200);
+    camera.position.set(0, 8, 8);
     camera.lookAt(0, 0, 0);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(width, height);
-    renderer.setClearColor(0x05080f, 1);
+    renderer.setClearColor(0x030610, 1);
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.1;
     host.appendChild(renderer.domElement);
 
-    // Terrain grid (wireframe plane)
-    const grid = new THREE.GridHelper(10, 30, 0x1a3a5c, 0x0f2036);
-    (grid.material as THREE.Material).transparent = true;
-    (grid.material as THREE.Material).opacity = 0.55;
-    scene.add(grid);
+    // ── Lights ──
+    scene.add(new THREE.AmbientLight(0x1a2a4a, 2.0));
+    const sun = new THREE.DirectionalLight(0xfff4e0, 2.2);
+    sun.position.set(5, 10, 4);
+    scene.add(sun);
+    const rim = new THREE.DirectionalLight(0x3388cc, 1.0);
+    rim.position.set(-4, 6, -6);
+    scene.add(rim);
 
-    // Ambient glow floor
-    const floorGeo = new THREE.PlaneGeometry(10, 10, 40, 40);
-    const floorMat = new THREE.MeshBasicMaterial({
-      color: 0x0a1626,
-      transparent: true,
-      opacity: 0.45,
-    });
-    const floor = new THREE.Mesh(floorGeo, floorMat);
-    floor.rotation.x = -Math.PI / 2;
-    floor.position.y = -0.01;
-    scene.add(floor);
-
-    // Faux terrain elevation ripples
-    const terrainGeo = new THREE.PlaneGeometry(10, 10, 60, 60);
-    const pos = terrainGeo.attributes.position;
-    for (let i = 0; i < pos.count; i++) {
-      const x = pos.getX(i);
-      const y = pos.getY(i);
-      const z = Math.sin(x * 0.9) * 0.15 + Math.cos(y * 0.7) * 0.12 + Math.sin((x + y) * 0.4) * 0.08;
-      pos.setZ(i, z);
+    // ── Starfield ──
+    const starCount = 1000;
+    const starGeo = new THREE.BufferGeometry();
+    const starPosArr = new Float32Array(starCount * 3);
+    for (let i = 0; i < starCount; i++) {
+      starPosArr[i * 3] = (Math.random() - 0.5) * 120;
+      starPosArr[i * 3 + 1] = 15 + Math.random() * 60;
+      starPosArr[i * 3 + 2] = (Math.random() - 0.5) * 120;
     }
-    terrainGeo.computeVertexNormals();
-    const terrainMat = new THREE.MeshBasicMaterial({
-      color: 0x123a5a,
-      wireframe: true,
-      transparent: true,
-      opacity: 0.35,
-    });
-    const terrain = new THREE.Mesh(terrainGeo, terrainMat);
-    terrain.rotation.x = -Math.PI / 2;
-    scene.add(terrain);
+    starGeo.setAttribute("position", new THREE.BufferAttribute(starPosArr, 3));
+    scene.add(
+      new THREE.Points(
+        starGeo,
+        new THREE.PointsMaterial({ color: 0xffffff, size: 0.12, transparent: true, opacity: 0.6 }),
+      ),
+    );
 
-    // Gateways
-    for (const gw of GATEWAYS) {
-      const g = new THREE.Mesh(
-        new THREE.OctahedronGeometry(0.18, 0),
-        new THREE.MeshBasicMaterial({ color: 0x3ab0ff }),
+    // ── Coordinate helpers ──
+    // Nodes use small abstract lat/lon (-0.8..0.8 range). Map directly to flat XZ.
+    const SCALE = 5.5;
+    const CENTER_LAT = 0.0;
+    const CENTER_LON = 0.0;
+    function ll2xz(lat: number, lon: number): { x: number; z: number } {
+      return {
+        x: (lon - CENTER_LON) * SCALE,
+        z: -(lat - CENTER_LAT) * SCALE,
+      };
+    }
+
+    // ── Ground terrain plane ──
+    const planeW = 30;
+    const planeH = 14;
+    const terrainGeo = new THREE.PlaneGeometry(planeW, planeH, 80, 40);
+    terrainGeo.rotateX(-Math.PI / 2);
+    const tPos = terrainGeo.attributes.position;
+    const terrainColors = new Float32Array(tPos.count * 3);
+    for (let i = 0; i < tPos.count; i++) {
+      const x = tPos.getX(i);
+      const z = tPos.getZ(i);
+      // Procedural elevation
+      const elev =
+        Math.sin(x * 0.45) * 0.18 +
+        Math.cos(z * 0.55) * 0.14 +
+        Math.sin((x + z) * 0.3) * 0.1 +
+        Math.cos((x - z) * 0.7) * 0.06;
+      tPos.setY(i, elev);
+      // Color: darker at edges, subtle green/brown land
+      const cx = x / (planeW * 0.5);
+      const cz = z / (planeH * 0.5);
+      const dist = Math.sqrt(cx * cx + cz * cz);
+      const fade = Math.max(0, 1 - dist * 0.9);
+      terrainColors[i * 3] = (0.06 + Math.random() * 0.03) * fade;
+      terrainColors[i * 3 + 1] = (0.1 + Math.random() * 0.04) * fade;
+      terrainColors[i * 3 + 2] = (0.14 + Math.random() * 0.03) * fade;
+    }
+    terrainGeo.setAttribute("color", new THREE.BufferAttribute(terrainColors, 3));
+    terrainGeo.computeVertexNormals();
+    const terrainMat = new THREE.MeshStandardMaterial({
+      vertexColors: true,
+      roughness: 0.9,
+      metalness: 0.1,
+    });
+    scene.add(new THREE.Mesh(terrainGeo, terrainMat));
+
+    // ── Grid lines ──
+    const gridHelper = new THREE.GridHelper(planeW, 30, 0x1a3a5c, 0x0d1e30);
+    (gridHelper.material as THREE.Material).transparent = true;
+    (gridHelper.material as THREE.Material).opacity = 0.35;
+    gridHelper.position.y = 0.01;
+    scene.add(gridHelper);
+
+    // ── Subtle reference grid (matching node coordinate space) ──
+    function makeFlatLine(pts: THREE.Vector3[], color: number, opacity: number): THREE.Line {
+      const geo = new THREE.BufferGeometry().setFromPoints(pts);
+      return new THREE.Line(
+        geo,
+        new THREE.LineBasicMaterial({ color, transparent: true, opacity }),
       );
-      g.position.set(gw.lon * 4.2, 0.25, gw.lat * 4.2);
-      scene.add(g);
+    }
+
+    const gratGroup = new THREE.Group();
+    for (let v = -4; v <= 4; v += 1) {
+      const ptsX: THREE.Vector3[] = [];
+      const ptsZ: THREE.Vector3[] = [];
+      for (let w = -5; w <= 5; w += 0.5) {
+        ptsX.push(new THREE.Vector3(w * SCALE, 0.02, v * SCALE));
+        ptsZ.push(new THREE.Vector3(v * SCALE, 0.02, w * SCALE));
+      }
+      gratGroup.add(makeFlatLine(ptsX, 0x1a3050, 0.1));
+      gratGroup.add(makeFlatLine(ptsZ, 0x1a3050, 0.1));
+    }
+    scene.add(gratGroup);
+
+    // ── Region labels (floating text) ──
+    // (borders omitted — node positions are abstract, not geographic)
+
+    // ── Gateways ──
+    const gwGroup = new THREE.Group();
+    for (const gw of GATEWAYS) {
+      const { x, z } = ll2xz(gw.lat, gw.lon);
+      const base = new THREE.Vector3(x, 0, z);
+      // Ground ring
       const ring = new THREE.Mesh(
-        new THREE.RingGeometry(0.28, 0.34, 32),
-        new THREE.MeshBasicMaterial({ color: 0x3ab0ff, side: THREE.DoubleSide, transparent: true, opacity: 0.7 }),
+        new THREE.RingGeometry(0.35, 0.42, 32),
+        new THREE.MeshBasicMaterial({
+          color: 0x3ab0ff,
+          side: THREE.DoubleSide,
+          transparent: true,
+          opacity: 0.8,
+        }),
       );
       ring.rotation.x = -Math.PI / 2;
-      ring.position.set(gw.lon * 4.2, 0.02, gw.lat * 4.2);
-      scene.add(ring);
+      ring.position.copy(base).setY(0.02);
+      gwGroup.add(ring);
+      // Diamond
+      const diamond = new THREE.Mesh(
+        new THREE.OctahedronGeometry(0.16, 0),
+        new THREE.MeshBasicMaterial({ color: 0x3ab0ff }),
+      );
+      diamond.position.set(x, 1.0, z);
+      gwGroup.add(diamond);
     }
+    scene.add(gwGroup);
 
-    // Region tiles
+    // ── Region nodes ──
     const tiles = new Map<string, THREE.Mesh>();
+    const beaconsGroup = new THREE.Group();
     const pulses = new Map<string, THREE.Mesh>();
     const lines: THREE.Line[] = [];
-    for (const n of INITIAL_NODES) {
-      const tileGeo = new THREE.CylinderGeometry(0.35, 0.35, 0.12, 6);
-      const tileMat = new THREE.MeshBasicMaterial({
-        color: statusColor(n.status),
-        transparent: true,
-        opacity: 0.85,
-      });
-      const tile = new THREE.Mesh(tileGeo, tileMat);
-      tile.position.set(n.lon * 4.2, 0.06, n.lat * 4.2);
-      tile.userData.nodeId = n.id;
-      scene.add(tile);
-      tiles.set(n.id, tile);
+    const dataFlows: THREE.Mesh[] = [];
 
-      const pulseMat = new THREE.MeshBasicMaterial({
-        color: statusColor(n.status),
+    for (const n of INITIAL_NODES) {
+      const { x, z } = ll2xz(n.geoLat, n.geoLon);
+      const color = statusColor(n.status);
+
+      // Ground disc — larger, brighter
+      const disc = new THREE.Mesh(
+        new THREE.CircleGeometry(0.55, 32),
+        new THREE.MeshBasicMaterial({
+          color,
+          transparent: true,
+          opacity: 0.9,
+          side: THREE.DoubleSide,
+        }),
+      );
+      disc.rotation.x = -Math.PI / 2;
+      disc.position.set(x, 0.05, z);
+      disc.userData.nodeId = n.id;
+      scene.add(disc);
+      tiles.set(n.id, disc);
+
+      // Vertical beacon — tall glowing pillar
+      const columnH = 2.5;
+      const column = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.04, 0.06, columnH, 12),
+        new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.7 }),
+      );
+      column.position.set(x, columnH / 2 + 0.05, z);
+      beaconsGroup.add(column);
+
+      // Glow cone at base
+      const coneGeo = new THREE.ConeGeometry(0.35, 0.6, 16, 1, true);
+      const coneMat = new THREE.MeshBasicMaterial({
+        color,
         transparent: true,
-        opacity: 0.4,
+        opacity: 0.25,
         side: THREE.DoubleSide,
       });
-      const pulse = new THREE.Mesh(new THREE.RingGeometry(0.4, 0.48, 32), pulseMat);
+      const cone = new THREE.Mesh(coneGeo, coneMat);
+      cone.position.set(x, 0.35, z);
+      beaconsGroup.add(cone);
+
+      // Tip glow — larger emissive sphere
+      const tip = new THREE.Mesh(
+        new THREE.SphereGeometry(0.14, 16, 16),
+        new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 1.0 }),
+      );
+      tip.position.set(x, columnH + 0.05, z);
+      beaconsGroup.add(tip);
+
+      // Point light at tip for ambient glow
+      const light = new THREE.PointLight(color, 0.8, 4);
+      light.position.set(x, columnH + 0.1, z);
+      beaconsGroup.add(light);
+
+      // Pulse ring
+      const pulse = new THREE.Mesh(
+        new THREE.RingGeometry(0.5, 0.58, 32),
+        new THREE.MeshBasicMaterial({
+          color,
+          transparent: true,
+          opacity: 0.35,
+          side: THREE.DoubleSide,
+        }),
+      );
       pulse.rotation.x = -Math.PI / 2;
-      pulse.position.set(n.lon * 4.2, 0.03, n.lat * 4.2);
+      pulse.position.set(x, 0.06, z);
       scene.add(pulse);
       pulses.set(n.id, pulse);
 
-      // Mesh lines to nearest gateway
+      // Mesh line (curved bezier arc to gateway)
       const gw = GATEWAYS[0];
-      const points = [
-        new THREE.Vector3(n.lon * 4.2, 0.12, n.lat * 4.2),
-        new THREE.Vector3(gw.lon * 4.2, 0.22, gw.lat * 4.2),
-      ];
-      const lineGeo = new THREE.BufferGeometry().setFromPoints(points);
-      const lineMat = new THREE.LineBasicMaterial({
-        color: 0x2478b8,
-        transparent: true,
-        opacity: 0.35,
-      });
-      const line = new THREE.Line(lineGeo, lineMat);
+      const gwXz = ll2xz(gw.lat, gw.lon);
+      const start = new THREE.Vector3(x, 0.1, z);
+      const end = new THREE.Vector3(gwXz.x, 0.1, gwXz.z);
+      const mid = start.clone().add(end).multiplyScalar(0.5);
+      mid.y = 1.8 + start.distanceTo(end) * 0.15;
+      const curvePts: THREE.Vector3[] = [];
+      for (let t = 0; t <= 1; t += 0.025) {
+        const p = new THREE.Vector3();
+        p.x = (1 - t) * (1 - t) * start.x + 2 * (1 - t) * t * mid.x + t * t * end.x;
+        p.y = (1 - t) * (1 - t) * start.y + 2 * (1 - t) * t * mid.y + t * t * end.y;
+        p.z = (1 - t) * (1 - t) * start.z + 2 * (1 - t) * t * mid.z + t * t * end.z;
+        curvePts.push(p);
+      }
+      const lineGeo = new THREE.BufferGeometry().setFromPoints(curvePts);
+      const line = new THREE.Line(
+        lineGeo,
+        new THREE.LineBasicMaterial({ color: 0x2478b8, transparent: true, opacity: 0.3 }),
+      );
       line.userData.nodeId = n.id;
       scene.add(line);
       lines.push(line);
-    }
 
-    // Click picking
+      // Data-flow particle
+      const flow = new THREE.Mesh(
+        new THREE.SphereGeometry(0.05, 8, 8),
+        new THREE.MeshBasicMaterial({ color: 0x60c0ff, transparent: true, opacity: 0.9 }),
+      );
+      flow.userData = { curvePts, progress: Math.random() };
+      scene.add(flow);
+      dataFlows.push(flow);
+    }
+    scene.add(beaconsGroup);
+
+    // ── Click picking ──
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
     const onClick = (e: MouseEvent) => {
@@ -408,14 +654,11 @@ function SituationRoom() {
       mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
       raycaster.setFromCamera(mouse, camera);
       const hits = raycaster.intersectObjects(Array.from(tiles.values()));
-      if (hits.length) {
-        const id = hits[0].object.userData.nodeId as string;
-        setSelectedId(id);
-      }
+      if (hits.length) setSelectedId(hits[0].object.userData.nodeId as string);
     };
     renderer.domElement.addEventListener("click", onClick);
 
-    // Resize
+    // ── Resize ──
     const onResize = () => {
       if (!host) return;
       const w = host.clientWidth;
@@ -427,33 +670,40 @@ function SituationRoom() {
     const ro = new ResizeObserver(onResize);
     ro.observe(host);
 
-    const ref = {
-      renderer,
-      scene,
-      camera,
-      tiles,
-      pulses,
-      lines,
-      disposed: false,
-    };
+    const ref = { renderer, scene, camera, tiles, pulses, lines, disposed: false };
     threeRef.current = ref;
 
+    // ── Animation loop ──
     let raf = 0;
     const start = performance.now();
     const animate = () => {
       if (ref.disposed) return;
       const t = (performance.now() - start) / 1000;
-      // gentle orbit
-      camera.position.x = Math.sin(t * 0.08) * 6.8;
-      camera.position.z = Math.cos(t * 0.08) * 6.8;
-      camera.position.y = 5.2 + Math.sin(t * 0.2) * 0.2;
+
+      // Gentle camera sway
+      camera.position.x = Math.sin(t * 0.06) * 1.5;
+      camera.position.z = 8 + Math.cos(t * 0.08) * 1;
+      camera.position.y = 8 + Math.sin(t * 0.12) * 0.4;
       camera.lookAt(0, 0, 0);
+
+      // Pulse rings
       pulses.forEach((p) => {
-        const s = 1 + (Math.sin(t * 2.4) + 1) * 0.35;
+        const s = 1 + (Math.sin(t * 2.0) + 1) * 0.4;
         p.scale.set(s, s, s);
-        (p.material as THREE.MeshBasicMaterial).opacity =
-          0.15 + (Math.sin(t * 2.4) + 1) * 0.2;
+        (p.material as THREE.MeshBasicMaterial).opacity = 0.1 + (Math.sin(t * 2.0) + 1) * 0.15;
       });
+
+      // Data-flow particles
+      for (const flow of dataFlows) {
+        const { curvePts, progress } = flow.userData as {
+          curvePts: THREE.Vector3[];
+          progress: number;
+        };
+        flow.userData.progress = (progress + 0.004) % 1;
+        const idx = Math.floor(flow.userData.progress * (curvePts.length - 1));
+        flow.position.copy(curvePts[Math.min(idx, curvePts.length - 1)]);
+      }
+
       renderer.render(scene, camera);
       raf = requestAnimationFrame(animate);
     };
@@ -492,31 +742,51 @@ function SituationRoom() {
 
   const armedCount = nodes.filter((n) => n.status === "armed").length;
   const criticalCount = nodes.filter((n) => n.status === "critical").length;
-  const activeDispatches = nodes.filter(
-    (n) => n.status === "armed" || n.status === "critical",
-  );
+  const activeDispatches = nodes.filter((n) => n.status === "armed" || n.status === "critical");
   const threatIndex = Math.round(
     (nodes.reduce((a, n) => a + n.probability, 0) / nodes.length) * 100,
   );
 
-  const killTower = () => {
+  const killTower = async () => {
     setUssdText("Signal lost. Falling back to LoRa mesh relay…");
+    if (backendLive) {
+      try {
+        await simulateMeshOffline(["gateway_01"]);
+      } catch {
+        /* fall through to local UX */
+      }
+    }
     setTimeout(() => {
-      setUssdText(
-        "KINGA (mesh): Advisory relayed via peer node. Confirm receipt: reply 1.",
-      );
+      setUssdText("KINGA (mesh): Advisory relayed via peer node. Confirm receipt: reply 1.");
       setUssdAwaiting(true);
     }, 1200);
-    setTimeline((t: TimelineEvent[]) =>
-      [
-        ...t,
-        { t: Date.now(), label: "Cell tower KE-MSB-CT-02 offline", stage: "mesh" },
-        { t: Date.now() + 1, label: "Mesh peer relay engaged", stage: "mesh" },
-      ].slice(-14) as TimelineEvent[],
-    );
+    if (!backendLive) {
+      setTimeline(
+        (t: TimelineEvent[]) =>
+          [
+            ...t,
+            { t: Date.now(), label: "Cell tower KE-MSB-CT-02 offline", stage: "mesh" },
+            { t: Date.now() + 1, label: "Mesh peer relay engaged", stage: "mesh" },
+          ].slice(-14) as TimelineEvent[],
+      );
+    } else {
+      void syncFromBackend();
+    }
   };
 
-  const forceHardTrigger = () => {
+  const forceHardTrigger = async () => {
+    if (backendLive) {
+      try {
+        const dispatch = await activateTrigger(selected.id);
+        setDispatchByTrigger((prev) => ({ ...prev, [selected.id]: dispatch.dispatch_id }));
+        await syncFromBackend();
+        setCriticalBanner(`CRITICAL ALERT · ${selected.id} FIRE`);
+        setTimeout(() => setCriticalBanner(null), 6000);
+        return;
+      } catch {
+        /* fall through to local simulation */
+      }
+    }
     setNodes((prev) =>
       prev.map((n) =>
         n.id === selected.id
@@ -532,16 +802,35 @@ function SituationRoom() {
     );
   };
 
-  const acknowledgeInstitutional = () => {
-    setTimeline((t: TimelineEvent[]) =>
-      [
-        ...t,
-        {
-          t: Date.now(),
-          label: `Institutional ACK · ${selected.id}`,
-          stage: "inst_ack",
-        },
-      ].slice(-14) as TimelineEvent[],
+  const acknowledgeInstitutional = async () => {
+    const dispatchId = dispatchByTrigger[selected.id];
+    if (backendLive && dispatchId) {
+      try {
+        await acknowledgeDispatch(
+          dispatchId,
+          `${selected.area} responsible institution`,
+          "Cash transfer initiated",
+        );
+        await syncFromBackend();
+        setUssdText(
+          `${selected.area} NDMA confirms alert. Move livestock to secondary water point. Reply 1 to confirm.`,
+        );
+        setUssdAwaiting(true);
+        return;
+      } catch {
+        /* fall through */
+      }
+    }
+    setTimeline(
+      (t: TimelineEvent[]) =>
+        [
+          ...t,
+          {
+            t: Date.now(),
+            label: `Institutional ACK · ${selected.id}`,
+            stage: "inst_ack",
+          },
+        ].slice(-14) as TimelineEvent[],
     );
     setUssdText(
       `${selected.area} NDMA confirms alert. Move livestock to secondary water point. Reply 1 to confirm.`,
@@ -552,26 +841,37 @@ function SituationRoom() {
     );
   };
 
-  const acknowledgeCommunity = () => {
+  const acknowledgeCommunity = async () => {
+    const dispatchId = dispatchByTrigger[selected.id];
+    if (backendLive && dispatchId) {
+      try {
+        await apiAcknowledgeCommunity(dispatchId, "community contact / USSD *789#");
+        await syncFromBackend();
+        setUssdAwaiting(false);
+        setUssdText("✓ Confirmed. Action logged. Stay safe.");
+        return;
+      } catch {
+        /* fall through */
+      }
+    }
     setUssdAwaiting(false);
     setUssdText("✓ Confirmed. Action logged. Stay safe.");
-    setTimeline((t: TimelineEvent[]) =>
-      [
-        ...t,
-        {
-          t: Date.now(),
-          label: `Community ACK · ${selected.id}`,
-          stage: "comm_ack",
-        },
-      ].slice(-14) as TimelineEvent[],
+    setTimeline(
+      (t: TimelineEvent[]) =>
+        [
+          ...t,
+          {
+            t: Date.now(),
+            label: `Community ACK · ${selected.id}`,
+            stage: "comm_ack",
+          },
+        ].slice(-14) as TimelineEvent[],
     );
-    setNodes((prev) =>
-      prev.map((n) => (n.id === selected.id ? { ...n, status: "confirmed" } : n)),
-    );
+    setNodes((prev) => prev.map((n) => (n.id === selected.id ? { ...n, status: "confirmed" } : n)));
   };
 
   return (
-    <div className="h-screen w-screen overflow-hidden bg-[#05080f] text-slate-100 font-sans">
+    <div className="min-h-screen w-screen bg-[#05080f] text-slate-100 font-sans">
       {criticalBanner && (
         <div className="pointer-events-none fixed left-1/2 top-4 z-50 -translate-x-1/2">
           <div className="rounded-md border border-rose-500/60 bg-rose-950/90 px-6 py-3 text-sm font-bold uppercase tracking-widest text-rose-200 shadow-[0_0_40px_rgba(255,47,74,0.5)] animate-pulse">
@@ -580,7 +880,7 @@ function SituationRoom() {
         </div>
       )}
 
-      <div className="grid h-screen w-screen grid-cols-12 grid-rows-6 gap-3 p-3">
+      <div className="grid min-h-screen w-screen grid-cols-12 auto-rows-[minmax(0,auto)] gap-3 p-3">
         {/* HEADER */}
         <header className="col-span-12 row-span-1 flex items-center justify-between rounded-lg border border-slate-800 bg-slate-950/80 px-6">
           <div className="flex items-center gap-4">
@@ -593,8 +893,31 @@ function SituationRoom() {
               </h1>
               <div className="text-[10px] uppercase tracking-[0.3em] text-slate-500">
                 Eastern Africa Global Operational View
+                {backendLive ? " · API live" : " · offline fallback"}
               </div>
             </div>
+          </div>
+          <div className="flex items-center gap-1 overflow-x-auto">
+            {[
+              { to: "/", label: "God's View" },
+              { to: "/triggers", label: "Triggers" },
+              { to: "/predictions", label: "Forecasts" },
+              { to: "/regions", label: "Regions" },
+              { to: "/mesh", label: "Mesh" },
+              { to: "/dispatches", label: "Dispatches" },
+              { to: "/activations", label: "Activations" },
+              { to: "/scorecard", label: "Scorecard" },
+              { to: "/institutions", label: "Institutions" },
+              { to: "/about", label: "About" },
+            ].map(({ to, label }) => (
+              <Link
+                key={to}
+                to={to}
+                className="whitespace-nowrap rounded border border-transparent px-2 py-1.5 text-[10px] font-semibold uppercase tracking-widest text-slate-500 transition hover:border-sky-500/40 hover:bg-sky-500/15 hover:text-sky-200"
+              >
+                {label}
+              </Link>
+            ))}
           </div>
           <div className="flex items-center gap-6">
             <StatChip label="ARMED" value={armedCount} tone="amber" />
@@ -610,7 +933,7 @@ function SituationRoom() {
         </header>
 
         {/* LEFT PANEL */}
-        <aside className="col-span-3 row-span-5 flex flex-col gap-3 overflow-hidden rounded-lg border border-slate-800 bg-slate-950/70 p-4">
+        <aside className="col-span-3 row-span-5 flex flex-col gap-3 overflow-auto rounded-lg border border-slate-800 bg-slate-950/70 p-4">
           <PanelTitle>Regional Threat Index</PanelTitle>
           <div>
             <div className="mb-2 flex items-end justify-between">
@@ -727,7 +1050,7 @@ function SituationRoom() {
           <div className="absolute right-0 top-0 z-10 space-y-1.5 p-3 text-[10px] uppercase tracking-widest">
             <LegendRow color="#3ab0ff" label="Gateway node" shape="diamond" />
             <LegendRow color="#1fd77a" label="Dormant relay" shape="dot" />
-            <LegendRow color="#f5c518" label="Armed (LSTM)" shape="dot" />
+            <LegendRow color="#f5c518" label="Armed (model)" shape="dot" />
             <LegendRow color="#ff2f4a" label="Critical fire" shape="dot" />
             <LegendRow color="#63f0c8" label="Confirmed ACK" shape="dot" />
           </div>
@@ -738,7 +1061,7 @@ function SituationRoom() {
         </main>
 
         {/* RIGHT PANEL */}
-        <section className="col-span-3 row-span-5 flex flex-col gap-3 overflow-hidden rounded-lg border border-slate-800 bg-slate-950/70 p-4">
+        <section className="col-span-3 row-span-5 flex flex-col gap-3 overflow-auto rounded-lg border border-slate-800 bg-slate-950/70 p-4">
           <PanelTitle>Node / Admin Unit Detail</PanelTitle>
           <div className="rounded border border-slate-800 bg-slate-900/50 p-3">
             <div className="flex items-center justify-between">
@@ -768,7 +1091,7 @@ function SituationRoom() {
               />
             )}
             <Gauge
-              label="LSTM Probability"
+              label="Anticipation Probability"
               value={selected.probability * 100}
               unit="%"
               threshold={60}
@@ -826,7 +1149,7 @@ function SituationRoom() {
         </section>
 
         {/* BOTTOM PANEL */}
-        <footer className="col-span-6 row-span-2 grid grid-cols-12 gap-3 overflow-hidden rounded-lg border border-slate-800 bg-slate-950/70 p-4">
+        <footer className="col-span-6 row-span-2 grid grid-cols-12 gap-3 overflow-auto rounded-lg border border-slate-800 bg-slate-950/70 p-4">
           <div className="col-span-7 flex flex-col overflow-hidden border-r border-slate-800 pr-3">
             <PanelTitle>Activation & Action Chronology</PanelTitle>
             <div className="mb-2 flex items-center gap-2 text-[10px] uppercase tracking-widest">
@@ -847,11 +1170,7 @@ function SituationRoom() {
                   className="flex items-center gap-2 rounded border border-slate-900 bg-slate-950/50 px-2 py-1"
                 >
                   <StageBadge stage={e.stage} />
-                  <span className="text-slate-500">
-                    {new Date(e.t).toLocaleTimeString(undefined, {
-                      hour12: false,
-                    })}
-                  </span>
+                  <span className="text-slate-500">{formatTimelineEat(e.t)}</span>
                   <span className="text-slate-300">{e.label}</span>
                 </div>
               ))}
@@ -994,9 +1313,7 @@ function Gauge({
     <div className="rounded border border-slate-800 bg-slate-900/40 p-2.5">
       <div className="flex items-center justify-between text-[10px] uppercase tracking-widest">
         <span className="text-slate-400">{label}</span>
-        <span
-          className={`font-mono text-xs ${breached ? "text-rose-300" : "text-slate-200"}`}
-        >
+        <span className={`font-mono text-xs ${breached ? "text-rose-300" : "text-slate-200"}`}>
           {value.toFixed(1)}
           {unit}
         </span>
