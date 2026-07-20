@@ -10,33 +10,165 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as LayoutRouteImport } from './routes/_layout'
+import { Route as LayoutAboutRouteImport } from './routes/_layout/about'
+import { Route as LayoutActivationsRouteImport } from './routes/_layout/activations'
+import { Route as LayoutDispatchesRouteImport } from './routes/_layout/dispatches'
+import { Route as LayoutInstitutionsRouteImport } from './routes/_layout/institutions'
+import { Route as LayoutMeshRouteImport } from './routes/_layout/mesh'
+import { Route as LayoutPredictionsRouteImport } from './routes/_layout/predictions'
+import { Route as LayoutRegionsRouteImport } from './routes/_layout/regions'
+import { Route as LayoutScorecardRouteImport } from './routes/_layout/scorecard'
+import { Route as LayoutTriggerBuilderRouteImport } from './routes/_layout/trigger-builder'
+import { Route as LayoutTriggersRouteImport } from './routes/_layout/triggers'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LayoutRoute = LayoutRouteImport.update({
+  id: '/_layout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LayoutAboutRoute = LayoutAboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutActivationsRoute = LayoutActivationsRouteImport.update({
+  id: '/activations',
+  path: '/activations',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutDispatchesRoute = LayoutDispatchesRouteImport.update({
+  id: '/dispatches',
+  path: '/dispatches',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutInstitutionsRoute = LayoutInstitutionsRouteImport.update({
+  id: '/institutions',
+  path: '/institutions',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutMeshRoute = LayoutMeshRouteImport.update({
+  id: '/mesh',
+  path: '/mesh',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutPredictionsRoute = LayoutPredictionsRouteImport.update({
+  id: '/predictions',
+  path: '/predictions',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutRegionsRoute = LayoutRegionsRouteImport.update({
+  id: '/regions',
+  path: '/regions',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutScorecardRoute = LayoutScorecardRouteImport.update({
+  id: '/scorecard',
+  path: '/scorecard',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutTriggerBuilderRoute = LayoutTriggerBuilderRouteImport.update({
+  id: '/trigger-builder',
+  path: '/trigger-builder',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutTriggersRoute = LayoutTriggersRouteImport.update({
+  id: '/triggers',
+  path: '/triggers',
+  getParentRoute: () => LayoutRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof LayoutAboutRoute
+  '/activations': typeof LayoutActivationsRoute
+  '/dispatches': typeof LayoutDispatchesRoute
+  '/institutions': typeof LayoutInstitutionsRoute
+  '/mesh': typeof LayoutMeshRoute
+  '/predictions': typeof LayoutPredictionsRoute
+  '/regions': typeof LayoutRegionsRoute
+  '/scorecard': typeof LayoutScorecardRoute
+  '/trigger-builder': typeof LayoutTriggerBuilderRoute
+  '/triggers': typeof LayoutTriggersRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof LayoutAboutRoute
+  '/activations': typeof LayoutActivationsRoute
+  '/dispatches': typeof LayoutDispatchesRoute
+  '/institutions': typeof LayoutInstitutionsRoute
+  '/mesh': typeof LayoutMeshRoute
+  '/predictions': typeof LayoutPredictionsRoute
+  '/regions': typeof LayoutRegionsRoute
+  '/scorecard': typeof LayoutScorecardRoute
+  '/trigger-builder': typeof LayoutTriggerBuilderRoute
+  '/triggers': typeof LayoutTriggersRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_layout': typeof LayoutRouteWithChildren
+  '/_layout/about': typeof LayoutAboutRoute
+  '/_layout/activations': typeof LayoutActivationsRoute
+  '/_layout/dispatches': typeof LayoutDispatchesRoute
+  '/_layout/institutions': typeof LayoutInstitutionsRoute
+  '/_layout/mesh': typeof LayoutMeshRoute
+  '/_layout/predictions': typeof LayoutPredictionsRoute
+  '/_layout/regions': typeof LayoutRegionsRoute
+  '/_layout/scorecard': typeof LayoutScorecardRoute
+  '/_layout/trigger-builder': typeof LayoutTriggerBuilderRoute
+  '/_layout/triggers': typeof LayoutTriggersRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/activations'
+    | '/dispatches'
+    | '/institutions'
+    | '/mesh'
+    | '/predictions'
+    | '/regions'
+    | '/scorecard'
+    | '/trigger-builder'
+    | '/triggers'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/activations'
+    | '/dispatches'
+    | '/institutions'
+    | '/mesh'
+    | '/predictions'
+    | '/regions'
+    | '/scorecard'
+    | '/trigger-builder'
+    | '/triggers'
+  id:
+    | '__root__'
+    | '/'
+    | '/_layout'
+    | '/_layout/about'
+    | '/_layout/activations'
+    | '/_layout/dispatches'
+    | '/_layout/institutions'
+    | '/_layout/mesh'
+    | '/_layout/predictions'
+    | '/_layout/regions'
+    | '/_layout/scorecard'
+    | '/_layout/trigger-builder'
+    | '/_layout/triggers'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  LayoutRoute: typeof LayoutRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +180,118 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_layout': {
+      id: '/_layout'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof LayoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_layout/about': {
+      id: '/_layout/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof LayoutAboutRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/activations': {
+      id: '/_layout/activations'
+      path: '/activations'
+      fullPath: '/activations'
+      preLoaderRoute: typeof LayoutActivationsRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/dispatches': {
+      id: '/_layout/dispatches'
+      path: '/dispatches'
+      fullPath: '/dispatches'
+      preLoaderRoute: typeof LayoutDispatchesRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/institutions': {
+      id: '/_layout/institutions'
+      path: '/institutions'
+      fullPath: '/institutions'
+      preLoaderRoute: typeof LayoutInstitutionsRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/mesh': {
+      id: '/_layout/mesh'
+      path: '/mesh'
+      fullPath: '/mesh'
+      preLoaderRoute: typeof LayoutMeshRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/predictions': {
+      id: '/_layout/predictions'
+      path: '/predictions'
+      fullPath: '/predictions'
+      preLoaderRoute: typeof LayoutPredictionsRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/regions': {
+      id: '/_layout/regions'
+      path: '/regions'
+      fullPath: '/regions'
+      preLoaderRoute: typeof LayoutRegionsRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/scorecard': {
+      id: '/_layout/scorecard'
+      path: '/scorecard'
+      fullPath: '/scorecard'
+      preLoaderRoute: typeof LayoutScorecardRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/trigger-builder': {
+      id: '/_layout/trigger-builder'
+      path: '/trigger-builder'
+      fullPath: '/trigger-builder'
+      preLoaderRoute: typeof LayoutTriggerBuilderRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/triggers': {
+      id: '/_layout/triggers'
+      path: '/triggers'
+      fullPath: '/triggers'
+      preLoaderRoute: typeof LayoutTriggersRouteImport
+      parentRoute: typeof LayoutRoute
+    }
   }
 }
 
+interface LayoutRouteChildren {
+  LayoutAboutRoute: typeof LayoutAboutRoute
+  LayoutActivationsRoute: typeof LayoutActivationsRoute
+  LayoutDispatchesRoute: typeof LayoutDispatchesRoute
+  LayoutInstitutionsRoute: typeof LayoutInstitutionsRoute
+  LayoutMeshRoute: typeof LayoutMeshRoute
+  LayoutPredictionsRoute: typeof LayoutPredictionsRoute
+  LayoutRegionsRoute: typeof LayoutRegionsRoute
+  LayoutScorecardRoute: typeof LayoutScorecardRoute
+  LayoutTriggerBuilderRoute: typeof LayoutTriggerBuilderRoute
+  LayoutTriggersRoute: typeof LayoutTriggersRoute
+}
+
+const LayoutRouteChildren: LayoutRouteChildren = {
+  LayoutAboutRoute: LayoutAboutRoute,
+  LayoutActivationsRoute: LayoutActivationsRoute,
+  LayoutDispatchesRoute: LayoutDispatchesRoute,
+  LayoutInstitutionsRoute: LayoutInstitutionsRoute,
+  LayoutMeshRoute: LayoutMeshRoute,
+  LayoutPredictionsRoute: LayoutPredictionsRoute,
+  LayoutRegionsRoute: LayoutRegionsRoute,
+  LayoutScorecardRoute: LayoutScorecardRoute,
+  LayoutTriggerBuilderRoute: LayoutTriggerBuilderRoute,
+  LayoutTriggersRoute: LayoutTriggersRoute,
+}
+
+const LayoutRouteWithChildren =
+  LayoutRoute._addFileChildren(LayoutRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  LayoutRoute: LayoutRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
