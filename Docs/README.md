@@ -2,7 +2,7 @@
 
 **An anticipatory action trigger & activation engine for the IGAD region.**
 
-Kinga (Swahili: *shield / protection*) closes the gap between an early warning being issued and a pre-agreed action actually happening. It digitizes Anticipatory Action (AA) protocols — pre-agreed thresholds that automatically activate funded responses — monitors live hazard data against them, dispatches action checklists through a resilient mesh/SMS relay, and tracks whether the responsible institution actually acknowledged and acted in time.
+Kinga closes the gap between an early warning being issued and a pre-agreed action actually happening. It digitizes Anticipatory Action (AA) protocols — pre-agreed thresholds that automatically activate funded responses — monitors live hazard data against them, dispatches action checklists through a resilient mesh/SMS relay, and tracks whether the responsible institution actually acknowledged and acted in time.
 
 Built for the IGAD Hackathon 2026.
 
