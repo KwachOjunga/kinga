@@ -1,0 +1,4512 @@
+{
+  "Marsabit County": [
+    {
+      "date": "2026-04-22T00:00:00+00:00",
+      "soil_moisture_pct": 31.42,
+      "rainfall_mm_3h": 8.66,
+      "rainfall_mm_24h": 37.08,
+      "seasonal_forecast_probability_below_normal": 0.491,
+      "ipc_phase": 1,
+      "river_level_m": 2.93,
+      "ndvi": 0.514
+    },
+    {
+      "date": "2026-04-23T00:00:00+00:00",
+      "soil_moisture_pct": 31.21,
+      "rainfall_mm_3h": 8.63,
+      "rainfall_mm_24h": 26.86,
+      "seasonal_forecast_probability_below_normal": 0.5,
+      "ipc_phase": 1,
+      "river_level_m": 2.93,
+      "ndvi": 0.512
+    },
+    {
+      "date": "2026-04-24T00:00:00+00:00",
+      "soil_moisture_pct": 30.98,
+      "rainfall_mm_3h": 8.73,
+      "rainfall_mm_24h": 29.07,
+      "seasonal_forecast_probability_below_normal": 0.517,
+      "ipc_phase": 1,
+      "river_level_m": 2.94,
+      "ndvi": 0.51
+    },
+    {
+      "date": "2026-04-25T00:00:00+00:00",
+      "soil_moisture_pct": 30.88,
+      "rainfall_mm_3h": 9.28,
+      "rainfall_mm_24h": 41.62,
+      "seasonal_forecast_probability_below_normal": 0.518,
+      "ipc_phase": 1,
+      "river_level_m": 2.96,
+      "ndvi": 0.509
+    },
+    {
+      "date": "2026-04-26T00:00:00+00:00",
+      "soil_moisture_pct": 30.71,
+      "rainfall_mm_3h": 9.01,
+      "rainfall_mm_24h": 44.24,
+      "seasonal_forecast_probability_below_normal": 0.525,
+      "ipc_phase": 1,
+      "river_level_m": 2.95,
+      "ndvi": 0.507
+    },
+    {
+      "date": "2026-04-27T00:00:00+00:00",
+      "soil_moisture_pct": 30.48,
+      "rainfall_mm_3h": 8.36,
+      "rainfall_mm_24h": 28.44,
+      "seasonal_forecast_probability_below_normal": 0.529,
+      "ipc_phase": 1,
+      "river_level_m": 2.92,
+      "ndvi": 0.505
+    },
+    {
+      "date": "2026-04-28T00:00:00+00:00",
+      "soil_moisture_pct": 30.42,
+      "rainfall_mm_3h": 8.98,
+      "rainfall_mm_24h": 38.04,
+      "seasonal_forecast_probability_below_normal": 0.543,
+      "ipc_phase": 1,
+      "river_level_m": 2.95,
+      "ndvi": 0.504
+    },
+    {
+      "date": "2026-04-29T00:00:00+00:00",
+      "soil_moisture_pct": 30.17,
+      "rainfall_mm_3h": 8.21,
+      "rainfall_mm_24h": 28.0,
+      "seasonal_forecast_probability_below_normal": 0.55,
+      "ipc_phase": 1,
+      "river_level_m": 2.91,
+      "ndvi": 0.502
+    },
+    {
+      "date": "2026-04-30T00:00:00+00:00",
+      "soil_moisture_pct": 30.09,
+      "rainfall_mm_3h": 8.04,
+      "rainfall_mm_24h": 21.56,
+      "seasonal_forecast_probability_below_normal": 0.56,
+      "ipc_phase": 1,
+      "river_level_m": 2.9,
+      "ndvi": 0.501
+    },
+    {
+      "date": "2026-05-01T00:00:00+00:00",
+      "soil_moisture_pct": 29.9,
+      "rainfall_mm_3h": 9.16,
+      "rainfall_mm_24h": 37.56,
+      "seasonal_forecast_probability_below_normal": 0.576,
+      "ipc_phase": 1,
+      "river_level_m": 2.96,
+      "ndvi": 0.499
+    },
+    {
+      "date": "2026-05-02T00:00:00+00:00",
+      "soil_moisture_pct": 29.79,
+      "rainfall_mm_3h": 8.16,
+      "rainfall_mm_24h": 25.81,
+      "seasonal_forecast_probability_below_normal": 0.592,
+      "ipc_phase": 1,
+      "river_level_m": 2.91,
+      "ndvi": 0.498
+    },
+    {
+      "date": "2026-05-03T00:00:00+00:00",
+      "soil_moisture_pct": 29.68,
+      "rainfall_mm_3h": 9.47,
+      "rainfall_mm_24h": 24.61,
+      "seasonal_forecast_probability_below_normal": 0.595,
+      "ipc_phase": 1,
+      "river_level_m": 2.97,
+      "ndvi": 0.497
+    },
+    {
+      "date": "2026-05-04T00:00:00+00:00",
+      "soil_moisture_pct": 29.63,
+      "rainfall_mm_3h": 9.9,
+      "rainfall_mm_24h": 40.75,
+      "seasonal_forecast_probability_below_normal": 0.608,
+      "ipc_phase": 1,
+      "river_level_m": 3.0,
+      "ndvi": 0.496
+    },
+    {
+      "date": "2026-05-05T00:00:00+00:00",
+      "soil_moisture_pct": 29.43,
+      "rainfall_mm_3h": 9.2,
+      "rainfall_mm_24h": 22.25,
+      "seasonal_forecast_probability_below_normal": 0.62,
+      "ipc_phase": 1,
+      "river_level_m": 2.96,
+      "ndvi": 0.494
+    },
+    {
+      "date": "2026-05-06T00:00:00+00:00",
+      "soil_moisture_pct": 29.35,
+      "rainfall_mm_3h": 7.9,
+      "rainfall_mm_24h": 29.18,
+      "seasonal_forecast_probability_below_normal": 0.629,
+      "ipc_phase": 1,
+      "river_level_m": 2.89,
+      "ndvi": 0.494
+    },
+    {
+      "date": "2026-05-07T00:00:00+00:00",
+      "soil_moisture_pct": 29.15,
+      "rainfall_mm_3h": 8.14,
+      "rainfall_mm_24h": 29.94,
+      "seasonal_forecast_probability_below_normal": 0.64,
+      "ipc_phase": 1,
+      "river_level_m": 2.91,
+      "ndvi": 0.491
+    },
+    {
+      "date": "2026-05-08T00:00:00+00:00",
+      "soil_moisture_pct": 29.04,
+      "rainfall_mm_3h": 7.62,
+      "rainfall_mm_24h": 20.14,
+      "seasonal_forecast_probability_below_normal": 0.649,
+      "ipc_phase": 1,
+      "river_level_m": 2.88,
+      "ndvi": 0.49
+    },
+    {
+      "date": "2026-05-09T00:00:00+00:00",
+      "soil_moisture_pct": 28.91,
+      "rainfall_mm_3h": 5.7,
+      "rainfall_mm_24h": 12.41,
+      "seasonal_forecast_probability_below_normal": 0.654,
+      "ipc_phase": 1,
+      "river_level_m": 2.79,
+      "ndvi": 0.489
+    },
+    {
+      "date": "2026-05-10T00:00:00+00:00",
+      "soil_moisture_pct": 28.8,
+      "rainfall_mm_3h": 5.92,
+      "rainfall_mm_24h": 21.73,
+      "seasonal_forecast_probability_below_normal": 0.667,
+      "ipc_phase": 1,
+      "river_level_m": 2.8,
+      "ndvi": 0.488
+    },
+    {
+      "date": "2026-05-11T00:00:00+00:00",
+      "soil_moisture_pct": 28.59,
+      "rainfall_mm_3h": 6.86,
+      "rainfall_mm_24h": 30.46,
+      "seasonal_forecast_probability_below_normal": 0.675,
+      "ipc_phase": 1,
+      "river_level_m": 2.84,
+      "ndvi": 0.486
+    },
+    {
+      "date": "2026-05-12T00:00:00+00:00",
+      "soil_moisture_pct": 28.51,
+      "rainfall_mm_3h": 6.31,
+      "rainfall_mm_24h": 26.3,
+      "seasonal_forecast_probability_below_normal": 0.677,
+      "ipc_phase": 1,
+      "river_level_m": 2.82,
+      "ndvi": 0.485
+    },
+    {
+      "date": "2026-05-13T00:00:00+00:00",
+      "soil_moisture_pct": 28.37,
+      "rainfall_mm_3h": 5.61,
+      "rainfall_mm_24h": 13.78,
+      "seasonal_forecast_probability_below_normal": 0.687,
+      "ipc_phase": 1,
+      "river_level_m": 2.78,
+      "ndvi": 0.484
+    },
+    {
+      "date": "2026-05-14T00:00:00+00:00",
+      "soil_moisture_pct": 28.18,
+      "rainfall_mm_3h": 6.61,
+      "rainfall_mm_24h": 19.19,
+      "seasonal_forecast_probability_below_normal": 0.694,
+      "ipc_phase": 1,
+      "river_level_m": 2.83,
+      "ndvi": 0.482
+    },
+    {
+      "date": "2026-05-15T00:00:00+00:00",
+      "soil_moisture_pct": 28.0,
+      "rainfall_mm_3h": 4.07,
+      "rainfall_mm_24h": 9.59,
+      "seasonal_forecast_probability_below_normal": 0.696,
+      "ipc_phase": 1,
+      "river_level_m": 2.7,
+      "ndvi": 0.48
+    },
+    {
+      "date": "2026-05-16T00:00:00+00:00",
+      "soil_moisture_pct": 27.76,
+      "rainfall_mm_3h": 4.67,
+      "rainfall_mm_24h": 13.08,
+      "seasonal_forecast_probability_below_normal": 0.71,
+      "ipc_phase": 1,
+      "river_level_m": 2.73,
+      "ndvi": 0.478
+    },
+    {
+      "date": "2026-05-17T00:00:00+00:00",
+      "soil_moisture_pct": 27.52,
+      "rainfall_mm_3h": 4.14,
+      "rainfall_mm_24h": 13.86,
+      "seasonal_forecast_probability_below_normal": 0.725,
+      "ipc_phase": 1,
+      "river_level_m": 2.71,
+      "ndvi": 0.475
+    },
+    {
+      "date": "2026-05-18T00:00:00+00:00",
+      "soil_moisture_pct": 27.41,
+      "rainfall_mm_3h": 2.71,
+      "rainfall_mm_24h": 9.14,
+      "seasonal_forecast_probability_below_normal": 0.743,
+      "ipc_phase": 1,
+      "river_level_m": 2.64,
+      "ndvi": 0.474
+    },
+    {
+      "date": "2026-05-19T00:00:00+00:00",
+      "soil_moisture_pct": 27.32,
+      "rainfall_mm_3h": 3.37,
+      "rainfall_mm_24h": 8.52,
+      "seasonal_forecast_probability_below_normal": 0.754,
+      "ipc_phase": 1,
+      "river_level_m": 2.67,
+      "ndvi": 0.473
+    },
+    {
+      "date": "2026-05-20T00:00:00+00:00",
+      "soil_moisture_pct": 27.1,
+      "rainfall_mm_3h": 3.47,
+      "rainfall_mm_24h": 11.45,
+      "seasonal_forecast_probability_below_normal": 0.769,
+      "ipc_phase": 1,
+      "river_level_m": 2.67,
+      "ndvi": 0.471
+    },
+    {
+      "date": "2026-05-21T00:00:00+00:00",
+      "soil_moisture_pct": 26.92,
+      "rainfall_mm_3h": 5.88,
+      "rainfall_mm_24h": 13.24,
+      "seasonal_forecast_probability_below_normal": 0.782,
+      "ipc_phase": 1,
+      "river_level_m": 2.79,
+      "ndvi": 0.469
+    },
+    {
+      "date": "2026-05-22T00:00:00+00:00",
+      "soil_moisture_pct": 26.79,
+      "rainfall_mm_3h": 6.21,
+      "rainfall_mm_24h": 18.56,
+      "seasonal_forecast_probability_below_normal": 0.791,
+      "ipc_phase": 1,
+      "river_level_m": 2.81,
+      "ndvi": 0.468
+    },
+    {
+      "date": "2026-05-23T00:00:00+00:00",
+      "soil_moisture_pct": 26.71,
+      "rainfall_mm_3h": 8.4,
+      "rainfall_mm_24h": 21.1,
+      "seasonal_forecast_probability_below_normal": 0.803,
+      "ipc_phase": 1,
+      "river_level_m": 2.92,
+      "ndvi": 0.467
+    },
+    {
+      "date": "2026-05-24T00:00:00+00:00",
+      "soil_moisture_pct": 26.48,
+      "rainfall_mm_3h": 7.82,
+      "rainfall_mm_24h": 29.49,
+      "seasonal_forecast_probability_below_normal": 0.81,
+      "ipc_phase": 1,
+      "river_level_m": 2.89,
+      "ndvi": 0.465
+    },
+    {
+      "date": "2026-05-25T00:00:00+00:00",
+      "soil_moisture_pct": 26.42,
+      "rainfall_mm_3h": 5.61,
+      "rainfall_mm_24h": 24.4,
+      "seasonal_forecast_probability_below_normal": 0.82,
+      "ipc_phase": 1,
+      "river_level_m": 2.78,
+      "ndvi": 0.464
+    },
+    {
+      "date": "2026-05-26T00:00:00+00:00",
+      "soil_moisture_pct": 26.36,
+      "rainfall_mm_3h": 8.61,
+      "rainfall_mm_24h": 41.43,
+      "seasonal_forecast_probability_below_normal": 0.83,
+      "ipc_phase": 1,
+      "river_level_m": 2.93,
+      "ndvi": 0.464
+    },
+    {
+      "date": "2026-05-27T00:00:00+00:00",
+      "soil_moisture_pct": 26.19,
+      "rainfall_mm_3h": 5.41,
+      "rainfall_mm_24h": 16.2,
+      "seasonal_forecast_probability_below_normal": 0.835,
+      "ipc_phase": 1,
+      "river_level_m": 2.77,
+      "ndvi": 0.462
+    },
+    {
+      "date": "2026-05-28T00:00:00+00:00",
+      "soil_moisture_pct": 26.04,
+      "rainfall_mm_3h": 4.49,
+      "rainfall_mm_24h": 20.11,
+      "seasonal_forecast_probability_below_normal": 0.835,
+      "ipc_phase": 1,
+      "river_level_m": 2.72,
+      "ndvi": 0.46
+    },
+    {
+      "date": "2026-05-29T00:00:00+00:00",
+      "soil_moisture_pct": 25.81,
+      "rainfall_mm_3h": 4.25,
+      "rainfall_mm_24h": 9.89,
+      "seasonal_forecast_probability_below_normal": 0.846,
+      "ipc_phase": 1,
+      "river_level_m": 2.71,
+      "ndvi": 0.458
+    },
+    {
+      "date": "2026-05-30T00:00:00+00:00",
+      "soil_moisture_pct": 25.62,
+      "rainfall_mm_3h": 4.17,
+      "rainfall_mm_24h": 17.96,
+      "seasonal_forecast_probability_below_normal": 0.861,
+      "ipc_phase": 1,
+      "river_level_m": 2.71,
+      "ndvi": 0.456
+    },
+    {
+      "date": "2026-05-31T00:00:00+00:00",
+      "soil_moisture_pct": 25.55,
+      "rainfall_mm_3h": 3.42,
+      "rainfall_mm_24h": 7.23,
+      "seasonal_forecast_probability_below_normal": 0.866,
+      "ipc_phase": 1,
+      "river_level_m": 2.67,
+      "ndvi": 0.456
+    },
+    {
+      "date": "2026-06-01T00:00:00+00:00",
+      "soil_moisture_pct": 25.39,
+      "rainfall_mm_3h": 6.62,
+      "rainfall_mm_24h": 29.27,
+      "seasonal_forecast_probability_below_normal": 0.882,
+      "ipc_phase": 1,
+      "river_level_m": 2.83,
+      "ndvi": 0.454
+    },
+    {
+      "date": "2026-06-02T00:00:00+00:00",
+      "soil_moisture_pct": 25.28,
+      "rainfall_mm_3h": 8.01,
+      "rainfall_mm_24h": 28.41,
+      "seasonal_forecast_probability_below_normal": 0.888,
+      "ipc_phase": 1,
+      "river_level_m": 2.9,
+      "ndvi": 0.453
+    },
+    {
+      "date": "2026-06-03T00:00:00+00:00",
+      "soil_moisture_pct": 25.18,
+      "rainfall_mm_3h": 7.03,
+      "rainfall_mm_24h": 15.01,
+      "seasonal_forecast_probability_below_normal": 0.891,
+      "ipc_phase": 1,
+      "river_level_m": 2.85,
+      "ndvi": 0.452
+    },
+    {
+      "date": "2026-06-04T00:00:00+00:00",
+      "soil_moisture_pct": 25.04,
+      "rainfall_mm_3h": 5.11,
+      "rainfall_mm_24h": 21.71,
+      "seasonal_forecast_probability_below_normal": 0.909,
+      "ipc_phase": 1,
+      "river_level_m": 2.76,
+      "ndvi": 0.45
+    },
+    {
+      "date": "2026-06-05T00:00:00+00:00",
+      "soil_moisture_pct": 24.81,
+      "rainfall_mm_3h": 4.94,
+      "rainfall_mm_24h": 14.55,
+      "seasonal_forecast_probability_below_normal": 0.92,
+      "ipc_phase": 1,
+      "river_level_m": 2.75,
+      "ndvi": 0.448
+    },
+    {
+      "date": "2026-06-06T00:00:00+00:00",
+      "soil_moisture_pct": 24.61,
+      "rainfall_mm_3h": 4.32,
+      "rainfall_mm_24h": 9.86,
+      "seasonal_forecast_probability_below_normal": 0.927,
+      "ipc_phase": 1,
+      "river_level_m": 2.72,
+      "ndvi": 0.446
+    },
+    {
+      "date": "2026-06-07T00:00:00+00:00",
+      "soil_moisture_pct": 24.41,
+      "rainfall_mm_3h": 4.59,
+      "rainfall_mm_24h": 12.51,
+      "seasonal_forecast_probability_below_normal": 0.946,
+      "ipc_phase": 1,
+      "river_level_m": 2.73,
+      "ndvi": 0.444
+    },
+    {
+      "date": "2026-06-08T00:00:00+00:00",
+      "soil_moisture_pct": 24.33,
+      "rainfall_mm_3h": 7.18,
+      "rainfall_mm_24h": 18.22,
+      "seasonal_forecast_probability_below_normal": 0.949,
+      "ipc_phase": 1,
+      "river_level_m": 2.86,
+      "ndvi": 0.443
+    },
+    {
+      "date": "2026-06-09T00:00:00+00:00",
+      "soil_moisture_pct": 24.16,
+      "rainfall_mm_3h": 5.52,
+      "rainfall_mm_24h": 23.91,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 2.78,
+      "ndvi": 0.442
+    },
+    {
+      "date": "2026-06-10T00:00:00+00:00",
+      "soil_moisture_pct": 23.92,
+      "rainfall_mm_3h": 5.51,
+      "rainfall_mm_24h": 11.25,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 2.78,
+      "ndvi": 0.439
+    },
+    {
+      "date": "2026-06-11T00:00:00+00:00",
+      "soil_moisture_pct": 23.82,
+      "rainfall_mm_3h": 5.65,
+      "rainfall_mm_24h": 13.36,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 2.78,
+      "ndvi": 0.438
+    },
+    {
+      "date": "2026-06-12T00:00:00+00:00",
+      "soil_moisture_pct": 23.67,
+      "rainfall_mm_3h": 4.38,
+      "rainfall_mm_24h": 11.39,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 2.72,
+      "ndvi": 0.437
+    },
+    {
+      "date": "2026-06-13T00:00:00+00:00",
+      "soil_moisture_pct": 23.46,
+      "rainfall_mm_3h": 5.76,
+      "rainfall_mm_24h": 13.78,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 2.79,
+      "ndvi": 0.435
+    },
+    {
+      "date": "2026-06-14T00:00:00+00:00",
+      "soil_moisture_pct": 23.39,
+      "rainfall_mm_3h": 6.49,
+      "rainfall_mm_24h": 18.84,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 2.82,
+      "ndvi": 0.434
+    },
+    {
+      "date": "2026-06-15T00:00:00+00:00",
+      "soil_moisture_pct": 23.24,
+      "rainfall_mm_3h": 7.3,
+      "rainfall_mm_24h": 20.86,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 2.86,
+      "ndvi": 0.432
+    },
+    {
+      "date": "2026-06-16T00:00:00+00:00",
+      "soil_moisture_pct": 23.0,
+      "rainfall_mm_3h": 6.96,
+      "rainfall_mm_24h": 27.16,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 2.85,
+      "ndvi": 0.43
+    },
+    {
+      "date": "2026-06-17T00:00:00+00:00",
+      "soil_moisture_pct": 22.93,
+      "rainfall_mm_3h": 7.1,
+      "rainfall_mm_24h": 34.76,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.85,
+      "ndvi": 0.429
+    },
+    {
+      "date": "2026-06-18T00:00:00+00:00",
+      "soil_moisture_pct": 22.76,
+      "rainfall_mm_3h": 5.82,
+      "rainfall_mm_24h": 19.79,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.79,
+      "ndvi": 0.428
+    },
+    {
+      "date": "2026-06-19T00:00:00+00:00",
+      "soil_moisture_pct": 22.56,
+      "rainfall_mm_3h": 6.29,
+      "rainfall_mm_24h": 28.23,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.81,
+      "ndvi": 0.426
+    },
+    {
+      "date": "2026-06-20T00:00:00+00:00",
+      "soil_moisture_pct": 22.35,
+      "rainfall_mm_3h": 3.07,
+      "rainfall_mm_24h": 11.72,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.65,
+      "ndvi": 0.423
+    },
+    {
+      "date": "2026-06-21T00:00:00+00:00",
+      "soil_moisture_pct": 22.12,
+      "rainfall_mm_3h": 6.39,
+      "rainfall_mm_24h": 19.94,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.82,
+      "ndvi": 0.421
+    },
+    {
+      "date": "2026-06-22T00:00:00+00:00",
+      "soil_moisture_pct": 21.99,
+      "rainfall_mm_3h": 6.24,
+      "rainfall_mm_24h": 20.99,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.81,
+      "ndvi": 0.42
+    },
+    {
+      "date": "2026-06-23T00:00:00+00:00",
+      "soil_moisture_pct": 21.89,
+      "rainfall_mm_3h": 4.31,
+      "rainfall_mm_24h": 19.19,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.72,
+      "ndvi": 0.419
+    },
+    {
+      "date": "2026-06-24T00:00:00+00:00",
+      "soil_moisture_pct": 21.82,
+      "rainfall_mm_3h": 2.56,
+      "rainfall_mm_24h": 6.23,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.63,
+      "ndvi": 0.418
+    },
+    {
+      "date": "2026-06-25T00:00:00+00:00",
+      "soil_moisture_pct": 21.6,
+      "rainfall_mm_3h": 1.08,
+      "rainfall_mm_24h": 5.12,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.55,
+      "ndvi": 0.416
+    },
+    {
+      "date": "2026-06-26T00:00:00+00:00",
+      "soil_moisture_pct": 21.52,
+      "rainfall_mm_3h": 0.51,
+      "rainfall_mm_24h": 1.2,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.53,
+      "ndvi": 0.415
+    },
+    {
+      "date": "2026-06-27T00:00:00+00:00",
+      "soil_moisture_pct": 21.47,
+      "rainfall_mm_3h": 0.11,
+      "rainfall_mm_24h": 0.24,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.51,
+      "ndvi": 0.415
+    },
+    {
+      "date": "2026-06-28T00:00:00+00:00",
+      "soil_moisture_pct": 21.3,
+      "rainfall_mm_3h": 1.63,
+      "rainfall_mm_24h": 4.82,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.58,
+      "ndvi": 0.413
+    },
+    {
+      "date": "2026-06-29T00:00:00+00:00",
+      "soil_moisture_pct": 21.15,
+      "rainfall_mm_3h": 1.63,
+      "rainfall_mm_24h": 3.47,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.58,
+      "ndvi": 0.411
+    },
+    {
+      "date": "2026-06-30T00:00:00+00:00",
+      "soil_moisture_pct": 21.06,
+      "rainfall_mm_3h": 5.85,
+      "rainfall_mm_24h": 21.73,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.79,
+      "ndvi": 0.411
+    },
+    {
+      "date": "2026-07-01T00:00:00+00:00",
+      "soil_moisture_pct": 20.93,
+      "rainfall_mm_3h": 4.71,
+      "rainfall_mm_24h": 16.81,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.74,
+      "ndvi": 0.409
+    },
+    {
+      "date": "2026-07-02T00:00:00+00:00",
+      "soil_moisture_pct": 20.86,
+      "rainfall_mm_3h": 6.49,
+      "rainfall_mm_24h": 31.01,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.82,
+      "ndvi": 0.409
+    },
+    {
+      "date": "2026-07-03T00:00:00+00:00",
+      "soil_moisture_pct": 20.79,
+      "rainfall_mm_3h": 7.89,
+      "rainfall_mm_24h": 38.94,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.89,
+      "ndvi": 0.408
+    },
+    {
+      "date": "2026-07-04T00:00:00+00:00",
+      "soil_moisture_pct": 20.58,
+      "rainfall_mm_3h": 8.28,
+      "rainfall_mm_24h": 35.91,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.91,
+      "ndvi": 0.406
+    },
+    {
+      "date": "2026-07-05T00:00:00+00:00",
+      "soil_moisture_pct": 20.5,
+      "rainfall_mm_3h": 7.9,
+      "rainfall_mm_24h": 36.14,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.9,
+      "ndvi": 0.405
+    },
+    {
+      "date": "2026-07-06T00:00:00+00:00",
+      "soil_moisture_pct": 20.36,
+      "rainfall_mm_3h": 7.55,
+      "rainfall_mm_24h": 21.13,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.88,
+      "ndvi": 0.404
+    },
+    {
+      "date": "2026-07-07T00:00:00+00:00",
+      "soil_moisture_pct": 20.28,
+      "rainfall_mm_3h": 4.91,
+      "rainfall_mm_24h": 13.25,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.75,
+      "ndvi": 0.403
+    },
+    {
+      "date": "2026-07-08T00:00:00+00:00",
+      "soil_moisture_pct": 20.16,
+      "rainfall_mm_3h": 6.21,
+      "rainfall_mm_24h": 19.48,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.81,
+      "ndvi": 0.402
+    },
+    {
+      "date": "2026-07-09T00:00:00+00:00",
+      "soil_moisture_pct": 19.97,
+      "rainfall_mm_3h": 5.71,
+      "rainfall_mm_24h": 27.1,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.79,
+      "ndvi": 0.4
+    },
+    {
+      "date": "2026-07-10T00:00:00+00:00",
+      "soil_moisture_pct": 19.82,
+      "rainfall_mm_3h": 7.47,
+      "rainfall_mm_24h": 33.97,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.87,
+      "ndvi": 0.398
+    },
+    {
+      "date": "2026-07-11T00:00:00+00:00",
+      "soil_moisture_pct": 19.64,
+      "rainfall_mm_3h": 8.71,
+      "rainfall_mm_24h": 33.98,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.94,
+      "ndvi": 0.396
+    },
+    {
+      "date": "2026-07-12T00:00:00+00:00",
+      "soil_moisture_pct": 19.53,
+      "rainfall_mm_3h": 10.2,
+      "rainfall_mm_24h": 41.66,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.01,
+      "ndvi": 0.395
+    },
+    {
+      "date": "2026-07-13T00:00:00+00:00",
+      "soil_moisture_pct": 19.31,
+      "rainfall_mm_3h": 10.3,
+      "rainfall_mm_24h": 23.55,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.02,
+      "ndvi": 0.393
+    },
+    {
+      "date": "2026-07-14T00:00:00+00:00",
+      "soil_moisture_pct": 19.12,
+      "rainfall_mm_3h": 11.4,
+      "rainfall_mm_24h": 27.5,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.07,
+      "ndvi": 0.391
+    },
+    {
+      "date": "2026-07-15T00:00:00+00:00",
+      "soil_moisture_pct": 18.87,
+      "rainfall_mm_3h": 10.62,
+      "rainfall_mm_24h": 46.19,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.03,
+      "ndvi": 0.389
+    },
+    {
+      "date": "2026-07-16T00:00:00+00:00",
+      "soil_moisture_pct": 18.67,
+      "rainfall_mm_3h": 9.1,
+      "rainfall_mm_24h": 34.32,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.96,
+      "ndvi": 0.387
+    },
+    {
+      "date": "2026-07-17T00:00:00+00:00",
+      "soil_moisture_pct": 18.6,
+      "rainfall_mm_3h": 9.57,
+      "rainfall_mm_24h": 35.58,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.98,
+      "ndvi": 0.386
+    },
+    {
+      "date": "2026-07-18T00:00:00+00:00",
+      "soil_moisture_pct": 18.45,
+      "rainfall_mm_3h": 10.03,
+      "rainfall_mm_24h": 44.1,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.0,
+      "ndvi": 0.385
+    },
+    {
+      "date": "2026-07-19T00:00:00+00:00",
+      "soil_moisture_pct": 18.31,
+      "rainfall_mm_3h": 6.93,
+      "rainfall_mm_24h": 16.35,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.85,
+      "ndvi": 0.383
+    },
+    {
+      "date": "2026-07-20T00:00:00+00:00",
+      "soil_moisture_pct": 18.23,
+      "rainfall_mm_3h": 9.15,
+      "rainfall_mm_24h": 29.78,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 2.96,
+      "ndvi": 0.382
+    }
+  ],
+  "Gedo": [
+    {
+      "date": "2026-04-22T00:00:00+00:00",
+      "soil_moisture_pct": 32.9,
+      "rainfall_mm_3h": 15.77,
+      "rainfall_mm_24h": 44.33,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.29,
+      "ndvi": 0.529
+    },
+    {
+      "date": "2026-04-23T00:00:00+00:00",
+      "soil_moisture_pct": 32.85,
+      "rainfall_mm_3h": 13.18,
+      "rainfall_mm_24h": 32.58,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.16,
+      "ndvi": 0.528
+    },
+    {
+      "date": "2026-04-24T00:00:00+00:00",
+      "soil_moisture_pct": 34.65,
+      "rainfall_mm_3h": 14.33,
+      "rainfall_mm_24h": 47.48,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.22,
+      "ndvi": 0.547
+    },
+    {
+      "date": "2026-04-25T00:00:00+00:00",
+      "soil_moisture_pct": 35.84,
+      "rainfall_mm_3h": 13.95,
+      "rainfall_mm_24h": 51.05,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.2,
+      "ndvi": 0.558
+    },
+    {
+      "date": "2026-04-26T00:00:00+00:00",
+      "soil_moisture_pct": 37.18,
+      "rainfall_mm_3h": 11.49,
+      "rainfall_mm_24h": 39.49,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.07,
+      "ndvi": 0.572
+    },
+    {
+      "date": "2026-04-27T00:00:00+00:00",
+      "soil_moisture_pct": 39.14,
+      "rainfall_mm_3h": 11.52,
+      "rainfall_mm_24h": 47.84,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.08,
+      "ndvi": 0.591
+    },
+    {
+      "date": "2026-04-28T00:00:00+00:00",
+      "soil_moisture_pct": 38.5,
+      "rainfall_mm_3h": 14.05,
+      "rainfall_mm_24h": 63.93,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.2,
+      "ndvi": 0.585
+    },
+    {
+      "date": "2026-04-29T00:00:00+00:00",
+      "soil_moisture_pct": 37.87,
+      "rainfall_mm_3h": 13.43,
+      "rainfall_mm_24h": 50.56,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.17,
+      "ndvi": 0.579
+    },
+    {
+      "date": "2026-04-30T00:00:00+00:00",
+      "soil_moisture_pct": 36.9,
+      "rainfall_mm_3h": 12.06,
+      "rainfall_mm_24h": 40.55,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.1,
+      "ndvi": 0.569
+    },
+    {
+      "date": "2026-05-01T00:00:00+00:00",
+      "soil_moisture_pct": 36.79,
+      "rainfall_mm_3h": 7.25,
+      "rainfall_mm_24h": 24.47,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 2.86,
+      "ndvi": 0.568
+    },
+    {
+      "date": "2026-05-02T00:00:00+00:00",
+      "soil_moisture_pct": 36.69,
+      "rainfall_mm_3h": 4.87,
+      "rainfall_mm_24h": 23.15,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 2.74,
+      "ndvi": 0.567
+    },
+    {
+      "date": "2026-05-03T00:00:00+00:00",
+      "soil_moisture_pct": 36.03,
+      "rainfall_mm_3h": 5.7,
+      "rainfall_mm_24h": 28.43,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 2.78,
+      "ndvi": 0.56
+    },
+    {
+      "date": "2026-05-04T00:00:00+00:00",
+      "soil_moisture_pct": 35.88,
+      "rainfall_mm_3h": 5.86,
+      "rainfall_mm_24h": 26.43,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 2.79,
+      "ndvi": 0.559
+    },
+    {
+      "date": "2026-05-05T00:00:00+00:00",
+      "soil_moisture_pct": 37.87,
+      "rainfall_mm_3h": 7.97,
+      "rainfall_mm_24h": 31.84,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 2.9,
+      "ndvi": 0.579
+    },
+    {
+      "date": "2026-05-06T00:00:00+00:00",
+      "soil_moisture_pct": 37.15,
+      "rainfall_mm_3h": 8.38,
+      "rainfall_mm_24h": 39.31,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 2.92,
+      "ndvi": 0.571
+    },
+    {
+      "date": "2026-05-07T00:00:00+00:00",
+      "soil_moisture_pct": 36.87,
+      "rainfall_mm_3h": 9.97,
+      "rainfall_mm_24h": 24.22,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.0,
+      "ndvi": 0.569
+    },
+    {
+      "date": "2026-05-08T00:00:00+00:00",
+      "soil_moisture_pct": 36.46,
+      "rainfall_mm_3h": 10.56,
+      "rainfall_mm_24h": 49.97,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.03,
+      "ndvi": 0.565
+    },
+    {
+      "date": "2026-05-09T00:00:00+00:00",
+      "soil_moisture_pct": 35.57,
+      "rainfall_mm_3h": 12.12,
+      "rainfall_mm_24h": 24.45,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.11,
+      "ndvi": 0.556
+    },
+    {
+      "date": "2026-05-10T00:00:00+00:00",
+      "soil_moisture_pct": 36.39,
+      "rainfall_mm_3h": 14.61,
+      "rainfall_mm_24h": 64.36,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.23,
+      "ndvi": 0.564
+    },
+    {
+      "date": "2026-05-11T00:00:00+00:00",
+      "soil_moisture_pct": 37.94,
+      "rainfall_mm_3h": 10.17,
+      "rainfall_mm_24h": 22.08,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.01,
+      "ndvi": 0.579
+    },
+    {
+      "date": "2026-05-12T00:00:00+00:00",
+      "soil_moisture_pct": 39.72,
+      "rainfall_mm_3h": 12.41,
+      "rainfall_mm_24h": 53.58,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.12,
+      "ndvi": 0.597
+    },
+    {
+      "date": "2026-05-13T00:00:00+00:00",
+      "soil_moisture_pct": 41.23,
+      "rainfall_mm_3h": 15.68,
+      "rainfall_mm_24h": 33.25,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.28,
+      "ndvi": 0.612
+    },
+    {
+      "date": "2026-05-14T00:00:00+00:00",
+      "soil_moisture_pct": 40.61,
+      "rainfall_mm_3h": 13.37,
+      "rainfall_mm_24h": 46.99,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.17,
+      "ndvi": 0.606
+    },
+    {
+      "date": "2026-05-15T00:00:00+00:00",
+      "soil_moisture_pct": 41.5,
+      "rainfall_mm_3h": 17.43,
+      "rainfall_mm_24h": 79.39,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.37,
+      "ndvi": 0.615
+    },
+    {
+      "date": "2026-05-16T00:00:00+00:00",
+      "soil_moisture_pct": 42.7,
+      "rainfall_mm_3h": 15.65,
+      "rainfall_mm_24h": 40.37,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.28,
+      "ndvi": 0.627
+    },
+    {
+      "date": "2026-05-17T00:00:00+00:00",
+      "soil_moisture_pct": 43.83,
+      "rainfall_mm_3h": 14.58,
+      "rainfall_mm_24h": 72.02,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.23,
+      "ndvi": 0.638
+    },
+    {
+      "date": "2026-05-18T00:00:00+00:00",
+      "soil_moisture_pct": 43.0,
+      "rainfall_mm_3h": 10.43,
+      "rainfall_mm_24h": 40.15,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.02,
+      "ndvi": 0.63
+    },
+    {
+      "date": "2026-05-19T00:00:00+00:00",
+      "soil_moisture_pct": 44.65,
+      "rainfall_mm_3h": 11.85,
+      "rainfall_mm_24h": 48.94,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.09,
+      "ndvi": 0.646
+    },
+    {
+      "date": "2026-05-20T00:00:00+00:00",
+      "soil_moisture_pct": 43.92,
+      "rainfall_mm_3h": 14.64,
+      "rainfall_mm_24h": 37.34,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.23,
+      "ndvi": 0.639
+    },
+    {
+      "date": "2026-05-21T00:00:00+00:00",
+      "soil_moisture_pct": 44.3,
+      "rainfall_mm_3h": 11.43,
+      "rainfall_mm_24h": 49.75,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.07,
+      "ndvi": 0.643
+    },
+    {
+      "date": "2026-05-22T00:00:00+00:00",
+      "soil_moisture_pct": 45.02,
+      "rainfall_mm_3h": 10.86,
+      "rainfall_mm_24h": 26.45,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.04,
+      "ndvi": 0.65
+    },
+    {
+      "date": "2026-05-23T00:00:00+00:00",
+      "soil_moisture_pct": 44.92,
+      "rainfall_mm_3h": 14.82,
+      "rainfall_mm_24h": 55.36,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.24,
+      "ndvi": 0.649
+    },
+    {
+      "date": "2026-05-24T00:00:00+00:00",
+      "soil_moisture_pct": 45.87,
+      "rainfall_mm_3h": 18.03,
+      "rainfall_mm_24h": 86.92,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.4,
+      "ndvi": 0.659
+    },
+    {
+      "date": "2026-05-25T00:00:00+00:00",
+      "soil_moisture_pct": 46.39,
+      "rainfall_mm_3h": 19.18,
+      "rainfall_mm_24h": 61.6,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.46,
+      "ndvi": 0.664
+    },
+    {
+      "date": "2026-05-26T00:00:00+00:00",
+      "soil_moisture_pct": 45.75,
+      "rainfall_mm_3h": 25.03,
+      "rainfall_mm_24h": 60.13,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.75,
+      "ndvi": 0.658
+    },
+    {
+      "date": "2026-05-27T00:00:00+00:00",
+      "soil_moisture_pct": 45.67,
+      "rainfall_mm_3h": 25.51,
+      "rainfall_mm_24h": 83.77,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.78,
+      "ndvi": 0.657
+    },
+    {
+      "date": "2026-05-28T00:00:00+00:00",
+      "soil_moisture_pct": 46.57,
+      "rainfall_mm_3h": 26.51,
+      "rainfall_mm_24h": 85.77,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.83,
+      "ndvi": 0.666
+    },
+    {
+      "date": "2026-05-29T00:00:00+00:00",
+      "soil_moisture_pct": 46.22,
+      "rainfall_mm_3h": 24.01,
+      "rainfall_mm_24h": 90.39,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.7,
+      "ndvi": 0.662
+    },
+    {
+      "date": "2026-05-30T00:00:00+00:00",
+      "soil_moisture_pct": 45.33,
+      "rainfall_mm_3h": 20.66,
+      "rainfall_mm_24h": 67.24,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.53,
+      "ndvi": 0.653
+    },
+    {
+      "date": "2026-05-31T00:00:00+00:00",
+      "soil_moisture_pct": 45.01,
+      "rainfall_mm_3h": 26.47,
+      "rainfall_mm_24h": 98.39,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.82,
+      "ndvi": 0.65
+    },
+    {
+      "date": "2026-06-01T00:00:00+00:00",
+      "soil_moisture_pct": 46.11,
+      "rainfall_mm_3h": 27.51,
+      "rainfall_mm_24h": 108.5,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.88,
+      "ndvi": 0.661
+    },
+    {
+      "date": "2026-06-02T00:00:00+00:00",
+      "soil_moisture_pct": 46.06,
+      "rainfall_mm_3h": 28.07,
+      "rainfall_mm_24h": 122.44,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.9,
+      "ndvi": 0.661
+    },
+    {
+      "date": "2026-06-03T00:00:00+00:00",
+      "soil_moisture_pct": 46.36,
+      "rainfall_mm_3h": 31.26,
+      "rainfall_mm_24h": 121.22,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.06,
+      "ndvi": 0.664
+    },
+    {
+      "date": "2026-06-04T00:00:00+00:00",
+      "soil_moisture_pct": 46.89,
+      "rainfall_mm_3h": 39.05,
+      "rainfall_mm_24h": 164.41,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.45,
+      "ndvi": 0.669
+    },
+    {
+      "date": "2026-06-05T00:00:00+00:00",
+      "soil_moisture_pct": 48.66,
+      "rainfall_mm_3h": 39.33,
+      "rainfall_mm_24h": 138.07,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.47,
+      "ndvi": 0.687
+    },
+    {
+      "date": "2026-06-06T00:00:00+00:00",
+      "soil_moisture_pct": 50.06,
+      "rainfall_mm_3h": 38.82,
+      "rainfall_mm_24h": 114.25,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.44,
+      "ndvi": 0.701
+    },
+    {
+      "date": "2026-06-07T00:00:00+00:00",
+      "soil_moisture_pct": 50.54,
+      "rainfall_mm_3h": 36.26,
+      "rainfall_mm_24h": 85.13,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.31,
+      "ndvi": 0.705
+    },
+    {
+      "date": "2026-06-08T00:00:00+00:00",
+      "soil_moisture_pct": 52.07,
+      "rainfall_mm_3h": 38.26,
+      "rainfall_mm_24h": 82.89,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.41,
+      "ndvi": 0.721
+    },
+    {
+      "date": "2026-06-09T00:00:00+00:00",
+      "soil_moisture_pct": 52.07,
+      "rainfall_mm_3h": 37.4,
+      "rainfall_mm_24h": 94.21,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.37,
+      "ndvi": 0.721
+    },
+    {
+      "date": "2026-06-10T00:00:00+00:00",
+      "soil_moisture_pct": 53.3,
+      "rainfall_mm_3h": 40.21,
+      "rainfall_mm_24h": 82.18,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.51,
+      "ndvi": 0.733
+    },
+    {
+      "date": "2026-06-11T00:00:00+00:00",
+      "soil_moisture_pct": 54.87,
+      "rainfall_mm_3h": 34.23,
+      "rainfall_mm_24h": 106.7,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.21,
+      "ndvi": 0.749
+    },
+    {
+      "date": "2026-06-12T00:00:00+00:00",
+      "soil_moisture_pct": 55.67,
+      "rainfall_mm_3h": 36.92,
+      "rainfall_mm_24h": 87.09,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.35,
+      "ndvi": 0.757
+    },
+    {
+      "date": "2026-06-13T00:00:00+00:00",
+      "soil_moisture_pct": 57.54,
+      "rainfall_mm_3h": 28.03,
+      "rainfall_mm_24h": 139.74,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.9,
+      "ndvi": 0.775
+    },
+    {
+      "date": "2026-06-14T00:00:00+00:00",
+      "soil_moisture_pct": 57.48,
+      "rainfall_mm_3h": 29.33,
+      "rainfall_mm_24h": 119.17,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.97,
+      "ndvi": 0.775
+    },
+    {
+      "date": "2026-06-15T00:00:00+00:00",
+      "soil_moisture_pct": 57.64,
+      "rainfall_mm_3h": 24.65,
+      "rainfall_mm_24h": 96.68,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.73,
+      "ndvi": 0.776
+    },
+    {
+      "date": "2026-06-16T00:00:00+00:00",
+      "soil_moisture_pct": 57.27,
+      "rainfall_mm_3h": 24.39,
+      "rainfall_mm_24h": 87.2,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.72,
+      "ndvi": 0.773
+    },
+    {
+      "date": "2026-06-17T00:00:00+00:00",
+      "soil_moisture_pct": 56.77,
+      "rainfall_mm_3h": 26.39,
+      "rainfall_mm_24h": 119.01,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.82,
+      "ndvi": 0.768
+    },
+    {
+      "date": "2026-06-18T00:00:00+00:00",
+      "soil_moisture_pct": 57.43,
+      "rainfall_mm_3h": 31.28,
+      "rainfall_mm_24h": 141.3,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.06,
+      "ndvi": 0.774
+    },
+    {
+      "date": "2026-06-19T00:00:00+00:00",
+      "soil_moisture_pct": 56.86,
+      "rainfall_mm_3h": 35.29,
+      "rainfall_mm_24h": 118.03,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.26,
+      "ndvi": 0.769
+    },
+    {
+      "date": "2026-06-20T00:00:00+00:00",
+      "soil_moisture_pct": 56.1,
+      "rainfall_mm_3h": 33.96,
+      "rainfall_mm_24h": 144.87,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.2,
+      "ndvi": 0.761
+    },
+    {
+      "date": "2026-06-21T00:00:00+00:00",
+      "soil_moisture_pct": 56.51,
+      "rainfall_mm_3h": 34.73,
+      "rainfall_mm_24h": 85.17,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.24,
+      "ndvi": 0.765
+    },
+    {
+      "date": "2026-06-22T00:00:00+00:00",
+      "soil_moisture_pct": 58.23,
+      "rainfall_mm_3h": 31.91,
+      "rainfall_mm_24h": 68.1,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.1,
+      "ndvi": 0.782
+    },
+    {
+      "date": "2026-06-23T00:00:00+00:00",
+      "soil_moisture_pct": 58.1,
+      "rainfall_mm_3h": 27.21,
+      "rainfall_mm_24h": 94.45,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.86,
+      "ndvi": 0.781
+    },
+    {
+      "date": "2026-06-24T00:00:00+00:00",
+      "soil_moisture_pct": 58.58,
+      "rainfall_mm_3h": 30.66,
+      "rainfall_mm_24h": 69.05,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 4.03,
+      "ndvi": 0.786
+    },
+    {
+      "date": "2026-06-25T00:00:00+00:00",
+      "soil_moisture_pct": 60.11,
+      "rainfall_mm_3h": 25.6,
+      "rainfall_mm_24h": 100.16,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.78,
+      "ndvi": 0.801
+    },
+    {
+      "date": "2026-06-26T00:00:00+00:00",
+      "soil_moisture_pct": 61.12,
+      "rainfall_mm_3h": 25.06,
+      "rainfall_mm_24h": 107.48,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.75,
+      "ndvi": 0.811
+    },
+    {
+      "date": "2026-06-27T00:00:00+00:00",
+      "soil_moisture_pct": 61.22,
+      "rainfall_mm_3h": 25.67,
+      "rainfall_mm_24h": 92.89,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.78,
+      "ndvi": 0.812
+    },
+    {
+      "date": "2026-06-28T00:00:00+00:00",
+      "soil_moisture_pct": 62.76,
+      "rainfall_mm_3h": 27.66,
+      "rainfall_mm_24h": 95.36,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.88,
+      "ndvi": 0.828
+    },
+    {
+      "date": "2026-06-29T00:00:00+00:00",
+      "soil_moisture_pct": 64.31,
+      "rainfall_mm_3h": 28.55,
+      "rainfall_mm_24h": 100.33,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.93,
+      "ndvi": 0.843
+    },
+    {
+      "date": "2026-06-30T00:00:00+00:00",
+      "soil_moisture_pct": 65.08,
+      "rainfall_mm_3h": 27.63,
+      "rainfall_mm_24h": 125.72,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.88,
+      "ndvi": 0.851
+    },
+    {
+      "date": "2026-07-01T00:00:00+00:00",
+      "soil_moisture_pct": 65.57,
+      "rainfall_mm_3h": 23.89,
+      "rainfall_mm_24h": 85.88,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.69,
+      "ndvi": 0.856
+    },
+    {
+      "date": "2026-07-02T00:00:00+00:00",
+      "soil_moisture_pct": 65.77,
+      "rainfall_mm_3h": 21.23,
+      "rainfall_mm_24h": 100.87,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.56,
+      "ndvi": 0.858
+    },
+    {
+      "date": "2026-07-03T00:00:00+00:00",
+      "soil_moisture_pct": 65.3,
+      "rainfall_mm_3h": 21.38,
+      "rainfall_mm_24h": 64.5,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.57,
+      "ndvi": 0.853
+    },
+    {
+      "date": "2026-07-04T00:00:00+00:00",
+      "soil_moisture_pct": 64.37,
+      "rainfall_mm_3h": 23.6,
+      "rainfall_mm_24h": 112.86,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.68,
+      "ndvi": 0.844
+    },
+    {
+      "date": "2026-07-05T00:00:00+00:00",
+      "soil_moisture_pct": 64.3,
+      "rainfall_mm_3h": 25.24,
+      "rainfall_mm_24h": 95.81,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.76,
+      "ndvi": 0.843
+    },
+    {
+      "date": "2026-07-06T00:00:00+00:00",
+      "soil_moisture_pct": 64.13,
+      "rainfall_mm_3h": 25.04,
+      "rainfall_mm_24h": 102.89,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.75,
+      "ndvi": 0.841
+    },
+    {
+      "date": "2026-07-07T00:00:00+00:00",
+      "soil_moisture_pct": 66.08,
+      "rainfall_mm_3h": 25.61,
+      "rainfall_mm_24h": 98.88,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.78,
+      "ndvi": 0.861
+    },
+    {
+      "date": "2026-07-08T00:00:00+00:00",
+      "soil_moisture_pct": 67.36,
+      "rainfall_mm_3h": 29.35,
+      "rainfall_mm_24h": 138.25,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.97,
+      "ndvi": 0.874
+    },
+    {
+      "date": "2026-07-09T00:00:00+00:00",
+      "soil_moisture_pct": 69.25,
+      "rainfall_mm_3h": 22.12,
+      "rainfall_mm_24h": 96.15,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.61,
+      "ndvi": 0.893
+    },
+    {
+      "date": "2026-07-10T00:00:00+00:00",
+      "soil_moisture_pct": 68.59,
+      "rainfall_mm_3h": 18.91,
+      "rainfall_mm_24h": 79.36,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.45,
+      "ndvi": 0.886
+    },
+    {
+      "date": "2026-07-11T00:00:00+00:00",
+      "soil_moisture_pct": 69.25,
+      "rainfall_mm_3h": 15.38,
+      "rainfall_mm_24h": 60.93,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.27,
+      "ndvi": 0.893
+    },
+    {
+      "date": "2026-07-12T00:00:00+00:00",
+      "soil_moisture_pct": 71.21,
+      "rainfall_mm_3h": 20.21,
+      "rainfall_mm_24h": 57.9,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.51,
+      "ndvi": 0.912
+    },
+    {
+      "date": "2026-07-13T00:00:00+00:00",
+      "soil_moisture_pct": 72.46,
+      "rainfall_mm_3h": 25.67,
+      "rainfall_mm_24h": 78.04,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.78,
+      "ndvi": 0.925
+    },
+    {
+      "date": "2026-07-14T00:00:00+00:00",
+      "soil_moisture_pct": 71.58,
+      "rainfall_mm_3h": 20.72,
+      "rainfall_mm_24h": 89.76,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.54,
+      "ndvi": 0.916
+    },
+    {
+      "date": "2026-07-15T00:00:00+00:00",
+      "soil_moisture_pct": 73.54,
+      "rainfall_mm_3h": 19.16,
+      "rainfall_mm_24h": 65.04,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.46,
+      "ndvi": 0.935
+    },
+    {
+      "date": "2026-07-16T00:00:00+00:00",
+      "soil_moisture_pct": 73.77,
+      "rainfall_mm_3h": 13.83,
+      "rainfall_mm_24h": 60.6,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.19,
+      "ndvi": 0.938
+    },
+    {
+      "date": "2026-07-17T00:00:00+00:00",
+      "soil_moisture_pct": 74.44,
+      "rainfall_mm_3h": 17.66,
+      "rainfall_mm_24h": 77.8,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.38,
+      "ndvi": 0.944
+    },
+    {
+      "date": "2026-07-18T00:00:00+00:00",
+      "soil_moisture_pct": 75.9,
+      "rainfall_mm_3h": 19.28,
+      "rainfall_mm_24h": 40.7,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.46,
+      "ndvi": 0.959
+    },
+    {
+      "date": "2026-07-19T00:00:00+00:00",
+      "soil_moisture_pct": 75.05,
+      "rainfall_mm_3h": 14.22,
+      "rainfall_mm_24h": 33.11,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.21,
+      "ndvi": 0.951
+    },
+    {
+      "date": "2026-07-20T00:00:00+00:00",
+      "soil_moisture_pct": 76.19,
+      "rainfall_mm_3h": 14.93,
+      "rainfall_mm_24h": 64.51,
+      "seasonal_forecast_probability_below_normal": 0.367,
+      "ipc_phase": 1,
+      "river_level_m": 3.25,
+      "ndvi": 0.962
+    }
+  ],
+  "Somali Region": [
+    {
+      "date": "2026-04-22T00:00:00+00:00",
+      "soil_moisture_pct": 32.92,
+      "rainfall_mm_3h": 15.17,
+      "rainfall_mm_24h": 69.4,
+      "seasonal_forecast_probability_below_normal": 0.473,
+      "ipc_phase": 1,
+      "river_level_m": 3.26,
+      "ndvi": 0.529
+    },
+    {
+      "date": "2026-04-23T00:00:00+00:00",
+      "soil_moisture_pct": 32.87,
+      "rainfall_mm_3h": 15.57,
+      "rainfall_mm_24h": 32.53,
+      "seasonal_forecast_probability_below_normal": 0.486,
+      "ipc_phase": 1,
+      "river_level_m": 3.28,
+      "ndvi": 0.529
+    },
+    {
+      "date": "2026-04-24T00:00:00+00:00",
+      "soil_moisture_pct": 32.74,
+      "rainfall_mm_3h": 14.96,
+      "rainfall_mm_24h": 40.58,
+      "seasonal_forecast_probability_below_normal": 0.5,
+      "ipc_phase": 1,
+      "river_level_m": 3.25,
+      "ndvi": 0.527
+    },
+    {
+      "date": "2026-04-25T00:00:00+00:00",
+      "soil_moisture_pct": 32.52,
+      "rainfall_mm_3h": 17.37,
+      "rainfall_mm_24h": 50.33,
+      "seasonal_forecast_probability_below_normal": 0.517,
+      "ipc_phase": 1,
+      "river_level_m": 3.37,
+      "ndvi": 0.525
+    },
+    {
+      "date": "2026-04-26T00:00:00+00:00",
+      "soil_moisture_pct": 32.35,
+      "rainfall_mm_3h": 16.91,
+      "rainfall_mm_24h": 78.78,
+      "seasonal_forecast_probability_below_normal": 0.522,
+      "ipc_phase": 1,
+      "river_level_m": 3.35,
+      "ndvi": 0.524
+    },
+    {
+      "date": "2026-04-27T00:00:00+00:00",
+      "soil_moisture_pct": 32.26,
+      "rainfall_mm_3h": 17.78,
+      "rainfall_mm_24h": 73.82,
+      "seasonal_forecast_probability_below_normal": 0.529,
+      "ipc_phase": 1,
+      "river_level_m": 3.39,
+      "ndvi": 0.523
+    },
+    {
+      "date": "2026-04-28T00:00:00+00:00",
+      "soil_moisture_pct": 32.05,
+      "rainfall_mm_3h": 20.86,
+      "rainfall_mm_24h": 67.23,
+      "seasonal_forecast_probability_below_normal": 0.535,
+      "ipc_phase": 1,
+      "river_level_m": 3.54,
+      "ndvi": 0.521
+    },
+    {
+      "date": "2026-04-29T00:00:00+00:00",
+      "soil_moisture_pct": 31.98,
+      "rainfall_mm_3h": 21.78,
+      "rainfall_mm_24h": 89.35,
+      "seasonal_forecast_probability_below_normal": 0.555,
+      "ipc_phase": 1,
+      "river_level_m": 3.59,
+      "ndvi": 0.52
+    },
+    {
+      "date": "2026-04-30T00:00:00+00:00",
+      "soil_moisture_pct": 31.81,
+      "rainfall_mm_3h": 22.02,
+      "rainfall_mm_24h": 76.88,
+      "seasonal_forecast_probability_below_normal": 0.573,
+      "ipc_phase": 1,
+      "river_level_m": 3.6,
+      "ndvi": 0.518
+    },
+    {
+      "date": "2026-05-01T00:00:00+00:00",
+      "soil_moisture_pct": 31.73,
+      "rainfall_mm_3h": 24.53,
+      "rainfall_mm_24h": 63.92,
+      "seasonal_forecast_probability_below_normal": 0.575,
+      "ipc_phase": 1,
+      "river_level_m": 3.73,
+      "ndvi": 0.517
+    },
+    {
+      "date": "2026-05-02T00:00:00+00:00",
+      "soil_moisture_pct": 31.68,
+      "rainfall_mm_3h": 23.22,
+      "rainfall_mm_24h": 70.36,
+      "seasonal_forecast_probability_below_normal": 0.587,
+      "ipc_phase": 1,
+      "river_level_m": 3.66,
+      "ndvi": 0.517
+    },
+    {
+      "date": "2026-05-03T00:00:00+00:00",
+      "soil_moisture_pct": 31.54,
+      "rainfall_mm_3h": 20.69,
+      "rainfall_mm_24h": 74.93,
+      "seasonal_forecast_probability_below_normal": 0.602,
+      "ipc_phase": 1,
+      "river_level_m": 3.53,
+      "ndvi": 0.515
+    },
+    {
+      "date": "2026-05-04T00:00:00+00:00",
+      "soil_moisture_pct": 31.44,
+      "rainfall_mm_3h": 20.56,
+      "rainfall_mm_24h": 61.2,
+      "seasonal_forecast_probability_below_normal": 0.607,
+      "ipc_phase": 1,
+      "river_level_m": 3.53,
+      "ndvi": 0.514
+    },
+    {
+      "date": "2026-05-05T00:00:00+00:00",
+      "soil_moisture_pct": 31.2,
+      "rainfall_mm_3h": 19.78,
+      "rainfall_mm_24h": 74.61,
+      "seasonal_forecast_probability_below_normal": 0.622,
+      "ipc_phase": 1,
+      "river_level_m": 3.49,
+      "ndvi": 0.512
+    },
+    {
+      "date": "2026-05-06T00:00:00+00:00",
+      "soil_moisture_pct": 31.02,
+      "rainfall_mm_3h": 18.71,
+      "rainfall_mm_24h": 55.52,
+      "seasonal_forecast_probability_below_normal": 0.627,
+      "ipc_phase": 1,
+      "river_level_m": 3.44,
+      "ndvi": 0.51
+    },
+    {
+      "date": "2026-05-07T00:00:00+00:00",
+      "soil_moisture_pct": 30.94,
+      "rainfall_mm_3h": 22.28,
+      "rainfall_mm_24h": 97.5,
+      "seasonal_forecast_probability_below_normal": 0.638,
+      "ipc_phase": 1,
+      "river_level_m": 3.61,
+      "ndvi": 0.509
+    },
+    {
+      "date": "2026-05-08T00:00:00+00:00",
+      "soil_moisture_pct": 30.74,
+      "rainfall_mm_3h": 23.51,
+      "rainfall_mm_24h": 117.16,
+      "seasonal_forecast_probability_below_normal": 0.647,
+      "ipc_phase": 1,
+      "river_level_m": 3.68,
+      "ndvi": 0.507
+    },
+    {
+      "date": "2026-05-09T00:00:00+00:00",
+      "soil_moisture_pct": 30.55,
+      "rainfall_mm_3h": 22.85,
+      "rainfall_mm_24h": 84.25,
+      "seasonal_forecast_probability_below_normal": 0.651,
+      "ipc_phase": 1,
+      "river_level_m": 3.64,
+      "ndvi": 0.506
+    },
+    {
+      "date": "2026-05-10T00:00:00+00:00",
+      "soil_moisture_pct": 30.48,
+      "rainfall_mm_3h": 22.17,
+      "rainfall_mm_24h": 78.43,
+      "seasonal_forecast_probability_below_normal": 0.67,
+      "ipc_phase": 1,
+      "river_level_m": 3.61,
+      "ndvi": 0.505
+    },
+    {
+      "date": "2026-05-11T00:00:00+00:00",
+      "soil_moisture_pct": 30.34,
+      "rainfall_mm_3h": 23.59,
+      "rainfall_mm_24h": 54.48,
+      "seasonal_forecast_probability_below_normal": 0.689,
+      "ipc_phase": 1,
+      "river_level_m": 3.68,
+      "ndvi": 0.503
+    },
+    {
+      "date": "2026-05-12T00:00:00+00:00",
+      "soil_moisture_pct": 30.28,
+      "rainfall_mm_3h": 20.11,
+      "rainfall_mm_24h": 67.69,
+      "seasonal_forecast_probability_below_normal": 0.691,
+      "ipc_phase": 1,
+      "river_level_m": 3.51,
+      "ndvi": 0.503
+    },
+    {
+      "date": "2026-05-13T00:00:00+00:00",
+      "soil_moisture_pct": 30.13,
+      "rainfall_mm_3h": 21.78,
+      "rainfall_mm_24h": 50.86,
+      "seasonal_forecast_probability_below_normal": 0.692,
+      "ipc_phase": 1,
+      "river_level_m": 3.59,
+      "ndvi": 0.501
+    },
+    {
+      "date": "2026-05-14T00:00:00+00:00",
+      "soil_moisture_pct": 30.0,
+      "rainfall_mm_3h": 23.36,
+      "rainfall_mm_24h": 61.22,
+      "seasonal_forecast_probability_below_normal": 0.706,
+      "ipc_phase": 1,
+      "river_level_m": 3.67,
+      "ndvi": 0.5
+    },
+    {
+      "date": "2026-05-15T00:00:00+00:00",
+      "soil_moisture_pct": 29.89,
+      "rainfall_mm_3h": 23.02,
+      "rainfall_mm_24h": 46.16,
+      "seasonal_forecast_probability_below_normal": 0.714,
+      "ipc_phase": 1,
+      "river_level_m": 3.65,
+      "ndvi": 0.499
+    },
+    {
+      "date": "2026-05-16T00:00:00+00:00",
+      "soil_moisture_pct": 29.82,
+      "rainfall_mm_3h": 21.47,
+      "rainfall_mm_24h": 75.68,
+      "seasonal_forecast_probability_below_normal": 0.714,
+      "ipc_phase": 1,
+      "river_level_m": 3.57,
+      "ndvi": 0.498
+    },
+    {
+      "date": "2026-05-17T00:00:00+00:00",
+      "soil_moisture_pct": 29.67,
+      "rainfall_mm_3h": 19.13,
+      "rainfall_mm_24h": 83.04,
+      "seasonal_forecast_probability_below_normal": 0.723,
+      "ipc_phase": 1,
+      "river_level_m": 3.46,
+      "ndvi": 0.497
+    },
+    {
+      "date": "2026-05-18T00:00:00+00:00",
+      "soil_moisture_pct": 29.46,
+      "rainfall_mm_3h": 18.98,
+      "rainfall_mm_24h": 51.77,
+      "seasonal_forecast_probability_below_normal": 0.729,
+      "ipc_phase": 1,
+      "river_level_m": 3.45,
+      "ndvi": 0.495
+    },
+    {
+      "date": "2026-05-19T00:00:00+00:00",
+      "soil_moisture_pct": 29.31,
+      "rainfall_mm_3h": 17.6,
+      "rainfall_mm_24h": 52.66,
+      "seasonal_forecast_probability_below_normal": 0.734,
+      "ipc_phase": 1,
+      "river_level_m": 3.38,
+      "ndvi": 0.493
+    },
+    {
+      "date": "2026-05-20T00:00:00+00:00",
+      "soil_moisture_pct": 29.07,
+      "rainfall_mm_3h": 15.89,
+      "rainfall_mm_24h": 65.69,
+      "seasonal_forecast_probability_below_normal": 0.743,
+      "ipc_phase": 1,
+      "river_level_m": 3.29,
+      "ndvi": 0.491
+    },
+    {
+      "date": "2026-05-21T00:00:00+00:00",
+      "soil_moisture_pct": 28.99,
+      "rainfall_mm_3h": 16.71,
+      "rainfall_mm_24h": 79.48,
+      "seasonal_forecast_probability_below_normal": 0.746,
+      "ipc_phase": 1,
+      "river_level_m": 3.34,
+      "ndvi": 0.49
+    },
+    {
+      "date": "2026-05-22T00:00:00+00:00",
+      "soil_moisture_pct": 28.94,
+      "rainfall_mm_3h": 17.88,
+      "rainfall_mm_24h": 41.69,
+      "seasonal_forecast_probability_below_normal": 0.746,
+      "ipc_phase": 1,
+      "river_level_m": 3.39,
+      "ndvi": 0.489
+    },
+    {
+      "date": "2026-05-23T00:00:00+00:00",
+      "soil_moisture_pct": 28.77,
+      "rainfall_mm_3h": 19.38,
+      "rainfall_mm_24h": 73.07,
+      "seasonal_forecast_probability_below_normal": 0.758,
+      "ipc_phase": 1,
+      "river_level_m": 3.47,
+      "ndvi": 0.488
+    },
+    {
+      "date": "2026-05-24T00:00:00+00:00",
+      "soil_moisture_pct": 28.55,
+      "rainfall_mm_3h": 19.53,
+      "rainfall_mm_24h": 75.33,
+      "seasonal_forecast_probability_below_normal": 0.775,
+      "ipc_phase": 1,
+      "river_level_m": 3.48,
+      "ndvi": 0.485
+    },
+    {
+      "date": "2026-05-25T00:00:00+00:00",
+      "soil_moisture_pct": 28.47,
+      "rainfall_mm_3h": 18.97,
+      "rainfall_mm_24h": 52.41,
+      "seasonal_forecast_probability_below_normal": 0.792,
+      "ipc_phase": 1,
+      "river_level_m": 3.45,
+      "ndvi": 0.485
+    },
+    {
+      "date": "2026-05-26T00:00:00+00:00",
+      "soil_moisture_pct": 28.23,
+      "rainfall_mm_3h": 17.45,
+      "rainfall_mm_24h": 86.44,
+      "seasonal_forecast_probability_below_normal": 0.804,
+      "ipc_phase": 1,
+      "river_level_m": 3.37,
+      "ndvi": 0.482
+    },
+    {
+      "date": "2026-05-27T00:00:00+00:00",
+      "soil_moisture_pct": 28.11,
+      "rainfall_mm_3h": 16.07,
+      "rainfall_mm_24h": 70.66,
+      "seasonal_forecast_probability_below_normal": 0.81,
+      "ipc_phase": 1,
+      "river_level_m": 3.3,
+      "ndvi": 0.481
+    },
+    {
+      "date": "2026-05-28T00:00:00+00:00",
+      "soil_moisture_pct": 27.94,
+      "rainfall_mm_3h": 17.94,
+      "rainfall_mm_24h": 52.98,
+      "seasonal_forecast_probability_below_normal": 0.819,
+      "ipc_phase": 1,
+      "river_level_m": 3.4,
+      "ndvi": 0.479
+    },
+    {
+      "date": "2026-05-29T00:00:00+00:00",
+      "soil_moisture_pct": 27.87,
+      "rainfall_mm_3h": 18.45,
+      "rainfall_mm_24h": 37.96,
+      "seasonal_forecast_probability_below_normal": 0.825,
+      "ipc_phase": 1,
+      "river_level_m": 3.42,
+      "ndvi": 0.479
+    },
+    {
+      "date": "2026-05-30T00:00:00+00:00",
+      "soil_moisture_pct": 27.79,
+      "rainfall_mm_3h": 16.53,
+      "rainfall_mm_24h": 69.7,
+      "seasonal_forecast_probability_below_normal": 0.84,
+      "ipc_phase": 1,
+      "river_level_m": 3.33,
+      "ndvi": 0.478
+    },
+    {
+      "date": "2026-05-31T00:00:00+00:00",
+      "soil_moisture_pct": 27.68,
+      "rainfall_mm_3h": 16.92,
+      "rainfall_mm_24h": 40.23,
+      "seasonal_forecast_probability_below_normal": 0.852,
+      "ipc_phase": 1,
+      "river_level_m": 3.35,
+      "ndvi": 0.477
+    },
+    {
+      "date": "2026-06-01T00:00:00+00:00",
+      "soil_moisture_pct": 27.6,
+      "rainfall_mm_3h": 15.28,
+      "rainfall_mm_24h": 53.8,
+      "seasonal_forecast_probability_below_normal": 0.855,
+      "ipc_phase": 1,
+      "river_level_m": 3.26,
+      "ndvi": 0.476
+    },
+    {
+      "date": "2026-06-02T00:00:00+00:00",
+      "soil_moisture_pct": 27.35,
+      "rainfall_mm_3h": 15.2,
+      "rainfall_mm_24h": 75.68,
+      "seasonal_forecast_probability_below_normal": 0.855,
+      "ipc_phase": 1,
+      "river_level_m": 3.26,
+      "ndvi": 0.473
+    },
+    {
+      "date": "2026-06-03T00:00:00+00:00",
+      "soil_moisture_pct": 27.18,
+      "rainfall_mm_3h": 15.22,
+      "rainfall_mm_24h": 70.62,
+      "seasonal_forecast_probability_below_normal": 0.873,
+      "ipc_phase": 1,
+      "river_level_m": 3.26,
+      "ndvi": 0.472
+    },
+    {
+      "date": "2026-06-04T00:00:00+00:00",
+      "soil_moisture_pct": 27.03,
+      "rainfall_mm_3h": 13.59,
+      "rainfall_mm_24h": 29.24,
+      "seasonal_forecast_probability_below_normal": 0.879,
+      "ipc_phase": 1,
+      "river_level_m": 3.18,
+      "ndvi": 0.47
+    },
+    {
+      "date": "2026-06-05T00:00:00+00:00",
+      "soil_moisture_pct": 26.86,
+      "rainfall_mm_3h": 14.36,
+      "rainfall_mm_24h": 64.74,
+      "seasonal_forecast_probability_below_normal": 0.892,
+      "ipc_phase": 1,
+      "river_level_m": 3.22,
+      "ndvi": 0.469
+    },
+    {
+      "date": "2026-06-06T00:00:00+00:00",
+      "soil_moisture_pct": 26.8,
+      "rainfall_mm_3h": 15.85,
+      "rainfall_mm_24h": 73.27,
+      "seasonal_forecast_probability_below_normal": 0.897,
+      "ipc_phase": 1,
+      "river_level_m": 3.29,
+      "ndvi": 0.468
+    },
+    {
+      "date": "2026-06-07T00:00:00+00:00",
+      "soil_moisture_pct": 26.7,
+      "rainfall_mm_3h": 14.59,
+      "rainfall_mm_24h": 46.5,
+      "seasonal_forecast_probability_below_normal": 0.908,
+      "ipc_phase": 1,
+      "river_level_m": 3.23,
+      "ndvi": 0.467
+    },
+    {
+      "date": "2026-06-08T00:00:00+00:00",
+      "soil_moisture_pct": 26.52,
+      "rainfall_mm_3h": 16.52,
+      "rainfall_mm_24h": 70.61,
+      "seasonal_forecast_probability_below_normal": 0.919,
+      "ipc_phase": 1,
+      "river_level_m": 3.33,
+      "ndvi": 0.465
+    },
+    {
+      "date": "2026-06-09T00:00:00+00:00",
+      "soil_moisture_pct": 26.27,
+      "rainfall_mm_3h": 16.04,
+      "rainfall_mm_24h": 32.67,
+      "seasonal_forecast_probability_below_normal": 0.929,
+      "ipc_phase": 1,
+      "river_level_m": 3.3,
+      "ndvi": 0.463
+    },
+    {
+      "date": "2026-06-10T00:00:00+00:00",
+      "soil_moisture_pct": 26.06,
+      "rainfall_mm_3h": 16.42,
+      "rainfall_mm_24h": 37.47,
+      "seasonal_forecast_probability_below_normal": 0.937,
+      "ipc_phase": 1,
+      "river_level_m": 3.32,
+      "ndvi": 0.461
+    },
+    {
+      "date": "2026-06-11T00:00:00+00:00",
+      "soil_moisture_pct": 25.83,
+      "rainfall_mm_3h": 15.81,
+      "rainfall_mm_24h": 38.71,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.29,
+      "ndvi": 0.458
+    },
+    {
+      "date": "2026-06-12T00:00:00+00:00",
+      "soil_moisture_pct": 25.59,
+      "rainfall_mm_3h": 15.09,
+      "rainfall_mm_24h": 69.07,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.25,
+      "ndvi": 0.456
+    },
+    {
+      "date": "2026-06-13T00:00:00+00:00",
+      "soil_moisture_pct": 25.36,
+      "rainfall_mm_3h": 13.35,
+      "rainfall_mm_24h": 56.07,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.17,
+      "ndvi": 0.454
+    },
+    {
+      "date": "2026-06-14T00:00:00+00:00",
+      "soil_moisture_pct": 25.13,
+      "rainfall_mm_3h": 13.4,
+      "rainfall_mm_24h": 56.6,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.17,
+      "ndvi": 0.451
+    },
+    {
+      "date": "2026-06-15T00:00:00+00:00",
+      "soil_moisture_pct": 24.94,
+      "rainfall_mm_3h": 13.99,
+      "rainfall_mm_24h": 32.37,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.2,
+      "ndvi": 0.449
+    },
+    {
+      "date": "2026-06-16T00:00:00+00:00",
+      "soil_moisture_pct": 24.71,
+      "rainfall_mm_3h": 12.86,
+      "rainfall_mm_24h": 29.57,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.14,
+      "ndvi": 0.447
+    },
+    {
+      "date": "2026-06-17T00:00:00+00:00",
+      "soil_moisture_pct": 24.61,
+      "rainfall_mm_3h": 15.62,
+      "rainfall_mm_24h": 77.11,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.28,
+      "ndvi": 0.446
+    },
+    {
+      "date": "2026-06-18T00:00:00+00:00",
+      "soil_moisture_pct": 24.49,
+      "rainfall_mm_3h": 18.25,
+      "rainfall_mm_24h": 58.09,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.41,
+      "ndvi": 0.445
+    },
+    {
+      "date": "2026-06-19T00:00:00+00:00",
+      "soil_moisture_pct": 24.38,
+      "rainfall_mm_3h": 23.01,
+      "rainfall_mm_24h": 74.28,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.65,
+      "ndvi": 0.444
+    },
+    {
+      "date": "2026-06-20T00:00:00+00:00",
+      "soil_moisture_pct": 24.21,
+      "rainfall_mm_3h": 22.47,
+      "rainfall_mm_24h": 58.21,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.62,
+      "ndvi": 0.442
+    },
+    {
+      "date": "2026-06-21T00:00:00+00:00",
+      "soil_moisture_pct": 24.08,
+      "rainfall_mm_3h": 22.89,
+      "rainfall_mm_24h": 56.96,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.64,
+      "ndvi": 0.441
+    },
+    {
+      "date": "2026-06-22T00:00:00+00:00",
+      "soil_moisture_pct": 23.89,
+      "rainfall_mm_3h": 19.98,
+      "rainfall_mm_24h": 54.57,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.5,
+      "ndvi": 0.439
+    },
+    {
+      "date": "2026-06-23T00:00:00+00:00",
+      "soil_moisture_pct": 23.82,
+      "rainfall_mm_3h": 19.9,
+      "rainfall_mm_24h": 56.39,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.49,
+      "ndvi": 0.438
+    },
+    {
+      "date": "2026-06-24T00:00:00+00:00",
+      "soil_moisture_pct": 23.73,
+      "rainfall_mm_3h": 17.88,
+      "rainfall_mm_24h": 60.9,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.39,
+      "ndvi": 0.437
+    },
+    {
+      "date": "2026-06-25T00:00:00+00:00",
+      "soil_moisture_pct": 23.63,
+      "rainfall_mm_3h": 18.3,
+      "rainfall_mm_24h": 89.28,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.42,
+      "ndvi": 0.436
+    },
+    {
+      "date": "2026-06-26T00:00:00+00:00",
+      "soil_moisture_pct": 23.45,
+      "rainfall_mm_3h": 15.46,
+      "rainfall_mm_24h": 42.64,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.27,
+      "ndvi": 0.435
+    },
+    {
+      "date": "2026-06-27T00:00:00+00:00",
+      "soil_moisture_pct": 23.34,
+      "rainfall_mm_3h": 15.31,
+      "rainfall_mm_24h": 72.03,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.27,
+      "ndvi": 0.433
+    },
+    {
+      "date": "2026-06-28T00:00:00+00:00",
+      "soil_moisture_pct": 23.09,
+      "rainfall_mm_3h": 13.64,
+      "rainfall_mm_24h": 30.22,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.18,
+      "ndvi": 0.431
+    },
+    {
+      "date": "2026-06-29T00:00:00+00:00",
+      "soil_moisture_pct": 23.02,
+      "rainfall_mm_3h": 15.51,
+      "rainfall_mm_24h": 35.53,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 1,
+      "river_level_m": 3.28,
+      "ndvi": 0.43
+    },
+    {
+      "date": "2026-06-30T00:00:00+00:00",
+      "soil_moisture_pct": 22.8,
+      "rainfall_mm_3h": 14.26,
+      "rainfall_mm_24h": 35.59,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.21,
+      "ndvi": 0.428
+    },
+    {
+      "date": "2026-07-01T00:00:00+00:00",
+      "soil_moisture_pct": 22.7,
+      "rainfall_mm_3h": 13.79,
+      "rainfall_mm_24h": 51.76,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.19,
+      "ndvi": 0.427
+    },
+    {
+      "date": "2026-07-02T00:00:00+00:00",
+      "soil_moisture_pct": 22.5,
+      "rainfall_mm_3h": 14.51,
+      "rainfall_mm_24h": 46.64,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.23,
+      "ndvi": 0.425
+    },
+    {
+      "date": "2026-07-03T00:00:00+00:00",
+      "soil_moisture_pct": 22.3,
+      "rainfall_mm_3h": 14.29,
+      "rainfall_mm_24h": 68.94,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.21,
+      "ndvi": 0.423
+    },
+    {
+      "date": "2026-07-04T00:00:00+00:00",
+      "soil_moisture_pct": 22.22,
+      "rainfall_mm_3h": 13.95,
+      "rainfall_mm_24h": 38.97,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.2,
+      "ndvi": 0.422
+    },
+    {
+      "date": "2026-07-05T00:00:00+00:00",
+      "soil_moisture_pct": 22.0,
+      "rainfall_mm_3h": 12.82,
+      "rainfall_mm_24h": 42.95,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.14,
+      "ndvi": 0.42
+    },
+    {
+      "date": "2026-07-06T00:00:00+00:00",
+      "soil_moisture_pct": 21.91,
+      "rainfall_mm_3h": 14.3,
+      "rainfall_mm_24h": 66.14,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.22,
+      "ndvi": 0.419
+    },
+    {
+      "date": "2026-07-07T00:00:00+00:00",
+      "soil_moisture_pct": 21.79,
+      "rainfall_mm_3h": 15.1,
+      "rainfall_mm_24h": 41.29,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.25,
+      "ndvi": 0.418
+    },
+    {
+      "date": "2026-07-08T00:00:00+00:00",
+      "soil_moisture_pct": 21.71,
+      "rainfall_mm_3h": 13.8,
+      "rainfall_mm_24h": 59.78,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.19,
+      "ndvi": 0.417
+    },
+    {
+      "date": "2026-07-09T00:00:00+00:00",
+      "soil_moisture_pct": 21.55,
+      "rainfall_mm_3h": 16.62,
+      "rainfall_mm_24h": 60.0,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.33,
+      "ndvi": 0.416
+    },
+    {
+      "date": "2026-07-10T00:00:00+00:00",
+      "soil_moisture_pct": 21.41,
+      "rainfall_mm_3h": 16.74,
+      "rainfall_mm_24h": 81.28,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.34,
+      "ndvi": 0.414
+    },
+    {
+      "date": "2026-07-11T00:00:00+00:00",
+      "soil_moisture_pct": 21.27,
+      "rainfall_mm_3h": 19.21,
+      "rainfall_mm_24h": 70.36,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.46,
+      "ndvi": 0.413
+    },
+    {
+      "date": "2026-07-12T00:00:00+00:00",
+      "soil_moisture_pct": 21.18,
+      "rainfall_mm_3h": 19.07,
+      "rainfall_mm_24h": 44.96,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.45,
+      "ndvi": 0.412
+    },
+    {
+      "date": "2026-07-13T00:00:00+00:00",
+      "soil_moisture_pct": 20.94,
+      "rainfall_mm_3h": 20.4,
+      "rainfall_mm_24h": 69.27,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.52,
+      "ndvi": 0.409
+    },
+    {
+      "date": "2026-07-14T00:00:00+00:00",
+      "soil_moisture_pct": 20.81,
+      "rainfall_mm_3h": 19.87,
+      "rainfall_mm_24h": 98.67,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.49,
+      "ndvi": 0.408
+    },
+    {
+      "date": "2026-07-15T00:00:00+00:00",
+      "soil_moisture_pct": 20.6,
+      "rainfall_mm_3h": 14.4,
+      "rainfall_mm_24h": 35.4,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.22,
+      "ndvi": 0.406
+    },
+    {
+      "date": "2026-07-16T00:00:00+00:00",
+      "soil_moisture_pct": 20.37,
+      "rainfall_mm_3h": 12.65,
+      "rainfall_mm_24h": 38.31,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.13,
+      "ndvi": 0.404
+    },
+    {
+      "date": "2026-07-17T00:00:00+00:00",
+      "soil_moisture_pct": 20.16,
+      "rainfall_mm_3h": 16.02,
+      "rainfall_mm_24h": 70.18,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.3,
+      "ndvi": 0.402
+    },
+    {
+      "date": "2026-07-18T00:00:00+00:00",
+      "soil_moisture_pct": 20.06,
+      "rainfall_mm_3h": 16.22,
+      "rainfall_mm_24h": 63.52,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.31,
+      "ndvi": 0.401
+    },
+    {
+      "date": "2026-07-19T00:00:00+00:00",
+      "soil_moisture_pct": 20.01,
+      "rainfall_mm_3h": 14.17,
+      "rainfall_mm_24h": 30.97,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.21,
+      "ndvi": 0.4
+    },
+    {
+      "date": "2026-07-20T00:00:00+00:00",
+      "soil_moisture_pct": 19.87,
+      "rainfall_mm_3h": 14.22,
+      "rainfall_mm_24h": 55.41,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.21,
+      "ndvi": 0.399
+    }
+  ],
+  "Turkana County": [
+    {
+      "date": "2026-04-22T00:00:00+00:00",
+      "soil_moisture_pct": 25.7,
+      "rainfall_mm_3h": 20.48,
+      "rainfall_mm_24h": 77.82,
+      "seasonal_forecast_probability_below_normal": 0.377,
+      "ipc_phase": 1,
+      "river_level_m": 3.52,
+      "ndvi": 0.457
+    },
+    {
+      "date": "2026-04-23T00:00:00+00:00",
+      "soil_moisture_pct": 25.55,
+      "rainfall_mm_3h": 21.18,
+      "rainfall_mm_24h": 53.62,
+      "seasonal_forecast_probability_below_normal": 0.384,
+      "ipc_phase": 1,
+      "river_level_m": 3.56,
+      "ndvi": 0.456
+    },
+    {
+      "date": "2026-04-24T00:00:00+00:00",
+      "soil_moisture_pct": 25.37,
+      "rainfall_mm_3h": 21.74,
+      "rainfall_mm_24h": 72.81,
+      "seasonal_forecast_probability_below_normal": 0.385,
+      "ipc_phase": 1,
+      "river_level_m": 3.59,
+      "ndvi": 0.454
+    },
+    {
+      "date": "2026-04-25T00:00:00+00:00",
+      "soil_moisture_pct": 25.14,
+      "rainfall_mm_3h": 21.29,
+      "rainfall_mm_24h": 61.89,
+      "seasonal_forecast_probability_below_normal": 0.398,
+      "ipc_phase": 1,
+      "river_level_m": 3.56,
+      "ndvi": 0.451
+    },
+    {
+      "date": "2026-04-26T00:00:00+00:00",
+      "soil_moisture_pct": 24.9,
+      "rainfall_mm_3h": 23.98,
+      "rainfall_mm_24h": 76.96,
+      "seasonal_forecast_probability_below_normal": 0.413,
+      "ipc_phase": 1,
+      "river_level_m": 3.7,
+      "ndvi": 0.449
+    },
+    {
+      "date": "2026-04-27T00:00:00+00:00",
+      "soil_moisture_pct": 24.74,
+      "rainfall_mm_3h": 25.13,
+      "rainfall_mm_24h": 118.64,
+      "seasonal_forecast_probability_below_normal": 0.423,
+      "ipc_phase": 1,
+      "river_level_m": 3.76,
+      "ndvi": 0.447
+    },
+    {
+      "date": "2026-04-28T00:00:00+00:00",
+      "soil_moisture_pct": 24.6,
+      "rainfall_mm_3h": 25.04,
+      "rainfall_mm_24h": 80.74,
+      "seasonal_forecast_probability_below_normal": 0.43,
+      "ipc_phase": 1,
+      "river_level_m": 3.75,
+      "ndvi": 0.446
+    },
+    {
+      "date": "2026-04-29T00:00:00+00:00",
+      "soil_moisture_pct": 24.47,
+      "rainfall_mm_3h": 25.04,
+      "rainfall_mm_24h": 100.24,
+      "seasonal_forecast_probability_below_normal": 0.432,
+      "ipc_phase": 1,
+      "river_level_m": 3.75,
+      "ndvi": 0.445
+    },
+    {
+      "date": "2026-04-30T00:00:00+00:00",
+      "soil_moisture_pct": 24.29,
+      "rainfall_mm_3h": 26.18,
+      "rainfall_mm_24h": 78.0,
+      "seasonal_forecast_probability_below_normal": 0.432,
+      "ipc_phase": 1,
+      "river_level_m": 3.81,
+      "ndvi": 0.443
+    },
+    {
+      "date": "2026-05-01T00:00:00+00:00",
+      "soil_moisture_pct": 24.2,
+      "rainfall_mm_3h": 25.43,
+      "rainfall_mm_24h": 69.67,
+      "seasonal_forecast_probability_below_normal": 0.449,
+      "ipc_phase": 1,
+      "river_level_m": 3.77,
+      "ndvi": 0.442
+    },
+    {
+      "date": "2026-05-02T00:00:00+00:00",
+      "soil_moisture_pct": 24.01,
+      "rainfall_mm_3h": 25.51,
+      "rainfall_mm_24h": 61.62,
+      "seasonal_forecast_probability_below_normal": 0.455,
+      "ipc_phase": 1,
+      "river_level_m": 3.78,
+      "ndvi": 0.44
+    },
+    {
+      "date": "2026-05-03T00:00:00+00:00",
+      "soil_moisture_pct": 23.91,
+      "rainfall_mm_3h": 26.02,
+      "rainfall_mm_24h": 67.84,
+      "seasonal_forecast_probability_below_normal": 0.473,
+      "ipc_phase": 1,
+      "river_level_m": 3.8,
+      "ndvi": 0.439
+    },
+    {
+      "date": "2026-05-04T00:00:00+00:00",
+      "soil_moisture_pct": 23.75,
+      "rainfall_mm_3h": 22.85,
+      "rainfall_mm_24h": 87.54,
+      "seasonal_forecast_probability_below_normal": 0.492,
+      "ipc_phase": 1,
+      "river_level_m": 3.64,
+      "ndvi": 0.437
+    },
+    {
+      "date": "2026-05-05T00:00:00+00:00",
+      "soil_moisture_pct": 23.65,
+      "rainfall_mm_3h": 22.85,
+      "rainfall_mm_24h": 112.6,
+      "seasonal_forecast_probability_below_normal": 0.498,
+      "ipc_phase": 1,
+      "river_level_m": 3.64,
+      "ndvi": 0.436
+    },
+    {
+      "date": "2026-05-06T00:00:00+00:00",
+      "soil_moisture_pct": 23.52,
+      "rainfall_mm_3h": 22.1,
+      "rainfall_mm_24h": 70.71,
+      "seasonal_forecast_probability_below_normal": 0.499,
+      "ipc_phase": 1,
+      "river_level_m": 3.6,
+      "ndvi": 0.435
+    },
+    {
+      "date": "2026-05-07T00:00:00+00:00",
+      "soil_moisture_pct": 23.29,
+      "rainfall_mm_3h": 23.58,
+      "rainfall_mm_24h": 113.35,
+      "seasonal_forecast_probability_below_normal": 0.508,
+      "ipc_phase": 1,
+      "river_level_m": 3.68,
+      "ndvi": 0.433
+    },
+    {
+      "date": "2026-05-08T00:00:00+00:00",
+      "soil_moisture_pct": 23.07,
+      "rainfall_mm_3h": 22.14,
+      "rainfall_mm_24h": 76.83,
+      "seasonal_forecast_probability_below_normal": 0.519,
+      "ipc_phase": 1,
+      "river_level_m": 3.61,
+      "ndvi": 0.431
+    },
+    {
+      "date": "2026-05-09T00:00:00+00:00",
+      "soil_moisture_pct": 22.89,
+      "rainfall_mm_3h": 21.0,
+      "rainfall_mm_24h": 99.5,
+      "seasonal_forecast_probability_below_normal": 0.523,
+      "ipc_phase": 2,
+      "river_level_m": 3.55,
+      "ndvi": 0.429
+    },
+    {
+      "date": "2026-05-10T00:00:00+00:00",
+      "soil_moisture_pct": 22.66,
+      "rainfall_mm_3h": 19.57,
+      "rainfall_mm_24h": 82.87,
+      "seasonal_forecast_probability_below_normal": 0.543,
+      "ipc_phase": 2,
+      "river_level_m": 3.48,
+      "ndvi": 0.427
+    },
+    {
+      "date": "2026-05-11T00:00:00+00:00",
+      "soil_moisture_pct": 22.46,
+      "rainfall_mm_3h": 19.73,
+      "rainfall_mm_24h": 66.48,
+      "seasonal_forecast_probability_below_normal": 0.553,
+      "ipc_phase": 2,
+      "river_level_m": 3.49,
+      "ndvi": 0.425
+    },
+    {
+      "date": "2026-05-12T00:00:00+00:00",
+      "soil_moisture_pct": 22.36,
+      "rainfall_mm_3h": 19.96,
+      "rainfall_mm_24h": 55.35,
+      "seasonal_forecast_probability_below_normal": 0.558,
+      "ipc_phase": 2,
+      "river_level_m": 3.5,
+      "ndvi": 0.424
+    },
+    {
+      "date": "2026-05-13T00:00:00+00:00",
+      "soil_moisture_pct": 22.19,
+      "rainfall_mm_3h": 19.73,
+      "rainfall_mm_24h": 87.74,
+      "seasonal_forecast_probability_below_normal": 0.563,
+      "ipc_phase": 2,
+      "river_level_m": 3.49,
+      "ndvi": 0.422
+    },
+    {
+      "date": "2026-05-14T00:00:00+00:00",
+      "soil_moisture_pct": 21.97,
+      "rainfall_mm_3h": 18.76,
+      "rainfall_mm_24h": 56.43,
+      "seasonal_forecast_probability_below_normal": 0.563,
+      "ipc_phase": 2,
+      "river_level_m": 3.44,
+      "ndvi": 0.42
+    },
+    {
+      "date": "2026-05-15T00:00:00+00:00",
+      "soil_moisture_pct": 21.76,
+      "rainfall_mm_3h": 20.93,
+      "rainfall_mm_24h": 90.47,
+      "seasonal_forecast_probability_below_normal": 0.566,
+      "ipc_phase": 2,
+      "river_level_m": 3.55,
+      "ndvi": 0.418
+    },
+    {
+      "date": "2026-05-16T00:00:00+00:00",
+      "soil_moisture_pct": 21.69,
+      "rainfall_mm_3h": 20.58,
+      "rainfall_mm_24h": 53.06,
+      "seasonal_forecast_probability_below_normal": 0.586,
+      "ipc_phase": 2,
+      "river_level_m": 3.53,
+      "ndvi": 0.417
+    },
+    {
+      "date": "2026-05-17T00:00:00+00:00",
+      "soil_moisture_pct": 21.61,
+      "rainfall_mm_3h": 22.56,
+      "rainfall_mm_24h": 108.26,
+      "seasonal_forecast_probability_below_normal": 0.598,
+      "ipc_phase": 2,
+      "river_level_m": 3.63,
+      "ndvi": 0.416
+    },
+    {
+      "date": "2026-05-18T00:00:00+00:00",
+      "soil_moisture_pct": 21.36,
+      "rainfall_mm_3h": 22.93,
+      "rainfall_mm_24h": 100.24,
+      "seasonal_forecast_probability_below_normal": 0.601,
+      "ipc_phase": 2,
+      "river_level_m": 3.65,
+      "ndvi": 0.414
+    },
+    {
+      "date": "2026-05-19T00:00:00+00:00",
+      "soil_moisture_pct": 21.25,
+      "rainfall_mm_3h": 23.09,
+      "rainfall_mm_24h": 53.93,
+      "seasonal_forecast_probability_below_normal": 0.614,
+      "ipc_phase": 2,
+      "river_level_m": 3.65,
+      "ndvi": 0.413
+    },
+    {
+      "date": "2026-05-20T00:00:00+00:00",
+      "soil_moisture_pct": 21.04,
+      "rainfall_mm_3h": 24.07,
+      "rainfall_mm_24h": 88.02,
+      "seasonal_forecast_probability_below_normal": 0.623,
+      "ipc_phase": 2,
+      "river_level_m": 3.7,
+      "ndvi": 0.41
+    },
+    {
+      "date": "2026-05-21T00:00:00+00:00",
+      "soil_moisture_pct": 20.89,
+      "rainfall_mm_3h": 25.26,
+      "rainfall_mm_24h": 125.72,
+      "seasonal_forecast_probability_below_normal": 0.636,
+      "ipc_phase": 2,
+      "river_level_m": 3.76,
+      "ndvi": 0.409
+    },
+    {
+      "date": "2026-05-22T00:00:00+00:00",
+      "soil_moisture_pct": 20.64,
+      "rainfall_mm_3h": 25.16,
+      "rainfall_mm_24h": 105.28,
+      "seasonal_forecast_probability_below_normal": 0.638,
+      "ipc_phase": 2,
+      "river_level_m": 3.76,
+      "ndvi": 0.406
+    },
+    {
+      "date": "2026-05-23T00:00:00+00:00",
+      "soil_moisture_pct": 20.39,
+      "rainfall_mm_3h": 27.03,
+      "rainfall_mm_24h": 88.5,
+      "seasonal_forecast_probability_below_normal": 0.647,
+      "ipc_phase": 2,
+      "river_level_m": 3.85,
+      "ndvi": 0.404
+    },
+    {
+      "date": "2026-05-24T00:00:00+00:00",
+      "soil_moisture_pct": 20.33,
+      "rainfall_mm_3h": 27.81,
+      "rainfall_mm_24h": 121.3,
+      "seasonal_forecast_probability_below_normal": 0.654,
+      "ipc_phase": 2,
+      "river_level_m": 3.89,
+      "ndvi": 0.403
+    },
+    {
+      "date": "2026-05-25T00:00:00+00:00",
+      "soil_moisture_pct": 20.12,
+      "rainfall_mm_3h": 26.61,
+      "rainfall_mm_24h": 78.9,
+      "seasonal_forecast_probability_below_normal": 0.662,
+      "ipc_phase": 2,
+      "river_level_m": 3.83,
+      "ndvi": 0.401
+    },
+    {
+      "date": "2026-05-26T00:00:00+00:00",
+      "soil_moisture_pct": 19.92,
+      "rainfall_mm_3h": 26.21,
+      "rainfall_mm_24h": 122.63,
+      "seasonal_forecast_probability_below_normal": 0.672,
+      "ipc_phase": 2,
+      "river_level_m": 3.81,
+      "ndvi": 0.399
+    },
+    {
+      "date": "2026-05-27T00:00:00+00:00",
+      "soil_moisture_pct": 19.84,
+      "rainfall_mm_3h": 26.33,
+      "rainfall_mm_24h": 64.78,
+      "seasonal_forecast_probability_below_normal": 0.674,
+      "ipc_phase": 2,
+      "river_level_m": 3.82,
+      "ndvi": 0.398
+    },
+    {
+      "date": "2026-05-28T00:00:00+00:00",
+      "soil_moisture_pct": 19.68,
+      "rainfall_mm_3h": 24.84,
+      "rainfall_mm_24h": 49.72,
+      "seasonal_forecast_probability_below_normal": 0.675,
+      "ipc_phase": 2,
+      "river_level_m": 3.74,
+      "ndvi": 0.397
+    },
+    {
+      "date": "2026-05-29T00:00:00+00:00",
+      "soil_moisture_pct": 19.54,
+      "rainfall_mm_3h": 24.49,
+      "rainfall_mm_24h": 96.9,
+      "seasonal_forecast_probability_below_normal": 0.676,
+      "ipc_phase": 2,
+      "river_level_m": 3.72,
+      "ndvi": 0.395
+    },
+    {
+      "date": "2026-05-30T00:00:00+00:00",
+      "soil_moisture_pct": 19.33,
+      "rainfall_mm_3h": 24.34,
+      "rainfall_mm_24h": 111.54,
+      "seasonal_forecast_probability_below_normal": 0.679,
+      "ipc_phase": 2,
+      "river_level_m": 3.72,
+      "ndvi": 0.393
+    },
+    {
+      "date": "2026-05-31T00:00:00+00:00",
+      "soil_moisture_pct": 19.11,
+      "rainfall_mm_3h": 23.95,
+      "rainfall_mm_24h": 54.56,
+      "seasonal_forecast_probability_below_normal": 0.695,
+      "ipc_phase": 2,
+      "river_level_m": 3.7,
+      "ndvi": 0.391
+    },
+    {
+      "date": "2026-06-01T00:00:00+00:00",
+      "soil_moisture_pct": 18.99,
+      "rainfall_mm_3h": 25.88,
+      "rainfall_mm_24h": 110.17,
+      "seasonal_forecast_probability_below_normal": 0.7,
+      "ipc_phase": 2,
+      "river_level_m": 3.79,
+      "ndvi": 0.39
+    },
+    {
+      "date": "2026-06-02T00:00:00+00:00",
+      "soil_moisture_pct": 18.83,
+      "rainfall_mm_3h": 25.89,
+      "rainfall_mm_24h": 80.34,
+      "seasonal_forecast_probability_below_normal": 0.709,
+      "ipc_phase": 2,
+      "river_level_m": 3.79,
+      "ndvi": 0.388
+    },
+    {
+      "date": "2026-06-03T00:00:00+00:00",
+      "soil_moisture_pct": 18.74,
+      "rainfall_mm_3h": 25.07,
+      "rainfall_mm_24h": 59.08,
+      "seasonal_forecast_probability_below_normal": 0.724,
+      "ipc_phase": 2,
+      "river_level_m": 3.75,
+      "ndvi": 0.387
+    },
+    {
+      "date": "2026-06-04T00:00:00+00:00",
+      "soil_moisture_pct": 18.67,
+      "rainfall_mm_3h": 24.49,
+      "rainfall_mm_24h": 109.47,
+      "seasonal_forecast_probability_below_normal": 0.728,
+      "ipc_phase": 2,
+      "river_level_m": 3.72,
+      "ndvi": 0.387
+    },
+    {
+      "date": "2026-06-05T00:00:00+00:00",
+      "soil_moisture_pct": 18.54,
+      "rainfall_mm_3h": 25.94,
+      "rainfall_mm_24h": 102.73,
+      "seasonal_forecast_probability_below_normal": 0.731,
+      "ipc_phase": 2,
+      "river_level_m": 3.8,
+      "ndvi": 0.385
+    },
+    {
+      "date": "2026-06-06T00:00:00+00:00",
+      "soil_moisture_pct": 18.4,
+      "rainfall_mm_3h": 26.1,
+      "rainfall_mm_24h": 128.61,
+      "seasonal_forecast_probability_below_normal": 0.748,
+      "ipc_phase": 2,
+      "river_level_m": 3.81,
+      "ndvi": 0.384
+    },
+    {
+      "date": "2026-06-07T00:00:00+00:00",
+      "soil_moisture_pct": 18.18,
+      "rainfall_mm_3h": 23.98,
+      "rainfall_mm_24h": 95.15,
+      "seasonal_forecast_probability_below_normal": 0.753,
+      "ipc_phase": 2,
+      "river_level_m": 3.7,
+      "ndvi": 0.382
+    },
+    {
+      "date": "2026-06-08T00:00:00+00:00",
+      "soil_moisture_pct": 18.07,
+      "rainfall_mm_3h": 21.72,
+      "rainfall_mm_24h": 79.32,
+      "seasonal_forecast_probability_below_normal": 0.764,
+      "ipc_phase": 2,
+      "river_level_m": 3.59,
+      "ndvi": 0.381
+    },
+    {
+      "date": "2026-06-09T00:00:00+00:00",
+      "soil_moisture_pct": 17.86,
+      "rainfall_mm_3h": 24.42,
+      "rainfall_mm_24h": 52.46,
+      "seasonal_forecast_probability_below_normal": 0.764,
+      "ipc_phase": 2,
+      "river_level_m": 3.72,
+      "ndvi": 0.379
+    },
+    {
+      "date": "2026-06-10T00:00:00+00:00",
+      "soil_moisture_pct": 17.69,
+      "rainfall_mm_3h": 21.56,
+      "rainfall_mm_24h": 70.19,
+      "seasonal_forecast_probability_below_normal": 0.77,
+      "ipc_phase": 2,
+      "river_level_m": 3.58,
+      "ndvi": 0.377
+    },
+    {
+      "date": "2026-06-11T00:00:00+00:00",
+      "soil_moisture_pct": 17.48,
+      "rainfall_mm_3h": 19.16,
+      "rainfall_mm_24h": 60.46,
+      "seasonal_forecast_probability_below_normal": 0.781,
+      "ipc_phase": 2,
+      "river_level_m": 3.46,
+      "ndvi": 0.375
+    },
+    {
+      "date": "2026-06-12T00:00:00+00:00",
+      "soil_moisture_pct": 17.38,
+      "rainfall_mm_3h": 19.78,
+      "rainfall_mm_24h": 73.04,
+      "seasonal_forecast_probability_below_normal": 0.787,
+      "ipc_phase": 2,
+      "river_level_m": 3.49,
+      "ndvi": 0.374
+    },
+    {
+      "date": "2026-06-13T00:00:00+00:00",
+      "soil_moisture_pct": 17.19,
+      "rainfall_mm_3h": 20.73,
+      "rainfall_mm_24h": 54.67,
+      "seasonal_forecast_probability_below_normal": 0.787,
+      "ipc_phase": 2,
+      "river_level_m": 3.54,
+      "ndvi": 0.372
+    },
+    {
+      "date": "2026-06-14T00:00:00+00:00",
+      "soil_moisture_pct": 16.97,
+      "rainfall_mm_3h": 21.28,
+      "rainfall_mm_24h": 99.39,
+      "seasonal_forecast_probability_below_normal": 0.791,
+      "ipc_phase": 2,
+      "river_level_m": 3.56,
+      "ndvi": 0.37
+    },
+    {
+      "date": "2026-06-15T00:00:00+00:00",
+      "soil_moisture_pct": 16.82,
+      "rainfall_mm_3h": 22.79,
+      "rainfall_mm_24h": 49.65,
+      "seasonal_forecast_probability_below_normal": 0.809,
+      "ipc_phase": 2,
+      "river_level_m": 3.64,
+      "ndvi": 0.368
+    },
+    {
+      "date": "2026-06-16T00:00:00+00:00",
+      "soil_moisture_pct": 16.73,
+      "rainfall_mm_3h": 25.73,
+      "rainfall_mm_24h": 103.92,
+      "seasonal_forecast_probability_below_normal": 0.813,
+      "ipc_phase": 2,
+      "river_level_m": 3.79,
+      "ndvi": 0.367
+    },
+    {
+      "date": "2026-06-17T00:00:00+00:00",
+      "soil_moisture_pct": 16.64,
+      "rainfall_mm_3h": 24.14,
+      "rainfall_mm_24h": 78.91,
+      "seasonal_forecast_probability_below_normal": 0.817,
+      "ipc_phase": 2,
+      "river_level_m": 3.71,
+      "ndvi": 0.366
+    },
+    {
+      "date": "2026-06-18T00:00:00+00:00",
+      "soil_moisture_pct": 16.55,
+      "rainfall_mm_3h": 23.99,
+      "rainfall_mm_24h": 71.04,
+      "seasonal_forecast_probability_below_normal": 0.835,
+      "ipc_phase": 2,
+      "river_level_m": 3.7,
+      "ndvi": 0.366
+    },
+    {
+      "date": "2026-06-19T00:00:00+00:00",
+      "soil_moisture_pct": 16.43,
+      "rainfall_mm_3h": 22.67,
+      "rainfall_mm_24h": 63.35,
+      "seasonal_forecast_probability_below_normal": 0.842,
+      "ipc_phase": 2,
+      "river_level_m": 3.63,
+      "ndvi": 0.364
+    },
+    {
+      "date": "2026-06-20T00:00:00+00:00",
+      "soil_moisture_pct": 16.26,
+      "rainfall_mm_3h": 21.94,
+      "rainfall_mm_24h": 105.06,
+      "seasonal_forecast_probability_below_normal": 0.86,
+      "ipc_phase": 2,
+      "river_level_m": 3.6,
+      "ndvi": 0.363
+    },
+    {
+      "date": "2026-06-21T00:00:00+00:00",
+      "soil_moisture_pct": 16.19,
+      "rainfall_mm_3h": 19.87,
+      "rainfall_mm_24h": 76.68,
+      "seasonal_forecast_probability_below_normal": 0.862,
+      "ipc_phase": 2,
+      "river_level_m": 3.49,
+      "ndvi": 0.362
+    },
+    {
+      "date": "2026-06-22T00:00:00+00:00",
+      "soil_moisture_pct": 16.11,
+      "rainfall_mm_3h": 21.86,
+      "rainfall_mm_24h": 97.48,
+      "seasonal_forecast_probability_below_normal": 0.877,
+      "ipc_phase": 2,
+      "river_level_m": 3.59,
+      "ndvi": 0.361
+    },
+    {
+      "date": "2026-06-23T00:00:00+00:00",
+      "soil_moisture_pct": 15.96,
+      "rainfall_mm_3h": 23.03,
+      "rainfall_mm_24h": 73.79,
+      "seasonal_forecast_probability_below_normal": 0.878,
+      "ipc_phase": 2,
+      "river_level_m": 3.65,
+      "ndvi": 0.36
+    },
+    {
+      "date": "2026-06-24T00:00:00+00:00",
+      "soil_moisture_pct": 15.84,
+      "rainfall_mm_3h": 22.17,
+      "rainfall_mm_24h": 97.95,
+      "seasonal_forecast_probability_below_normal": 0.889,
+      "ipc_phase": 2,
+      "river_level_m": 3.61,
+      "ndvi": 0.358
+    },
+    {
+      "date": "2026-06-25T00:00:00+00:00",
+      "soil_moisture_pct": 15.76,
+      "rainfall_mm_3h": 20.48,
+      "rainfall_mm_24h": 71.3,
+      "seasonal_forecast_probability_below_normal": 0.899,
+      "ipc_phase": 2,
+      "river_level_m": 3.52,
+      "ndvi": 0.358
+    },
+    {
+      "date": "2026-06-26T00:00:00+00:00",
+      "soil_moisture_pct": 15.51,
+      "rainfall_mm_3h": 20.61,
+      "rainfall_mm_24h": 77.39,
+      "seasonal_forecast_probability_below_normal": 0.907,
+      "ipc_phase": 2,
+      "river_level_m": 3.53,
+      "ndvi": 0.355
+    },
+    {
+      "date": "2026-06-27T00:00:00+00:00",
+      "soil_moisture_pct": 15.44,
+      "rainfall_mm_3h": 21.47,
+      "rainfall_mm_24h": 49.59,
+      "seasonal_forecast_probability_below_normal": 0.911,
+      "ipc_phase": 2,
+      "river_level_m": 3.57,
+      "ndvi": 0.354
+    },
+    {
+      "date": "2026-06-28T00:00:00+00:00",
+      "soil_moisture_pct": 15.22,
+      "rainfall_mm_3h": 19.97,
+      "rainfall_mm_24h": 64.41,
+      "seasonal_forecast_probability_below_normal": 0.918,
+      "ipc_phase": 2,
+      "river_level_m": 3.5,
+      "ndvi": 0.352
+    },
+    {
+      "date": "2026-06-29T00:00:00+00:00",
+      "soil_moisture_pct": 15.08,
+      "rainfall_mm_3h": 20.07,
+      "rainfall_mm_24h": 96.3,
+      "seasonal_forecast_probability_below_normal": 0.937,
+      "ipc_phase": 2,
+      "river_level_m": 3.5,
+      "ndvi": 0.351
+    },
+    {
+      "date": "2026-06-30T00:00:00+00:00",
+      "soil_moisture_pct": 14.95,
+      "rainfall_mm_3h": 17.73,
+      "rainfall_mm_24h": 65.67,
+      "seasonal_forecast_probability_below_normal": 0.946,
+      "ipc_phase": 2,
+      "river_level_m": 3.39,
+      "ndvi": 0.35
+    },
+    {
+      "date": "2026-07-01T00:00:00+00:00",
+      "soil_moisture_pct": 14.81,
+      "rainfall_mm_3h": 18.18,
+      "rainfall_mm_24h": 53.86,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.41,
+      "ndvi": 0.348
+    },
+    {
+      "date": "2026-07-02T00:00:00+00:00",
+      "soil_moisture_pct": 14.69,
+      "rainfall_mm_3h": 18.12,
+      "rainfall_mm_24h": 45.28,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.41,
+      "ndvi": 0.347
+    },
+    {
+      "date": "2026-07-03T00:00:00+00:00",
+      "soil_moisture_pct": 14.49,
+      "rainfall_mm_3h": 18.27,
+      "rainfall_mm_24h": 67.38,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.41,
+      "ndvi": 0.345
+    },
+    {
+      "date": "2026-07-04T00:00:00+00:00",
+      "soil_moisture_pct": 14.29,
+      "rainfall_mm_3h": 18.1,
+      "rainfall_mm_24h": 86.55,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.4,
+      "ndvi": 0.343
+    },
+    {
+      "date": "2026-07-05T00:00:00+00:00",
+      "soil_moisture_pct": 14.12,
+      "rainfall_mm_3h": 18.99,
+      "rainfall_mm_24h": 91.84,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.45,
+      "ndvi": 0.341
+    },
+    {
+      "date": "2026-07-06T00:00:00+00:00",
+      "soil_moisture_pct": 14.0,
+      "rainfall_mm_3h": 19.55,
+      "rainfall_mm_24h": 39.37,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.48,
+      "ndvi": 0.34
+    },
+    {
+      "date": "2026-07-07T00:00:00+00:00",
+      "soil_moisture_pct": 13.94,
+      "rainfall_mm_3h": 21.98,
+      "rainfall_mm_24h": 45.7,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.6,
+      "ndvi": 0.339
+    },
+    {
+      "date": "2026-07-08T00:00:00+00:00",
+      "soil_moisture_pct": 13.74,
+      "rainfall_mm_3h": 18.72,
+      "rainfall_mm_24h": 63.6,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.44,
+      "ndvi": 0.337
+    },
+    {
+      "date": "2026-07-09T00:00:00+00:00",
+      "soil_moisture_pct": 13.69,
+      "rainfall_mm_3h": 19.1,
+      "rainfall_mm_24h": 88.54,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.45,
+      "ndvi": 0.337
+    },
+    {
+      "date": "2026-07-10T00:00:00+00:00",
+      "soil_moisture_pct": 13.56,
+      "rainfall_mm_3h": 20.33,
+      "rainfall_mm_24h": 50.46,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.52,
+      "ndvi": 0.336
+    },
+    {
+      "date": "2026-07-11T00:00:00+00:00",
+      "soil_moisture_pct": 13.36,
+      "rainfall_mm_3h": 17.14,
+      "rainfall_mm_24h": 83.92,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.36,
+      "ndvi": 0.334
+    },
+    {
+      "date": "2026-07-12T00:00:00+00:00",
+      "soil_moisture_pct": 13.12,
+      "rainfall_mm_3h": 16.15,
+      "rainfall_mm_24h": 61.08,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 2,
+      "river_level_m": 3.31,
+      "ndvi": 0.331
+    },
+    {
+      "date": "2026-07-13T00:00:00+00:00",
+      "soil_moisture_pct": 12.89,
+      "rainfall_mm_3h": 13.02,
+      "rainfall_mm_24h": 44.86,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 3,
+      "river_level_m": 3.15,
+      "ndvi": 0.329
+    },
+    {
+      "date": "2026-07-14T00:00:00+00:00",
+      "soil_moisture_pct": 12.73,
+      "rainfall_mm_3h": 9.3,
+      "rainfall_mm_24h": 30.46,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 3,
+      "river_level_m": 2.97,
+      "ndvi": 0.327
+    },
+    {
+      "date": "2026-07-15T00:00:00+00:00",
+      "soil_moisture_pct": 12.6,
+      "rainfall_mm_3h": 8.78,
+      "rainfall_mm_24h": 38.49,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 3,
+      "river_level_m": 2.94,
+      "ndvi": 0.326
+    },
+    {
+      "date": "2026-07-16T00:00:00+00:00",
+      "soil_moisture_pct": 12.39,
+      "rainfall_mm_3h": 9.38,
+      "rainfall_mm_24h": 43.39,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 3,
+      "river_level_m": 2.97,
+      "ndvi": 0.324
+    },
+    {
+      "date": "2026-07-17T00:00:00+00:00",
+      "soil_moisture_pct": 12.33,
+      "rainfall_mm_3h": 9.95,
+      "rainfall_mm_24h": 40.5,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 3,
+      "river_level_m": 3.0,
+      "ndvi": 0.323
+    },
+    {
+      "date": "2026-07-18T00:00:00+00:00",
+      "soil_moisture_pct": 12.25,
+      "rainfall_mm_3h": 9.11,
+      "rainfall_mm_24h": 35.12,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 3,
+      "river_level_m": 2.96,
+      "ndvi": 0.322
+    },
+    {
+      "date": "2026-07-19T00:00:00+00:00",
+      "soil_moisture_pct": 12.19,
+      "rainfall_mm_3h": 10.56,
+      "rainfall_mm_24h": 27.91,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 3,
+      "river_level_m": 3.03,
+      "ndvi": 0.322
+    },
+    {
+      "date": "2026-07-20T00:00:00+00:00",
+      "soil_moisture_pct": 12.11,
+      "rainfall_mm_3h": 11.67,
+      "rainfall_mm_24h": 26.73,
+      "seasonal_forecast_probability_below_normal": 0.95,
+      "ipc_phase": 3,
+      "river_level_m": 3.08,
+      "ndvi": 0.321
+    }
+  ],
+  "Karamoja": [
+    {
+      "date": "2026-04-22T00:00:00+00:00",
+      "soil_moisture_pct": 33.45,
+      "rainfall_mm_3h": 16.65,
+      "rainfall_mm_24h": 65.86,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.33,
+      "ndvi": 0.535
+    },
+    {
+      "date": "2026-04-23T00:00:00+00:00",
+      "soil_moisture_pct": 34.35,
+      "rainfall_mm_3h": 24.79,
+      "rainfall_mm_24h": 81.47,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.74,
+      "ndvi": 0.544
+    },
+    {
+      "date": "2026-04-24T00:00:00+00:00",
+      "soil_moisture_pct": 33.46,
+      "rainfall_mm_3h": 26.07,
+      "rainfall_mm_24h": 93.95,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.8,
+      "ndvi": 0.535
+    },
+    {
+      "date": "2026-04-25T00:00:00+00:00",
+      "soil_moisture_pct": 35.34,
+      "rainfall_mm_3h": 22.97,
+      "rainfall_mm_24h": 48.73,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.65,
+      "ndvi": 0.553
+    },
+    {
+      "date": "2026-04-26T00:00:00+00:00",
+      "soil_moisture_pct": 35.24,
+      "rainfall_mm_3h": 20.77,
+      "rainfall_mm_24h": 97.83,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.54,
+      "ndvi": 0.552
+    },
+    {
+      "date": "2026-04-27T00:00:00+00:00",
+      "soil_moisture_pct": 37.05,
+      "rainfall_mm_3h": 20.02,
+      "rainfall_mm_24h": 90.32,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.5,
+      "ndvi": 0.571
+    },
+    {
+      "date": "2026-04-28T00:00:00+00:00",
+      "soil_moisture_pct": 38.56,
+      "rainfall_mm_3h": 21.07,
+      "rainfall_mm_24h": 52.0,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.55,
+      "ndvi": 0.586
+    },
+    {
+      "date": "2026-04-29T00:00:00+00:00",
+      "soil_moisture_pct": 40.3,
+      "rainfall_mm_3h": 19.95,
+      "rainfall_mm_24h": 73.85,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.5,
+      "ndvi": 0.603
+    },
+    {
+      "date": "2026-04-30T00:00:00+00:00",
+      "soil_moisture_pct": 40.64,
+      "rainfall_mm_3h": 19.18,
+      "rainfall_mm_24h": 42.0,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.46,
+      "ndvi": 0.606
+    },
+    {
+      "date": "2026-05-01T00:00:00+00:00",
+      "soil_moisture_pct": 40.57,
+      "rainfall_mm_3h": 13.98,
+      "rainfall_mm_24h": 35.91,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.2,
+      "ndvi": 0.606
+    },
+    {
+      "date": "2026-05-02T00:00:00+00:00",
+      "soil_moisture_pct": 42.46,
+      "rainfall_mm_3h": 15.11,
+      "rainfall_mm_24h": 34.51,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.26,
+      "ndvi": 0.625
+    },
+    {
+      "date": "2026-05-03T00:00:00+00:00",
+      "soil_moisture_pct": 43.59,
+      "rainfall_mm_3h": 18.85,
+      "rainfall_mm_24h": 84.65,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.44,
+      "ndvi": 0.636
+    },
+    {
+      "date": "2026-05-04T00:00:00+00:00",
+      "soil_moisture_pct": 45.11,
+      "rainfall_mm_3h": 21.34,
+      "rainfall_mm_24h": 103.07,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.57,
+      "ndvi": 0.651
+    },
+    {
+      "date": "2026-05-05T00:00:00+00:00",
+      "soil_moisture_pct": 46.5,
+      "rainfall_mm_3h": 21.27,
+      "rainfall_mm_24h": 77.35,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.56,
+      "ndvi": 0.665
+    },
+    {
+      "date": "2026-05-06T00:00:00+00:00",
+      "soil_moisture_pct": 48.2,
+      "rainfall_mm_3h": 21.8,
+      "rainfall_mm_24h": 107.15,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.59,
+      "ndvi": 0.682
+    },
+    {
+      "date": "2026-05-07T00:00:00+00:00",
+      "soil_moisture_pct": 48.65,
+      "rainfall_mm_3h": 25.48,
+      "rainfall_mm_24h": 85.83,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.77,
+      "ndvi": 0.686
+    },
+    {
+      "date": "2026-05-08T00:00:00+00:00",
+      "soil_moisture_pct": 48.73,
+      "rainfall_mm_3h": 24.98,
+      "rainfall_mm_24h": 79.31,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.75,
+      "ndvi": 0.687
+    },
+    {
+      "date": "2026-05-09T00:00:00+00:00",
+      "soil_moisture_pct": 47.96,
+      "rainfall_mm_3h": 28.73,
+      "rainfall_mm_24h": 124.67,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.94,
+      "ndvi": 0.68
+    },
+    {
+      "date": "2026-05-10T00:00:00+00:00",
+      "soil_moisture_pct": 49.76,
+      "rainfall_mm_3h": 25.98,
+      "rainfall_mm_24h": 99.68,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.8,
+      "ndvi": 0.698
+    },
+    {
+      "date": "2026-05-11T00:00:00+00:00",
+      "soil_moisture_pct": 49.23,
+      "rainfall_mm_3h": 24.35,
+      "rainfall_mm_24h": 63.74,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.72,
+      "ndvi": 0.692
+    },
+    {
+      "date": "2026-05-12T00:00:00+00:00",
+      "soil_moisture_pct": 48.88,
+      "rainfall_mm_3h": 29.94,
+      "rainfall_mm_24h": 106.21,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.0,
+      "ndvi": 0.689
+    },
+    {
+      "date": "2026-05-13T00:00:00+00:00",
+      "soil_moisture_pct": 50.82,
+      "rainfall_mm_3h": 31.67,
+      "rainfall_mm_24h": 85.79,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.08,
+      "ndvi": 0.708
+    },
+    {
+      "date": "2026-05-14T00:00:00+00:00",
+      "soil_moisture_pct": 50.28,
+      "rainfall_mm_3h": 30.69,
+      "rainfall_mm_24h": 67.22,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.03,
+      "ndvi": 0.703
+    },
+    {
+      "date": "2026-05-15T00:00:00+00:00",
+      "soil_moisture_pct": 50.98,
+      "rainfall_mm_3h": 28.95,
+      "rainfall_mm_24h": 137.16,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.95,
+      "ndvi": 0.71
+    },
+    {
+      "date": "2026-05-16T00:00:00+00:00",
+      "soil_moisture_pct": 51.86,
+      "rainfall_mm_3h": 30.91,
+      "rainfall_mm_24h": 80.53,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.05,
+      "ndvi": 0.719
+    },
+    {
+      "date": "2026-05-17T00:00:00+00:00",
+      "soil_moisture_pct": 52.71,
+      "rainfall_mm_3h": 29.65,
+      "rainfall_mm_24h": 136.17,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.98,
+      "ndvi": 0.727
+    },
+    {
+      "date": "2026-05-18T00:00:00+00:00",
+      "soil_moisture_pct": 52.76,
+      "rainfall_mm_3h": 33.43,
+      "rainfall_mm_24h": 75.95,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.17,
+      "ndvi": 0.728
+    },
+    {
+      "date": "2026-05-19T00:00:00+00:00",
+      "soil_moisture_pct": 53.07,
+      "rainfall_mm_3h": 40.12,
+      "rainfall_mm_24h": 194.08,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.51,
+      "ndvi": 0.731
+    },
+    {
+      "date": "2026-05-20T00:00:00+00:00",
+      "soil_moisture_pct": 54.38,
+      "rainfall_mm_3h": 40.21,
+      "rainfall_mm_24h": 145.6,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.51,
+      "ndvi": 0.744
+    },
+    {
+      "date": "2026-05-21T00:00:00+00:00",
+      "soil_moisture_pct": 54.34,
+      "rainfall_mm_3h": 41.38,
+      "rainfall_mm_24h": 163.84,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.57,
+      "ndvi": 0.743
+    },
+    {
+      "date": "2026-05-22T00:00:00+00:00",
+      "soil_moisture_pct": 54.65,
+      "rainfall_mm_3h": 38.64,
+      "rainfall_mm_24h": 103.79,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.43,
+      "ndvi": 0.746
+    },
+    {
+      "date": "2026-05-23T00:00:00+00:00",
+      "soil_moisture_pct": 54.16,
+      "rainfall_mm_3h": 40.61,
+      "rainfall_mm_24h": 195.32,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.53,
+      "ndvi": 0.742
+    },
+    {
+      "date": "2026-05-24T00:00:00+00:00",
+      "soil_moisture_pct": 53.48,
+      "rainfall_mm_3h": 37.82,
+      "rainfall_mm_24h": 132.11,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.39,
+      "ndvi": 0.735
+    },
+    {
+      "date": "2026-05-25T00:00:00+00:00",
+      "soil_moisture_pct": 54.0,
+      "rainfall_mm_3h": 38.53,
+      "rainfall_mm_24h": 127.54,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.43,
+      "ndvi": 0.74
+    },
+    {
+      "date": "2026-05-26T00:00:00+00:00",
+      "soil_moisture_pct": 54.46,
+      "rainfall_mm_3h": 29.66,
+      "rainfall_mm_24h": 101.86,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.98,
+      "ndvi": 0.745
+    },
+    {
+      "date": "2026-05-27T00:00:00+00:00",
+      "soil_moisture_pct": 53.66,
+      "rainfall_mm_3h": 27.67,
+      "rainfall_mm_24h": 104.56,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.88,
+      "ndvi": 0.737
+    },
+    {
+      "date": "2026-05-28T00:00:00+00:00",
+      "soil_moisture_pct": 54.57,
+      "rainfall_mm_3h": 31.99,
+      "rainfall_mm_24h": 68.85,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.1,
+      "ndvi": 0.746
+    },
+    {
+      "date": "2026-05-29T00:00:00+00:00",
+      "soil_moisture_pct": 54.98,
+      "rainfall_mm_3h": 38.96,
+      "rainfall_mm_24h": 182.75,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.45,
+      "ndvi": 0.75
+    },
+    {
+      "date": "2026-05-30T00:00:00+00:00",
+      "soil_moisture_pct": 54.16,
+      "rainfall_mm_3h": 37.18,
+      "rainfall_mm_24h": 166.09,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.36,
+      "ndvi": 0.742
+    },
+    {
+      "date": "2026-05-31T00:00:00+00:00",
+      "soil_moisture_pct": 55.51,
+      "rainfall_mm_3h": 36.87,
+      "rainfall_mm_24h": 121.1,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.34,
+      "ndvi": 0.755
+    },
+    {
+      "date": "2026-06-01T00:00:00+00:00",
+      "soil_moisture_pct": 57.08,
+      "rainfall_mm_3h": 36.53,
+      "rainfall_mm_24h": 142.2,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.33,
+      "ndvi": 0.771
+    },
+    {
+      "date": "2026-06-02T00:00:00+00:00",
+      "soil_moisture_pct": 58.06,
+      "rainfall_mm_3h": 41.88,
+      "rainfall_mm_24h": 168.18,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.59,
+      "ndvi": 0.781
+    },
+    {
+      "date": "2026-06-03T00:00:00+00:00",
+      "soil_moisture_pct": 58.18,
+      "rainfall_mm_3h": 39.71,
+      "rainfall_mm_24h": 130.05,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.49,
+      "ndvi": 0.782
+    },
+    {
+      "date": "2026-06-04T00:00:00+00:00",
+      "soil_moisture_pct": 58.69,
+      "rainfall_mm_3h": 42.67,
+      "rainfall_mm_24h": 179.65,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.63,
+      "ndvi": 0.787
+    },
+    {
+      "date": "2026-06-05T00:00:00+00:00",
+      "soil_moisture_pct": 58.34,
+      "rainfall_mm_3h": 38.59,
+      "rainfall_mm_24h": 163.47,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.43,
+      "ndvi": 0.783
+    },
+    {
+      "date": "2026-06-06T00:00:00+00:00",
+      "soil_moisture_pct": 57.94,
+      "rainfall_mm_3h": 38.92,
+      "rainfall_mm_24h": 151.03,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.45,
+      "ndvi": 0.779
+    },
+    {
+      "date": "2026-06-07T00:00:00+00:00",
+      "soil_moisture_pct": 59.62,
+      "rainfall_mm_3h": 32.14,
+      "rainfall_mm_24h": 90.56,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.11,
+      "ndvi": 0.796
+    },
+    {
+      "date": "2026-06-08T00:00:00+00:00",
+      "soil_moisture_pct": 61.49,
+      "rainfall_mm_3h": 38.43,
+      "rainfall_mm_24h": 94.66,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.42,
+      "ndvi": 0.815
+    },
+    {
+      "date": "2026-06-09T00:00:00+00:00",
+      "soil_moisture_pct": 61.36,
+      "rainfall_mm_3h": 43.55,
+      "rainfall_mm_24h": 156.25,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.68,
+      "ndvi": 0.814
+    },
+    {
+      "date": "2026-06-10T00:00:00+00:00",
+      "soil_moisture_pct": 62.64,
+      "rainfall_mm_3h": 43.89,
+      "rainfall_mm_24h": 181.02,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.69,
+      "ndvi": 0.826
+    },
+    {
+      "date": "2026-06-11T00:00:00+00:00",
+      "soil_moisture_pct": 62.72,
+      "rainfall_mm_3h": 41.46,
+      "rainfall_mm_24h": 142.43,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.57,
+      "ndvi": 0.827
+    },
+    {
+      "date": "2026-06-12T00:00:00+00:00",
+      "soil_moisture_pct": 62.54,
+      "rainfall_mm_3h": 42.45,
+      "rainfall_mm_24h": 124.16,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.62,
+      "ndvi": 0.825
+    },
+    {
+      "date": "2026-06-13T00:00:00+00:00",
+      "soil_moisture_pct": 63.19,
+      "rainfall_mm_3h": 42.38,
+      "rainfall_mm_24h": 174.39,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.62,
+      "ndvi": 0.832
+    },
+    {
+      "date": "2026-06-14T00:00:00+00:00",
+      "soil_moisture_pct": 63.63,
+      "rainfall_mm_3h": 41.32,
+      "rainfall_mm_24h": 179.59,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.57,
+      "ndvi": 0.836
+    },
+    {
+      "date": "2026-06-15T00:00:00+00:00",
+      "soil_moisture_pct": 65.08,
+      "rainfall_mm_3h": 37.87,
+      "rainfall_mm_24h": 126.66,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.39,
+      "ndvi": 0.851
+    },
+    {
+      "date": "2026-06-16T00:00:00+00:00",
+      "soil_moisture_pct": 64.8,
+      "rainfall_mm_3h": 36.17,
+      "rainfall_mm_24h": 111.49,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.31,
+      "ndvi": 0.848
+    },
+    {
+      "date": "2026-06-17T00:00:00+00:00",
+      "soil_moisture_pct": 65.2,
+      "rainfall_mm_3h": 37.16,
+      "rainfall_mm_24h": 118.02,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.36,
+      "ndvi": 0.852
+    },
+    {
+      "date": "2026-06-18T00:00:00+00:00",
+      "soil_moisture_pct": 66.46,
+      "rainfall_mm_3h": 30.84,
+      "rainfall_mm_24h": 90.71,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.04,
+      "ndvi": 0.865
+    },
+    {
+      "date": "2026-06-19T00:00:00+00:00",
+      "soil_moisture_pct": 65.85,
+      "rainfall_mm_3h": 31.23,
+      "rainfall_mm_24h": 103.59,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.06,
+      "ndvi": 0.858
+    },
+    {
+      "date": "2026-06-20T00:00:00+00:00",
+      "soil_moisture_pct": 65.96,
+      "rainfall_mm_3h": 33.92,
+      "rainfall_mm_24h": 91.86,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.2,
+      "ndvi": 0.86
+    },
+    {
+      "date": "2026-06-21T00:00:00+00:00",
+      "soil_moisture_pct": 67.75,
+      "rainfall_mm_3h": 34.55,
+      "rainfall_mm_24h": 120.72,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.23,
+      "ndvi": 0.877
+    },
+    {
+      "date": "2026-06-22T00:00:00+00:00",
+      "soil_moisture_pct": 69.35,
+      "rainfall_mm_3h": 33.61,
+      "rainfall_mm_24h": 167.92,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.18,
+      "ndvi": 0.893
+    },
+    {
+      "date": "2026-06-23T00:00:00+00:00",
+      "soil_moisture_pct": 71.02,
+      "rainfall_mm_3h": 25.36,
+      "rainfall_mm_24h": 119.84,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.77,
+      "ndvi": 0.91
+    },
+    {
+      "date": "2026-06-24T00:00:00+00:00",
+      "soil_moisture_pct": 71.4,
+      "rainfall_mm_3h": 24.08,
+      "rainfall_mm_24h": 54.03,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.7,
+      "ndvi": 0.914
+    },
+    {
+      "date": "2026-06-25T00:00:00+00:00",
+      "soil_moisture_pct": 71.83,
+      "rainfall_mm_3h": 23.57,
+      "rainfall_mm_24h": 82.1,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.68,
+      "ndvi": 0.918
+    },
+    {
+      "date": "2026-06-26T00:00:00+00:00",
+      "soil_moisture_pct": 72.54,
+      "rainfall_mm_3h": 25.24,
+      "rainfall_mm_24h": 92.29,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.76,
+      "ndvi": 0.925
+    },
+    {
+      "date": "2026-06-27T00:00:00+00:00",
+      "soil_moisture_pct": 71.86,
+      "rainfall_mm_3h": 21.74,
+      "rainfall_mm_24h": 58.18,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.59,
+      "ndvi": 0.919
+    },
+    {
+      "date": "2026-06-28T00:00:00+00:00",
+      "soil_moisture_pct": 73.41,
+      "rainfall_mm_3h": 23.99,
+      "rainfall_mm_24h": 119.59,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.7,
+      "ndvi": 0.934
+    },
+    {
+      "date": "2026-06-29T00:00:00+00:00",
+      "soil_moisture_pct": 75.08,
+      "rainfall_mm_3h": 28.54,
+      "rainfall_mm_24h": 84.0,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.93,
+      "ndvi": 0.951
+    },
+    {
+      "date": "2026-06-30T00:00:00+00:00",
+      "soil_moisture_pct": 74.88,
+      "rainfall_mm_3h": 29.25,
+      "rainfall_mm_24h": 111.71,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.96,
+      "ndvi": 0.949
+    },
+    {
+      "date": "2026-07-01T00:00:00+00:00",
+      "soil_moisture_pct": 74.91,
+      "rainfall_mm_3h": 28.54,
+      "rainfall_mm_24h": 104.78,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.93,
+      "ndvi": 0.949
+    },
+    {
+      "date": "2026-07-02T00:00:00+00:00",
+      "soil_moisture_pct": 74.42,
+      "rainfall_mm_3h": 30.2,
+      "rainfall_mm_24h": 78.07,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 4.01,
+      "ndvi": 0.944
+    },
+    {
+      "date": "2026-07-03T00:00:00+00:00",
+      "soil_moisture_pct": 76.27,
+      "rainfall_mm_3h": 28.02,
+      "rainfall_mm_24h": 89.92,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.9,
+      "ndvi": 0.963
+    },
+    {
+      "date": "2026-07-04T00:00:00+00:00",
+      "soil_moisture_pct": 77.32,
+      "rainfall_mm_3h": 23.9,
+      "rainfall_mm_24h": 61.55,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.69,
+      "ndvi": 0.973
+    },
+    {
+      "date": "2026-07-05T00:00:00+00:00",
+      "soil_moisture_pct": 78.75,
+      "rainfall_mm_3h": 26.21,
+      "rainfall_mm_24h": 73.23,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.81,
+      "ndvi": 0.988
+    },
+    {
+      "date": "2026-07-06T00:00:00+00:00",
+      "soil_moisture_pct": 78.17,
+      "rainfall_mm_3h": 25.03,
+      "rainfall_mm_24h": 100.96,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.75,
+      "ndvi": 0.982
+    },
+    {
+      "date": "2026-07-07T00:00:00+00:00",
+      "soil_moisture_pct": 77.88,
+      "rainfall_mm_3h": 21.59,
+      "rainfall_mm_24h": 61.08,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.58,
+      "ndvi": 0.979
+    },
+    {
+      "date": "2026-07-08T00:00:00+00:00",
+      "soil_moisture_pct": 77.67,
+      "rainfall_mm_3h": 18.1,
+      "rainfall_mm_24h": 59.56,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.41,
+      "ndvi": 0.977
+    },
+    {
+      "date": "2026-07-09T00:00:00+00:00",
+      "soil_moisture_pct": 77.43,
+      "rainfall_mm_3h": 13.34,
+      "rainfall_mm_24h": 57.73,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.17,
+      "ndvi": 0.974
+    },
+    {
+      "date": "2026-07-10T00:00:00+00:00",
+      "soil_moisture_pct": 77.57,
+      "rainfall_mm_3h": 14.37,
+      "rainfall_mm_24h": 64.73,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.22,
+      "ndvi": 0.976
+    },
+    {
+      "date": "2026-07-11T00:00:00+00:00",
+      "soil_moisture_pct": 76.58,
+      "rainfall_mm_3h": 10.58,
+      "rainfall_mm_24h": 39.29,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 3.03,
+      "ndvi": 0.966
+    },
+    {
+      "date": "2026-07-12T00:00:00+00:00",
+      "soil_moisture_pct": 75.69,
+      "rainfall_mm_3h": 3.94,
+      "rainfall_mm_24h": 10.33,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.7,
+      "ndvi": 0.957
+    },
+    {
+      "date": "2026-07-13T00:00:00+00:00",
+      "soil_moisture_pct": 77.12,
+      "rainfall_mm_3h": 3.48,
+      "rainfall_mm_24h": 7.88,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.67,
+      "ndvi": 0.971
+    },
+    {
+      "date": "2026-07-14T00:00:00+00:00",
+      "soil_moisture_pct": 78.37,
+      "rainfall_mm_3h": 3.12,
+      "rainfall_mm_24h": 9.72,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.66,
+      "ndvi": 0.984
+    },
+    {
+      "date": "2026-07-15T00:00:00+00:00",
+      "soil_moisture_pct": 77.95,
+      "rainfall_mm_3h": 5.95,
+      "rainfall_mm_24h": 19.21,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.8,
+      "ndvi": 0.98
+    },
+    {
+      "date": "2026-07-16T00:00:00+00:00",
+      "soil_moisture_pct": 79.54,
+      "rainfall_mm_3h": 1.79,
+      "rainfall_mm_24h": 7.02,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.59,
+      "ndvi": 0.995
+    },
+    {
+      "date": "2026-07-17T00:00:00+00:00",
+      "soil_moisture_pct": 80,
+      "rainfall_mm_3h": 0,
+      "rainfall_mm_24h": 0.0,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.5,
+      "ndvi": 1.0
+    },
+    {
+      "date": "2026-07-18T00:00:00+00:00",
+      "soil_moisture_pct": 80,
+      "rainfall_mm_3h": 0.96,
+      "rainfall_mm_24h": 2.64,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.55,
+      "ndvi": 1.0
+    },
+    {
+      "date": "2026-07-19T00:00:00+00:00",
+      "soil_moisture_pct": 80,
+      "rainfall_mm_3h": 0,
+      "rainfall_mm_24h": 0.0,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.5,
+      "ndvi": 1.0
+    },
+    {
+      "date": "2026-07-20T00:00:00+00:00",
+      "soil_moisture_pct": 79.6,
+      "rainfall_mm_3h": 3.79,
+      "rainfall_mm_24h": 9.7,
+      "seasonal_forecast_probability_below_normal": 0.462,
+      "ipc_phase": 1,
+      "river_level_m": 2.69,
+      "ndvi": 0.996
+    }
+  ]
+}
