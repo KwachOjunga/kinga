@@ -77,14 +77,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Kinga — Anticipatory Action Engine · IGAD Region" },
+      {
+        name: "description",
+        content:
+          "Anticipatory action trigger & activation engine for the IGAD region. Digitizes AA protocols so early warnings are automatically wired to pre-agreed funded responses.",
+      },
+      { name: "author", content: "IGAD Hackathon 2026" },
+      { property: "og:title", content: "Kinga — Anticipatory Action Engine" },
+      {
+        property: "og:description",
+        content:
+          "Unified control center for early-warning triggers, mesh-network dispatch and last-mile community alerts across Eastern Africa.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@IGAD_" },
     ],
     links: [
       {
