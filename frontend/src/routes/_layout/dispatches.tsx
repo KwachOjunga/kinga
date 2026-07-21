@@ -10,7 +10,7 @@ export const Route = createFileRoute("/_layout/dispatches")({
 });
 
 interface FullDispatch extends ApiDispatch {
-  hops?: { from: string; to: string; arrived_at: string; latency_ms: number }[];
+  hops?: { from_node: string; to_node: string; arrived_at: string; latency_ms: number }[];
   delivered?: boolean;
 }
 
@@ -185,7 +185,7 @@ function DispatchesPage() {
                         <div className="flex-1 rounded border border-slate-800 bg-slate-900/40 px-3 py-2">
                           <div className="flex items-center justify-between">
                             <div className="font-mono text-[10px] text-slate-300">
-                              {hop.from} → {hop.to}
+                              {hop.from_node} → {hop.to_node}
                             </div>
                             <div className="font-mono text-[10px] text-slate-500">
                               {hop.latency_ms}ms

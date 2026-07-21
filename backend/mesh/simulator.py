@@ -136,7 +136,7 @@ class MeshSimulator:
                 "dispatch_id": dispatch_id,
                 "route": [],
                 "hops": [],
-                "total_latency_ms": 0,
+                "total_latency": 0,
                 "delivered": False,
             }
 
@@ -155,7 +155,12 @@ class MeshSimulator:
                 total_latency += latency
                 current = current + timedelta(milliseconds=latency)
             hops.append(
-                MeshHop(node=node, arrived_at=current, latency_ms=latency)
+                MeshHop(
+                    from_node=route[i - 1] if i > 0 else node,
+                    to_node=node,
+                    arrived_at=current,
+                    latency_ms=latency,
+                )
             )
 
         self.offline_nodes = saved_offline
@@ -163,6 +168,6 @@ class MeshSimulator:
             "dispatch_id": dispatch_id,
             "route": route,
             "hops": hops,
-            "total_latency_ms": total_latency,
+            "total_latency": total_latency,
             "delivered": True,
         }

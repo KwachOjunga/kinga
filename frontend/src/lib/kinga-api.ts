@@ -172,7 +172,7 @@ export async function fetchFullDispatch(triggerId: string): Promise<{
   trigger_id: string;
   dispatched_at: string;
   delivery_route: string[];
-  hops: { from: string; to: string; arrived_at: string; latency_ms: number }[];
+  hops: { from_node: string; to_node: string; arrived_at: string; latency_ms: number }[];
   delivered: boolean;
 } | null> {
   try {

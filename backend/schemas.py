@@ -132,7 +132,8 @@ class MeshSimulateBody(BaseModel):
 
 
 class MeshHop(BaseModel):
-    node: str
+    from_node: str
+    to_node: str
     arrived_at: datetime
     latency_ms: int
 
@@ -141,7 +142,7 @@ class MeshSimulateResponse(BaseModel):
     dispatch_id: str
     route: list[str]
     hops: list[MeshHop]
-    total_latency_ms: int
+    total_latency: int
     delivered: bool
 
 

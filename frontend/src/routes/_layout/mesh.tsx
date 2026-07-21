@@ -20,7 +20,7 @@ export const Route = createFileRoute("/_layout/mesh")({
 
 interface SimulationResult {
   route: string[];
-  hops: { from: string; to: string; latency_ms: number }[];
+  hops: { from_node: string; to_node: string; latency_ms: number }[];
   total_latency: number;
   delivered: boolean;
 }
@@ -184,8 +184,8 @@ function MeshPage() {
               );
             })}
             {simResult?.hops.map((hop, i) => {
-              const fromNode = topology?.nodes.find((n) => n.id === hop.from);
-              const toNode = topology?.nodes.find((n) => n.id === hop.to);
+              const fromNode = topology?.nodes.find((n) => n.id === hop.from_node);
+              const toNode = topology?.nodes.find((n) => n.id === hop.to_node);
               if (!fromNode || !toNode) return null;
               const p1 = projectToScene({ lat: fromNode.lat, lon: fromNode.lon });
               const p2 = projectToScene({ lat: toNode.lat, lon: toNode.lon });
@@ -263,9 +263,9 @@ function MeshPage() {
                       key={i}
                       className="flex items-center gap-2 rounded border border-slate-800 bg-slate-900/40 px-2 py-1 text-[10px] font-mono"
                     >
-                      <span className="text-slate-400">{hop.from}</span>
+                      <span className="text-slate-400">{hop.from_node}</span>
                       <span className="text-sky-400">→</span>
-                      <span className="text-slate-400">{hop.to}</span>
+                      <span className="text-slate-400">{hop.to_node}</span>
                       <span className="ml-auto text-slate-500">{hop.latency_ms}ms</span>
                     </div>
                   ))}
