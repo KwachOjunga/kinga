@@ -12,20 +12,20 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 # Grid coordinates match the frontend Three.js map (-1..1 scaled by 4.2)
 MESH_NODES: list[dict] = [
-    {"id": "gateway_01", "label": "Gateway Node 01", "lat": -0.8, "lon": -0.8, "role": "gateway"},
-    {"id": "gateway_02", "label": "Gateway Node 02", "lat": 0.8, "lon": 0.85, "role": "gateway"},
-    {"id": "village_a", "label": "Village A Relay", "lat": 0.1, "lon": -0.2, "role": "relay"},
-    {"id": "village_b", "label": "Village B Relay", "lat": 0.4, "lon": 0.3, "role": "relay"},
-    {"id": "village_c", "label": "Village C Relay", "lat": 0.5, "lon": 0.5, "role": "relay"},
-    {"id": "field_marsabit", "label": "Marsabit Field Office", "lat": 0.35, "lon": -0.15, "role": "destination"},
-    {"id": "field_gedo", "label": "Gedo Field Office", "lat": 0.55, "lon": 0.55, "role": "destination"},
-    {"id": "field_dollo", "label": "Dollo Field Office", "lat": 0.62, "lon": 0.05, "role": "destination"},
-    {"id": "field_turkana", "label": "Turkana Field Office", "lat": 0.15, "lon": -0.45, "role": "destination"},
-    {"id": "field_karamoja", "label": "Karamoja Field Office", "lat": -0.15, "lon": -0.55, "role": "destination"},
-    {"id": "field_ali_sabieh", "label": "Ali Sabieh Field Office", "lat": 0.75, "lon": 0.75, "role": "destination"},
-    {"id": "field_gash_barka", "label": "Gash-Barka Field Office", "lat": 0.85, "lon": 0.35, "role": "destination"},
-    {"id": "field_jonglei", "label": "Jonglei Field Office", "lat": 0.5, "lon": -0.65, "role": "destination"},
-    {"id": "field_gedaref", "label": "Gedaref Field Office", "lat": 0.8, "lon": -0.5, "role": "destination"},
+    {"id": "gateway_01", "label": "Nairobi Gateway", "lat": -1.29, "lon": 36.82, "role": "gateway"},
+    {"id": "gateway_02", "label": "Addis Gateway", "lat": 9.03, "lon": 38.75, "role": "gateway"},
+    {"id": "village_a", "label": "Marsabit Relay", "lat": 2.33, "lon": 37.99, "role": "relay"},
+    {"id": "village_b", "label": "Dire Dawa Relay", "lat": 9.59, "lon": 41.86, "role": "relay"},
+    {"id": "village_c", "label": "Jijiga Relay", "lat": 9.35, "lon": 42.80, "role": "relay"},
+    {"id": "field_marsabit", "label": "Marsabit Field Office", "lat": 2.33, "lon": 37.99, "role": "destination"},
+    {"id": "field_gedo", "label": "Gedo Field Office", "lat": 3.52, "lon": 42.21, "role": "destination"},
+    {"id": "field_dollo", "label": "Dollo Field Office", "lat": 4.17, "lon": 42.08, "role": "destination"},
+    {"id": "field_turkana", "label": "Turkana Field Office", "lat": 3.12, "lon": 35.60, "role": "destination"},
+    {"id": "field_karamoja", "label": "Karamoja Field Office", "lat": 2.53, "lon": 34.67, "role": "destination"},
+    {"id": "field_ali_sabieh", "label": "Ali Sabieh Field Office", "lat": 11.16, "lon": 42.72, "role": "destination"},
+    {"id": "field_gash_barka", "label": "Gash-Barka Field Office", "lat": 15.32, "lon": 38.92, "role": "destination"},
+    {"id": "field_jonglei", "label": "Jonglei Field Office", "lat": 9.53, "lon": 31.65, "role": "destination"},
+    {"id": "field_gedaref", "label": "Gedaref Field Office", "lat": 13.19, "lon": 30.22, "role": "destination"},
 ]
 
 MESH_EDGES: list[tuple[str, str, int]] = [
