@@ -19,6 +19,7 @@ function DispatchesPage() {
   const [dispatches, setDispatches] = useState<Record<string, FullDispatch>>({});
   const [selectedId, setSelectedId] = useState<string>("");
   const [live, setLive] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const load = async () => {
@@ -27,25 +28,28 @@ function DispatchesPage() {
       if (!ok) return;
       const rows = await fetchApiTriggers();
       setTriggers(rows);
-      for (const t of rows) {
-        if (t.status === "triggered" || t.status === "activated" || t.status === "confirmed") {
-          try {
-            const data = await fetchFullDispatch(t.trigger_id);
-            if (data) {
-              setDispatches((prev) => ({ ...prev, [t.trigger_id]: data }));
-            }
-          } catch {
-            /* skip */
-          }
-        }
-      }
     };
     void load();
     const id = setInterval(() => void load(), 5000);
     return () => clearInterval(id);
   }, []);
 
-  const dispatchList = Object.entries(dispatches);
+  const selectTrigger = async (triggerId: string) => {
+    setSelectedId(triggerId);
+    if (dispatches[triggerId]) return;
+    setLoading(true);
+    try {
+      const data = await fetchFullDispatch(triggerId);
+      if (data) {
+        setDispatches((prev) => ({ ...prev, [triggerId]: data }));
+      }
+    } catch {
+      /* skip */
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const selected = selectedId ? dispatches[selectedId] : null;
   const selectedTrigger = selectedId ? triggers.find((t) => t.trigger_id === selectedId) : null;
 
@@ -72,7 +76,7 @@ function DispatchesPage() {
             .map((t) => (
               <button
                 key={t.trigger_id}
-                onClick={() => setSelectedId(t.trigger_id)}
+                onClick={() => void selectTrigger(t.trigger_id)}
                 className={`w-full rounded border px-3 py-2 text-left text-xs transition ${
                   selectedId === t.trigger_id
                     ? "border-sky-500/50 bg-sky-500/10"
