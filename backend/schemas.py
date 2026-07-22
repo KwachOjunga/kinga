@@ -67,6 +67,10 @@ class TriggerSummary(BaseModel):
     hazard: str
     status: TriggerStatus
     conditions: list[Condition]
+    action: Action | None = None
+    responsible_institution: Institution | None = None
+    condition_logic: str | None = None
+    arming_probability: float | None = None
 
 
 class ForecastPoint(BaseModel):
