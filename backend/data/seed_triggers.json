@@ -186,11 +186,11 @@
         "rationale": "Consecutive failed rains; livestock mortality rising in pastoral corridors."
       },
       {
-        "indicator": "spi_4",
-        "operator": "<",
-        "threshold": -1.5,
-        "unit": "index",
-        "rationale": "SPI-4 below -1.5 indicates severe drought conditions over 4-month window."
+        "indicator": "seasonal_forecast_probability_below_normal",
+        "operator": ">=",
+        "threshold": 0.6,
+        "unit": "probability",
+        "rationale": "Seasonal forecast indicates elevated probability of below-normal rains, consistent with severe drought conditions."
       }
     ],
     "condition_logic": "AND",
@@ -267,7 +267,7 @@
         "rationale": "White Nile gauge at Malakal rising above seasonal norm; upstream rainfall persistent."
       },
       {
-        "indicator": "rainfall_mm",
+        "indicator": "rainfall_mm_3h",
         "operator": ">",
         "threshold": 40,
         "unit": "mm",
@@ -311,7 +311,7 @@
         "rationale": "Vegetation index significantly below 5-year average for Gedaref agricultural zone."
       },
       {
-        "indicator": "rainfall_mm",
+        "indicator": "rainfall_mm_3h",
         "operator": "<",
         "threshold": 10,
         "unit": "mm",

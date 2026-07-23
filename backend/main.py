@@ -8,6 +8,7 @@ from schemas import (
     CommunityAckBody,
     MeshSimulateBody,
     MeshSimulateResponse,
+    MeshTopology,
     OfflineBody,
     PredictionResponse,
     ScorecardEntry,
@@ -116,9 +117,9 @@ def acknowledge_community(dispatch_id: str, body: CommunityAckBody) -> dict:
         raise HTTPException(status_code=404, detail="Dispatch not found") from exc
 
 
-@app.get("/mesh/topology")
-def mesh_topology() -> dict:
-    return store.mesh.get_topology().model_dump()
+@app.get("/mesh/topology", response_model=MeshTopology)
+def mesh_topology() -> MeshTopology:
+    return store.mesh.get_topology()
 
 
 @app.get("/mesh/status")

@@ -30,7 +30,7 @@ interface ForecastPoint {
 const INDICATOR_COLORS: Record<string, string> = {
   soil_moisture_pct: "#f5c518",
   seasonal_forecast_probability_below_normal: "#ff2f4a",
-  rainfall_mm: "#38bdf8",
+  rainfall_mm_3h: "#38bdf8",
   ndvi: "#22d3ee",
   river_level_m: "#6366f1",
 };
@@ -38,7 +38,7 @@ const INDICATOR_COLORS: Record<string, string> = {
 const INDICATOR_LABELS: Record<string, string> = {
   soil_moisture_pct: "Soil Moisture (%)",
   seasonal_forecast_probability_below_normal: "Below-Normal Prob.",
-  rainfall_mm: "Rainfall (mm)",
+  rainfall_mm_3h: "Rainfall (mm / 3h)",
   ndvi: "NDVI",
   river_level_m: "River Level (m)",
 };

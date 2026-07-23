@@ -20,11 +20,12 @@ const IGAD_COUNTRIES = [
 
 const INDICATORS = [
   "soil_moisture_pct",
-  "rainfall_mm",
+  "rainfall_mm_3h",
+  "rainfall_mm_24h",
   "seasonal_forecast_probability_below_normal",
   "ndvi",
   "river_level_m",
-  "spi_4",
+  "ipc_phase",
 ];
 
 const OPERATORS = [">=", "<=", ">", "<", "=="];

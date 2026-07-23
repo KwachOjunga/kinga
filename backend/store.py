@@ -17,7 +17,6 @@ from schemas import (
     MeshSimulateResponse,
     ScorecardEntry,
     TimelineEvent,
-    Trigger,
 )
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
@@ -282,35 +281,35 @@ class KingaStore:
             ).total_seconds() / 3600
             stats.setdefault(inst, []).append(delta)
 
-        entries: list[ScorecardEntry] = []
+        def _rate(hours: float) -> str:
+            if hours <= 3:
+                return "on_track"
+            if hours <= 6:
+                return "slow"
+            return "overdue"
+
         defaults = [
-            ("Kenya NDMA, Marsabit sub-office", 0.2, "on_track"),
-            ("Ethiopia NDRMC, Dollo border", 14.0, "overdue"),
-            ("Kenya NDMA, Turkana sub-office", 0.35, "on_track"),
-            ("Somalia DRM, Gedo office", 0.78, "on_track"),
-            ("Uganda OPM, Karamoja desk", 1.1, "on_track"),
-            ("Djibouti ANDHS, Ali Sabieh desk", 0.65, "on_track"),
-            ("Eritrea DMNC, Gash-Barka desk", 2.3, "slow"),
-            ("South Sudan DMC, Jonglei desk", 0.45, "on_track"),
-            ("Sudan HAC, Gedaref office", 1.8, "slow"),
+            ("Kenya NDMA, Marsabit sub-office", 0.2),
+            ("Ethiopia NDRMC, Dollo border", 14.0),
+            ("Kenya NDMA, Turkana sub-office", 0.35),
+            ("Somalia DRM, Gedo office", 0.78),
+            ("Uganda OPM, Karamoja desk", 1.1),
+            ("Djibouti ANDHS, Ali Sabieh desk", 0.65),
+            ("Eritrea DMNC, Gash-Barka desk", 2.3),
+            ("South Sudan DMC, Jonglei desk", 0.45),
+            ("Sudan HAC, Gedaref office", 1.8),
         ]
+        entries: list[ScorecardEntry] = []
         seen: set[str] = set()
-        for inst, hours, status in defaults:
-            if inst in stats:
-                hours = sum(stats[inst]) / len(stats[inst])
-                deadline = 6
-                status = (
-                    "on_track"
-                    if hours <= deadline * 0.5
-                    else "slow"
-                    if hours <= deadline
-                    else "overdue"
-                )
+        for inst, fallback_hours in defaults:
+            hours = (
+                sum(stats[inst]) / len(stats[inst]) if inst in stats else fallback_hours
+            )
             entries.append(
                 ScorecardEntry(
                     institution=inst,
                     avg_ack_hours=round(hours, 1),
-                    status=status,  # type: ignore[arg-type]
+                    status=_rate(hours),
                 )
             )
             seen.add(inst)
@@ -319,12 +318,11 @@ class KingaStore:
             if inst in seen:
                 continue
             hours = sum(hours_list) / len(hours_list)
-            status = "on_track" if hours <= 3 else "slow" if hours <= 6 else "overdue"
             entries.append(
                 ScorecardEntry(
                     institution=inst,
                     avg_ack_hours=round(hours, 1),
-                    status=status,  # type: ignore[arg-type]
+                    status=_rate(hours),
                 )
             )
         return entries
